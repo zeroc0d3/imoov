@@ -16,7 +16,7 @@ class HomeController extends Controller
     protected $avatar;
     protected $logo;
     protected $meta_default;
-    
+
 	public function __construct() {
 		$activeTheme     = \Theme::current();
         $node_modules    = \Theme::config('node-module');
@@ -24,9 +24,9 @@ class HomeController extends Controller
         $favicon         = \Theme::config('favicon');
         $avatar          = \Theme::config('avatar');
         $logo            = \Theme::config('logo');
-        
-		$this->theme_name       = $activeTheme->name;            
-		$this->theme_assetPath  = $activeTheme->assetPath;  
+
+		$this->theme_name       = $activeTheme->name;
+		$this->theme_assetPath  = $activeTheme->assetPath;
 	    $this->theme_viewsPath  = $activeTheme->viewsPath;
         $this->theme_npm        = $node_modules;
         $this->theme_favicon    = $favicon;
@@ -37,9 +37,9 @@ class HomeController extends Controller
         $meta_default = array(
             'meta_name' => array(
                 'content-language' => 'id-ID',
-                'title'            => 'Core ACL',
-                'description'      => 'Laravel Access Control (ACL)',
-                'keywords'         => 'laravel, access, control, list, acl, sentry, cartalyst, coreui',
+                'title'            => 'iMove',
+                'description'      => 'Car Rental & Transport System',
+                'keywords'         => 'imove, car, rental, transport, coreui',
                 'web_author'       => 'ZeroC0D3 Team',
                 'copyright'        => 'MIT License',
                 'google'           => 'notranslate'
@@ -47,8 +47,8 @@ class HomeController extends Controller
             'meta_property' => array(
                 'og:url'           => env('APP_URL', 'http://localhost'),
                 'og:type'          => 'website',
-                'og:title'         => 'Core ACL',
-                'og:description'   => 'Laravel Access Control (ACL)',
+                'og:title'         => 'iMove',
+                'og:description'   => 'Car Rental & Transport System',
                 'og:image'         => $this->theme_logo,
             ),
         );
@@ -57,7 +57,7 @@ class HomeController extends Controller
         #var_dump($meta_default);die();
         #$this->middleware('auth');  // Filtering guest authentified
     }
-	
+
 	public function index()
     {
     	$meta_name      = $this->meta_default['meta_name'];
@@ -74,9 +74,9 @@ class HomeController extends Controller
             #'meta_name'     => $this->meta_default['meta_name'],
             #'meta_property' => $this->meta_default['meta_property'],
         );
-        
+
         $index = 'themes/' . $this->theme_name . '/pages/home';
     	#var_dump($index, $data, $meta_name, $meta_property);die();
     	return view($index, ['data' => $data, 'meta_name' => $meta_name, 'meta_property' => $meta_property]);
-    }	
+    }
 }
