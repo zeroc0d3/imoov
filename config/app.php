@@ -182,6 +182,7 @@ return [
         igaster\laravelTheme\themeServiceProvider::class,
         Orchestra\Asset\AssetServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        'Fideloper\Proxy\TrustedProxyServiceProvider',
 
     ],
 
