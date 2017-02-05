@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'My Application',
+    'name' => 'Core ACL',
 
     /*
     |--------------------------------------------------------------------------
@@ -180,6 +180,8 @@ return [
 
         Barryvdh\Debugbar\ServiceProvider::class,
         igaster\laravelTheme\themeServiceProvider::class,
+        Orchestra\Asset\AssetServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
 
     ],
 
@@ -227,8 +229,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'Theme' => igaster\laravelTheme\Facades\Theme::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'Theme' => igaster\laravelTheme\Facades\Theme::class,
+        'Asset' => Orchestra\Support\Facades\Asset::class,
     ],
 
 ];

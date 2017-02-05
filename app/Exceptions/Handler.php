@@ -44,6 +44,42 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        /* Laravel exception */
+        /*
+        if ($exception instanceof HttpResponseException) {
+            return $exception->getResponse();
+        } elseif ($exception instanceof ModelNotFoundException) {
+            $exception = new NotFoundHttpException($exception->getMessage(), $exception);
+        } elseif ($exception instanceof AuthenticationException) {
+            return $this->unauthenticated($request, $exception);
+        } elseif ($exception instanceof AuthorizationException) {
+            $exception = new HttpException(403, $exception->getMessage());
+        } elseif ($exception instanceof ValidationException && $exception->getResponse()) {
+            return $exception->getResponse();
+        }
+
+        if ($this->isHttpException($exception)) {
+            return $this->toIlluminateResponse($this->renderHttpException($exception), $exception);
+        } else {
+            return $this->toIlluminateResponse($this->convertExceptionToResponse($exception), $exception);
+        }
+        */
+
+        /* CUSTOM exception */
+        if ($exception instanceof ModelNotFoundException) {
+            // ajax 404 json feedback
+            if ($request->ajax()) {
+                return response()->json(['error' => 'Not Found'], 404);
+            }
+
+            // normal 404 view page feedback
+            return response()->view('errors.missing', [], 404);
+        }
+
+        if ($exception instanceof CustomException) {
+            return response()->view('errors.custom', [], 500);
+        }
+
         return parent::render($request, $exception);
     }
 

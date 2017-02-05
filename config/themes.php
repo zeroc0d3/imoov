@@ -19,10 +19,11 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'themes_path' => 'resources/views/themes', // eg: realpath(base_path('resources/themes'))
+    #'themes_path' => 'resources/views/themes', // eg: realpath(base_path('resources/themes'))
     #'themes_path' => base_path('resources/views/themes'), // eg: realpath(base_path('resources/themes'))
     #'themes_path' => realpath(base_path('resources/views/themes')), // eg: realpath(base_path('resources/themes'))
-
+    'themes_path' => base_path('resources/views/themes'), 
+    
 	/*
 	|--------------------------------------------------------------------------
 	| Set behavior if an asset is not found in a Theme hierarcy.
@@ -62,12 +63,12 @@ return [
 		'default' => [
 			'extends'          => null,
 			'views-path'       => 'resources/views/themes/default',
-            'asset-path'       => 'public/themes/default/assets',
+            'asset-path'       => 'themes/default/assets',
             'node-module'      => 'node_modules',     # root path
             'bower-component'  => 'bower_components', # root path
-            'favicon'          => 'public/themes/default/assets/img/favicon.ico',
-            'avatar'           => 'public/themes/default/assets/img/avatar.png',
-            'logo'             => 'public/themes/default/assets/img/logo.png',
+            'favicon'          => 'themes/default/assets/img/favicon.ico',
+            'avatar'           => 'themes/default/assets/img/avatar.png',
+            'logo'             => 'default/assets/img/logo.png',
 		],
 
 		// Add your themes here...
@@ -98,23 +99,23 @@ return [
         'coreui' => [
             'extends'          => null,
             'views-path'       => 'resources/views/themes/coreui',
-            'asset-path'       => 'public/themes/coreui/assets',
-            'node-module'      => 'public/themes/coreui/node_modules',
-            'bower-component'  => 'public/themes/coreui/bower_components',
-            'favicon'          => 'public/themes/coreui/assets/img/favicon.png',
-            'avatar'           => 'public/themes/coreui/assets/img/avatar.png',
-            'logo'             => 'public/themes/coreui/assets/img/logo.png',
+            'asset-path'       => 'themes/coreui/assets',
+            'node-module'      => 'themes/coreui/node_modules',
+            'bower-component'  => 'themes/coreui/bower_components',
+            'favicon'          => 'themes/coreui/assets/img/favicon.png',
+            'avatar'           => 'themes/coreui/assets/img/avatar.png',
+            'logo'             => 'themes/coreui/assets/img/logo.png',
         ],
 
         'coreui-front' => [
             'extends'          => null,
             'views-path'       => 'resources/views/themes/coreui-front',
-            'asset-path'       => 'public/themes/coreui-front/assets',
-            'node-module'      => 'public/themes/coreui-front/node_modules',
-            'bower-component'  => 'public/themes/coreui-front/bower_components',
-            'favicon'          => 'public/themes/coreui-front/assets/img/favicon.png',
-            'avatar'           => 'public/themes/coreui-front/assets/img/avatar.png',
-            'logo'             => 'public/themes/coreui-front/assets/img/logo.png',
+            'asset-path'       => 'themes/coreui-front/assets',
+            'node-module'      => 'themes/coreui-front/node_modules',
+            'bower-component'  => 'themes/coreui-front/bower_components',
+            'favicon'          => 'themes/coreui-front/assets/img/favicon.png',
+            'avatar'           => 'themes/coreui-front/assets/img/avatar.png',
+            'logo'             => 'themes/coreui-front/assets/img/logo.png',
         ],
 
 	],

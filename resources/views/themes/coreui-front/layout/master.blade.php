@@ -4,21 +4,32 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ $data['title'] }}</title>
+    <meta content="index, follow" name="robots">
+    
+@foreach ($meta_name as $key => $meta)
+    <meta content="{!! $key !!}" name="{!! $meta !!}">
+@endforeach
 
+@foreach ($meta_property as $key => $meta)
+    <meta content="{!! $key !!}" name="{!! $meta !!}">
+@endforeach
+    
     <!-- Bootstrap Core CSS -->
-    <link media="all" type="text/css" rel="stylesheet" href="{{ $data['assetPath'] }}/css/bootstrap.min.css">
+    {!! Theme::css('css/bootstrap.min.css') !!}
     
     <!-- Custom Fonts -->
-    <link media="all" type="text/css" rel="stylesheet" href="{{ $data['assetPath'] }}/css/font-awesome.min.css">
-    <link media="all" type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
-    <link media="all" type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
-    <link media="all" type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
-    <link media="all" type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    {!! Theme::css('css/font-awesome.min.css') !!}
+
+    {!! Theme::css('https://fonts.googleapis.com/css?family=Montserrat:400,700') !!}
+    {!! Theme::css('https://fonts.googleapis.com/css?family=Kaushan+Script') !!}
+    {!! Theme::css('https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic') !!}
+    {!! Theme::css('https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700') !!}
     
     <!-- Theme CSS -->
-    <link media="all" type="text/css" rel="stylesheet" href="{{ $data['assetPath'] }}/css/agency.css">
-    
+    {!! Theme::css('css/agency.css') !!}
+
+    <title>{!! $data['title'] !!}</title>
+    <link rel="shortcut icon" href="{!! $data['favicon'] !!}">
   </head>
 
       <body id="page-top" class="index">
@@ -72,24 +83,25 @@
 
     <footer>
       <p>
-        &copy; Laravel & ZeroC0D3 Engineer 2017
+        &copy; <?=date('Y');?> - <strong>{!! $meta_name['web_author'] !!}</strong>, {!! $meta_name['copyright'] !!} 
       </p>
     </footer>
 
     <!-- jQuery -->
-    <script src="{{ $data['assetPath'] }}/js/jquery.min.js"></script>
+    {!! Theme::js('js/jquery.min.js') !!}
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="{{ $data['assetPath'] }}/js/bootstrap.min.js"></script>
+    {!! Theme::js('js/bootstrap.min.js') !!}
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
-
+    
     <!-- Contact Form JavaScript -->
-    <script src="{{ $data['assetPath'] }}/js/jqBootstrapValidation.js"></script>
-    <script src="{{ $data['assetPath'] }}/js/contact_me.js"></script>
+    {!! Theme::js('js/jqBootstrapValidation.js') !!}
+    {!! Theme::js('js/contact_me.js') !!}
 
     <!-- Theme JavaScript -->
-    <script src="{{ $data['assetPath'] }}/js/agency.js"></script>
+    {!! Theme::js('js/agency.js') !!}
+
   </body>
 </html>
