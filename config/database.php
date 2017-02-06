@@ -26,8 +26,7 @@ return [
     |
     */
 
-    #'default' => env('DB_CONNECTION', 'mysql'),
-    'default' => 'pgsql',
+    'default' => env('DB_CONNECTION', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -43,14 +42,6 @@ return [
     | so make sure you have the driver for your particular database of
     | choice installed on your machine before you begin development.
     |
-    */
-
-    /*
-    $url      = parse_url(getenv("DATABASE_URL"));
-    $host     = $url["host"];
-    $username = $url["user"];
-    $password = $url["pass"];
-    $database = substr($url["path"], 1);
     */
 
     'connections' => [
@@ -74,19 +65,6 @@ return [
             'strict' => true,
             'engine' => null,
         ],
-
-        /*
-        'pgsql' => array(
-            'driver'   => 'pgsql',
-            'host'     => $host,
-            'database' => $database,
-            'username' => $username,
-            'password' => $password,
-            'charset'  => 'utf8',
-            'prefix'   => '',
-            'schema'   => 'public',
-        ),
-        */
 
         'pgsql' => [
             'driver' => 'pgsql',
