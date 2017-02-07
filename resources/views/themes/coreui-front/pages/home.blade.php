@@ -298,22 +298,22 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        {!! Theme::img('logos/envato.jpg', 'envato', 'img-responsive img-centered') !!}
+                        {!! Theme::img('img/logos/envato.jpg', 'envato', 'img-responsive img-centered') !!}
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        {!! Theme::img('logos/designmodo.jpg', 'designmodo', 'img-responsive img-centered') !!}
+                        {!! Theme::img('img/logos/designmodo.jpg', 'designmodo', 'img-responsive img-centered') !!}
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        {!! Theme::img('logos/themeforest.jpg', 'themeforest', 'img-responsive img-centered') !!}
+                        {!! Theme::img('img/logos/themeforest.jpg', 'themeforest', 'img-responsive img-centered') !!}
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        {!! Theme::img('logos/creative-market.jpg', 'creative-market', 'img-responsive img-centered') !!}
+                        {!! Theme::img('img/logos/creative-market.jpg', 'creative-market', 'img-responsive img-centered') !!}
                     </a>
                 </div>
             </div>
