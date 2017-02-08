@@ -183,6 +183,7 @@ return [
         Orchestra\Asset\AssetServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         'Fideloper\Proxy\TrustedProxyServiceProvider',
+        'LaravelAcl\Authentication\AuthenticationServiceProvider',
 
     ],
 

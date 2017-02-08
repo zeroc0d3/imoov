@@ -18,5 +18,9 @@ Route::get('/', function () {
 */
 
 Route::get('/', 'HomeController@index');
+Route::get('/admin', function () {
+    return redirect('admin/login');
+});
+
 #Route::get('login', 'HomeController@login');
 #Route::get('signup', 'HomeController@signup');

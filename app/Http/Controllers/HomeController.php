@@ -9,7 +9,7 @@ use igaster\laravelTheme\themeServiceProvider as themeServiceProvider;
 
 class HomeController extends Controller
 {
-    protected $active_theme;
+	protected $active_theme;
     protected $node_modules;
     protected $bower_component;
     protected $favicon;
@@ -17,17 +17,17 @@ class HomeController extends Controller
     protected $logo;
     protected $meta_default;
 
-    public function __construct() {
-        $activeTheme     = \Theme::current();
+	public function __construct() {
+		$activeTheme     = \Theme::current();
         $node_modules    = \Theme::config('node-module');
-        $bower_component = \Theme::config('bower-component');
+		$bower_component = \Theme::config('bower-component');
         $favicon         = \Theme::config('favicon');
         $avatar          = \Theme::config('avatar');
         $logo            = \Theme::config('logo');
 
-        $this->theme_name       = $activeTheme->name;
-        $this->theme_assetPath  = $activeTheme->assetPath;
-        $this->theme_viewsPath  = $activeTheme->viewsPath;
+		$this->theme_name       = $activeTheme->name;
+		$this->theme_assetPath  = $activeTheme->assetPath;
+	    $this->theme_viewsPath  = $activeTheme->viewsPath;
         $this->theme_npm        = $node_modules;
         $this->theme_favicon    = $favicon;
         $this->theme_avatar     = $avatar;
@@ -38,8 +38,8 @@ class HomeController extends Controller
             'meta_name' => array(
                 'content-language' => 'id-ID',
                 'title'            => 'iMoov Car & Transport',
-                'description'      => 'Laravel Car Rental & Transport System',
-                'keywords'         => 'imoov, laravel, access, control, list, acl, sentry, cartalyst, coreui',
+                'description'      => 'Car Rental & Transport System',
+                'keywords'         => 'imoov, car, transport, laravel, access, control, list, acl, sentry, cartalyst, coreui',
                 'web_author'       => 'ZeroC0D3 Team',
                 'copyright'        => 'MIT License',
                 'google'           => 'notranslate'
@@ -47,8 +47,8 @@ class HomeController extends Controller
             'meta_property' => array(
                 'og:url'           => env('APP_URL', 'http://localhost'),
                 'og:type'          => 'website',
-                'og:title'         => 'Core ACL',
-                'og:description'   => 'Laravel Access Control (ACL)',
+                'og:title'         => 'iMoov Car & Transport',
+                'og:description'   => 'Car Rental & Transport System',
                 'og:image'         => $this->theme_logo,
             ),
         );

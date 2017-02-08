@@ -1,3 +1,4 @@
+@extends('laravel-authentication-acl::client.layouts.base-fullscreen')
 @section ('title')
 404
 @stop
@@ -6,7 +7,7 @@
     <div class="col-sm-6 col-md-6 col-lg-6">
         <div class="card card-accent-danger">
             <div class="card-header">
-                <img src="{!! asset('img/logo.png') !!}" width="60%">
+                <img src="{!! asset('packages/coreui/img/logo.png') !!}" width="60%">
             </div>
             <div class="card-block">
                 <h1 class="float-left display-4 mr-2">404</h1>
