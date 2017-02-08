@@ -62,7 +62,7 @@
             "php artisan view:clear",
             "php artisan optimize",
             "php artisan migrate --force",
-            "php artisan db:seed --force"
+            "php artisan migrate:refresh --seed --force"
         ]
     },
     "config": {
