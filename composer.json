@@ -56,11 +56,13 @@
             "php artisan optimize"
         ],
         "compile": [
+            "npm install gulp",
+            "gulp --production",
             "php artisan cache:clear",
             "php artisan view:clear",
             "php artisan optimize",
             "php artisan migrate --force",
-            "php artisan db:seed" 
+            "php artisan db:seed"
         ]
     },
     "config": {
