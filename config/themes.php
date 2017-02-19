@@ -22,8 +22,8 @@ return [
     #'themes_path' => 'resources/views/themes', // eg: realpath(base_path('resources/themes'))
     #'themes_path' => base_path('resources/views/themes'), // eg: realpath(base_path('resources/themes'))
     #'themes_path' => realpath(base_path('resources/views/themes')), // eg: realpath(base_path('resources/themes'))
-    'themes_path' => base_path('resources/views/themes'), 
-    
+    'themes_path' => base_path('resources/views/themes'),
+
 	/*
 	|--------------------------------------------------------------------------
 	| Set behavior if an asset is not found in a Theme hierarcy.
@@ -117,6 +117,19 @@ return [
             'avatar'           => 'themes/coreui-front/assets/img/avatar.png',
             'logo'             => 'themes/coreui-front/assets/img/logo.png',
         ],
+
+		// DjavaUI Theme
+		'djavaui' => [
+			'extends'          => null,
+			'views-path'       => 'resources/views/themes/djavaui',
+			'asset-path'       => 'themes/djavaui/assets',
+			'node-module'      => 'themes/djavaui/assets/global/plugins/node_modules',
+			'bower-component'  => 'themes/djavaui/assets/global/plugins/bower_components',
+			'favicon'          => 'themes/djavaui/assets/img/favicon.png',
+			'avatar'           => 'themes/djavaui/assets/img/avatar.png',
+			'logo'             => 'themes/djavaui/assets/img/logo.png',
+		],
+
 
 	],
 

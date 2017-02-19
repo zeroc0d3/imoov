@@ -2,5 +2,5 @@
 
 return [
     'frondend' => 'coreui-front',
-    'backend'  => 'coreui'
+    'backend'  => 'djavaui'
 ];
