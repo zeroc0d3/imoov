@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="index, follow" name="robots">
-    
+
 @foreach ($meta_name as $key => $meta)
     <meta content="{!! $key !!}" name="{!! $meta !!}">
 @endforeach
 
 @foreach ($meta_property as $key => $meta)
-    <meta content="{!! $key !!}" name="{!! $meta !!}">
+    <meta content="{!! $key !!}" property="{!! $meta !!}">
 @endforeach
-    
+
     <!-- Bootstrap Core CSS -->
     {!! Theme::css('css/bootstrap.min.css') !!}
-    
+
     <!-- Custom Fonts -->
     {!! Theme::css('css/font-awesome.min.css') !!}
 
@@ -24,7 +24,7 @@
     {!! Theme::css('https://fonts.googleapis.com/css?family=Kaushan+Script') !!}
     {!! Theme::css('https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic') !!}
     {!! Theme::css('https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700') !!}
-    
+
     <!-- Theme CSS -->
     {!! Theme::css('css/agency.css') !!}
 
@@ -70,7 +70,7 @@
                             <a class="page-scroll" href="#contact">Contact Us</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="login">Login</a>
+                            <a class="page-scroll" href="admin">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -83,7 +83,7 @@
 
     <footer>
       <p>
-        &copy; <?=date('Y');?> - <strong>{!! $meta_name['web_author'] !!}</strong>, {!! $meta_name['copyright'] !!} 
+        &copy; <?=date('Y');?> - <strong>{!! $meta_name['web_author'] !!}</strong>, {!! $meta_name['copyright'] !!}
       </p>
     </footer>
 
@@ -95,7 +95,7 @@
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
-    
+
     <!-- Contact Form JavaScript -->
     {!! Theme::js('js/jqBootstrapValidation.js') !!}
     {!! Theme::js('js/contact_me.js') !!}
