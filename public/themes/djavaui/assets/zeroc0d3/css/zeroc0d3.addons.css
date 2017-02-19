@@ -1,0 +1,113 @@
+/**
+ * ZeroC0D3-DjavaUI Modified
+ * @version v1.0.0-alpha.3
+ * @link http://coreui.io
+ * Copyright (c) 2017 ZeroC0D3 Team
+ * @license MIT
+ */
+
+.flash {
+  font-style: normal;
+  color: white; }
+
+.img-logo {
+  max-width: 200px;  }
+
+.img-login {
+  max-width: 250px;  }
+
+.img-icon {
+  max-width: 300px;  }
+
+.img-icon-square {
+  max-height: 72px;  }
+
+.img-header {
+  width: 60%; }
+
+.hidden {
+  display: none!important;
+  visibility: hidden!important; }
+
+.clearfix {
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+.header-custom .header-brand {
+  color: #fed136;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive; }
+
+.header-title {
+  margin-top:  15px;
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  vertical-align: center;
+  font-family: "open-sans", "oswald", "Kaushan Script", "Helvetica Neue"; }
+
+.header-title-small {
+  margin-top:  20px;
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  vertical-align: center;
+  font-family: "open-sans", "oswald", "Kaushan Script", "Helvetica Neue"; }
+
+.btn-socmed {
+  width: 100%px;
+  padding-bottom: 5px;
+  text-align: center; }
+
+.link-socmed {
+  margin-right: 10px; }
+
+.center-text {
+  align-items: center;
+  justify-content: center; }
+
+.center-msg {
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 600px; }
+
+.center-panel {
+  height: 100px; }
+
+.logo-navbar {
+  max-height: 50px; }
+
+.post-info {
+  margin-top:  12px;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  align-items: center;
+  vertical-align: center;
+  font-family: "open-sans", "oswald", "Kaushan Script", "Helvetica Neue"; }
+
+.btn-new {
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  align-items: center;
+  vertical-align: center; }
+
+.btn-sort {
+  padding-top: 5px;
+  padding-right: 3px;
+  padding-bottom: 5px;
+  align-items: center;
+  vertical-align: center; }
+
+.btn-order {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  align-items: center;
+  vertical-align: center; }
