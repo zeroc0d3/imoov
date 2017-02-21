@@ -1,0 +1,170 @@
+<p>
+    Slider Revolution is an All-Purpose Slide Displaying Solution that allows for showing almost any kind of content.
+    This plugin features tons of unique transition effects, an image preloader, video embedding, autoplay that stops on user interaction and lots of easy to set options to create your own effects. All customization can be handled via jQuery Options, HTML 5 data-attributes and CSS!
+</p>
+<p>
+    Official website : <a href="http://www.themepunch.com/portfolio/slider-revolution-jquery-plugin" target="_blank">http://www.themepunch.com/portfolio/slider-revolution-jquery-plugin</a>
+</p>
+<hr class="dotted"/>
+<h4>Basic Usage</h4>
+<ol class="list-number">
+    <li>
+        <p>Add Revolution js and css files to your HTML page</p>
+<pre class="html-code">
+&lt;!-- jQuery REVOLUTION Slider  --&gt;
+&lt;script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- REVOLUTION BANNER CSS SETTINGS --&gt;
+&lt;link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" /&gt;
+</pre>
+    </li>
+    <li>
+        <p>Create a Container for the Banner</p>
+<pre class="html-code">
+&lt;div class="bannercontainer"&gt;
+    &lt;div class="banner"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    </li>
+    <li>
+        <p>Auto-Responsive Style</p>
+        <p> This style allows you to let the wrapping Container decide how big (in width) your Slider will be. The Height will be auto calculated based on the Slider Width Put this in your CSS File (i.e) :</p>
+<pre class="css-code">
+    .bannercontainer {
+    	width:100%;
+    	position:relative;
+    	padding:0;
+    }
+
+    .banner{
+    	width:100%;
+    	position:relative;
+    }
+</pre>
+    </li>
+    <li>
+        <p>FullScreen Style</p>
+        <p>
+            This Style allows you to have a banner always fit in the maxium screensize. In Some option you can select containers which will reduce the height of the banner with the height of the container. See examples.
+        </p>
+<pre class="css-code">
+    .bannercontainer {
+    		width:100%;
+    		position:relative;
+    		padding:0;
+    }
+</pre>
+    </li>
+    <li>
+        <p>Create Your First Slides</p>
+<pre class="html-code">
+    &lt;ul&gt;
+        &lt;!-- THE BOXSLIDE EFFECT EXAMPLES  WITH LINK ON THE MAIN SLIDE EXAMPLE --&gt;
+
+        &lt;li data-transition="boxslide" data-slotamount="7" data-link="http://www.google.de"&gt;
+            &lt;img src="images/slides/image1.jpg"&gt;
+            &lt;div class="caption sft big_white"  data-x="400" data-y="100" data-speed="700" data-start="1700" data-easing="easeOutBack"&gt;KICKSTART YOUR WEBSITE&lt;/div&gt;
+            &lt;div class="caption sfb big_orange"  data-x="400" data-y="142" data-speed="500" data-start="1900" data-easing="easeOutBack"&gt;WITH SLIDER REVOLUTION!&lt;/div&gt;
+            &lt;div class="caption lfr medium_grey"  data-x="510" data-y="210" data-speed="300" data-start="2000"&gt;UNLIMITED TRANSITIONS&lt;/div&gt;
+        &lt;/li&gt;
+        ...
+    &lt;/ul&gt;
+</pre>
+    </li>
+    <li>
+        <p>Call the jQuery Plugin to build the Slider</p>
+<pre class="js-code">
+    &lt;script type="text/javascript"&gt;
+
+        jQuery(document).ready(function() {
+            jQuery('.banner').revolution({
+                delay:9000,
+                startwidth:960,
+                startheight:500,
+                startWithSlide:0,
+
+                fullScreenAlignForce:"off",
+                autoHeight:"off",
+                minHeight:"off",
+
+                shuffle:"off",
+
+                onHoverStop:"on",
+
+                thumbWidth:100,
+                thumbHeight:50,
+                thumbAmount:3,
+
+                hideThumbsOnMobile:"off",
+                hideNavDelayOnMobile:1500,
+                hideBulletsOnMobile:"off",
+                hideArrowsOnMobile:"off",
+                hideThumbsUnderResoluition:0,
+
+                hideThumbs:0,
+                hideTimerBar:"off",
+
+                keyboardNavigation:"on",
+
+                navigationType:"bullet",
+                navigationArrows:"solo",
+                navigationStyle:"round",
+
+                navigationHAlign:"center",
+                navigationVAlign:"bottom",
+                navigationHOffset:30,
+                navigationVOffset:30,
+
+                soloArrowLeftHalign:"left",
+                soloArrowLeftValign:"center",
+                soloArrowLeftHOffset:20,
+                soloArrowLeftVOffset:0,
+
+                soloArrowRightHalign:"right",
+                soloArrowRightValign:"center",
+                soloArrowRightHOffset:20,
+                soloArrowRightVOffset:0,
+
+
+                touchenabled:"on",
+                swipe_velocity:"0.7",
+                swipe_max_touches:"1",
+                swipe_min_touches:"1",
+                drag_block_vertical:"false",
+
+                parallax:"mouse",
+                parallaxBgFreeze:"on",
+                parallaxLevels:[10,7,4,3,2,5,4,3,2,1],
+                parallaxDisableOnMobile:"off",
+
+                stopAtSlide:-1,
+                stopAfterLoops:-1,
+                hideCaptionAtLimit:0,
+                hideAllCaptionAtLilmit:0,
+                hideSliderAtLimit:0,
+
+                dottedOverlay:"none",
+
+                spinned:"spinner4",
+
+                fullWidth:"off",
+                forceFullWidth:"off"
+                fullScreen:"off",
+                fullScreenOffsetContainer:"#topheader-to-offset",
+                fullScreenOffset:"0px",
+
+                panZoomDisableOnMobile:"off",
+
+                simplifyAll:"off",
+
+                shadow:0
+
+            });
+
+        });
+
+    &lt;/script&gt;
+</pre>
+    </li>
+</ol>

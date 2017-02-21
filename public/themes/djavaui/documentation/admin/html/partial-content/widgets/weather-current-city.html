@@ -1,0 +1,62 @@
+<div class="widgets-wrap">
+    <img src="../../../img/documentation/widget/weather/weather-current-city-doc.jpg" alt="weather current city"/>
+    <h4>Source code (HTML)</h4>
+    <div class="row">
+        <div class="col-sm-12">
+<pre class="html-code scroll">
+&lt;div class=&quot;widget-wrapper bg-theme rounded&quot;&gt;
+    &lt;div class=&quot;weather-current-city&quot;&gt;
+        &lt;img src=&quot;assets/img/building/5.jpg&quot; alt=&quot;...&quot;/&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-8 col-sm-8 col-xs-8&quot;&gt;
+                &lt;span class=&quot;current-city&quot;&gt;Yogyakarta, ID&lt;/span&gt;
+                &lt;span class=&quot;current-temp&quot;&gt;27&deg;C&lt;/span&gt;
+            &lt;/div&gt;&lt;!-- /.col-md-8 col-sm-8 col-xs-8 --&gt;
+            &lt;div class=&quot;col-md-4 col-sm-4 col-xs-4&quot;&gt;
+                &lt;span class=&quot;current-day-icon&quot;&gt;&lt;canvas id=&quot;partly-cloudy-day&quot; width=&quot;60&quot; height=&quot;60&quot;&gt;&lt;/canvas&gt;&lt;/span&gt;
+            &lt;/div&gt;&lt;!-- /.col-md-4 col-sm-4 col-xs-4 --&gt;
+        &lt;/div&gt;&lt;!-- /.row --&gt;
+        &lt;span class=&quot;current-day&quot;&gt; Monday, 8 December &lt;/span&gt;
+    &lt;/div&gt;&lt;!-- /.weather-current-city --&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;ul class=&quot;days&quot;&gt;
+            &lt;li class=&quot;col-md-4 col-sm-4 col-xs-4&quot;&gt;
+                &lt;strong&gt;Tue&lt;/strong&gt;
+                &lt;canvas id=&quot;snow&quot; width=&quot;45&quot; height=&quot;45&quot;&gt;&lt;/canvas&gt;
+                &lt;span&gt;20°&lt;/span&gt;
+            &lt;/li&gt;&lt;!-- /.col-md-4 col-sm-4 col-xs-4 --&gt;
+            &lt;li class=&quot;col-md-4 col-sm-4 col-xs-4&quot;&gt;&lt;strong&gt;Fri&lt;/strong&gt;
+                &lt;canvas id=&quot;rain&quot; width=&quot;45&quot; height=&quot;45&quot;&gt;&lt;/canvas&gt;
+                &lt;span&gt;18°&lt;/span&gt;
+            &lt;/li&gt;&lt;!-- /.col-md-4 col-sm-4 col-xs-4 --&gt;
+            &lt;li class=&quot;col-md-4 col-sm-4 col-xs-4&quot;&gt;&lt;strong&gt;Sat&lt;/strong&gt;
+                &lt;canvas id=&quot;sleet&quot; width=&quot;45&quot; height=&quot;45&quot;&gt;&lt;/canvas&gt;
+                &lt;span&gt;24°&lt;/span&gt;
+            &lt;/li&gt;&lt;!-- /.col-md-4 col-sm-4 col-xs-4 --&gt;
+        &lt;/ul&gt;&lt;!-- /.days --&gt;
+    &lt;/div&gt;&lt;!-- /.row --&gt;
+&lt;/div&gt;&lt;!-- /.widget-wrapper --&gt;
+</pre>
+
+            <h4>Required files (JS)</h4>
+<pre class="html-code">
+&lt;!-- PLUGINS JS --&gt;
+&lt;script src=&quot;assets/plugins/skycons/skycons.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+        var icons = new Skycons({&quot;color&quot;: &quot;white&quot;},{&quot;resizeClear&quot;: true}),
+                list  = [
+                    &quot;clear-day&quot;, &quot;clear-night&quot;, &quot;partly-cloudy-day&quot;,
+                    &quot;partly-cloudy-night&quot;, &quot;cloudy&quot;, &quot;rain&quot;, &quot;sleet&quot;, &quot;snow&quot;, &quot;wind&quot;,
+                    &quot;fog&quot;
+                ],
+
+            i;
+            for(i = list.length; i--; )
+        icons.set(list[i], list[i]);
+    icons.play();
+&lt;/script&gt;
+</pre>
+        </div>
+    </div>
+
+</div>

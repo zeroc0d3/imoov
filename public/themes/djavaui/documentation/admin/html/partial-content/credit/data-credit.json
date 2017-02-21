@@ -1,0 +1,643 @@
+{
+  "data": [
+    {
+      "name": "animate.css",
+      "description": "Just-add-water CSS animation, animate.css is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.",
+      "version": "3.4.0",
+      "bower_packages": "bower install animate.css",
+      "popular": "user=daneden&repo=animate.css",
+      "url_homepage": "http://daneden.github.io/animate.css",
+      "url_cdn": "https://cdnjs.com/libraries/animate.css"
+    },
+    {
+      "name": "Autosize",
+      "description": "Small jQuery plugin to allow dynamic resizing of textarea height, so that it grows as based on visitor input.",
+      "version": "1.18.9",
+      "bower_packages": "bower install jquery-autosize",
+      "popular": "user=jackmoore&repo=autosize",
+      "url_homepage": "http://www.jacklmoore.com/autosize",
+      "url_cdn": "https://cdnjs.com/libraries/autosize.js"
+    },
+    {
+      "name": "BlockUI",
+      "description": "The jQuery BlockUI Plugin lets you simulate synchronous behavior when using AJAX, without locking the browser.",
+      "version": "2.7",
+      "bower_packages": "bower install blockui",
+      "popular": "user=malsup&repo=blockui",
+      "url_homepage": "http://malsup.com/jquery/block/#overview",
+      "url_cdn": "https://cdnjs.com/libraries/jquery.blockui"
+    },
+    {
+      "name": "Bootbox",
+      "description": "Bootbox.js is a small JavaScript library which allows you to create programmatic dialog boxes using Bootstrap modals, without having to worry about creating, managing or removing any of the required DOM elements or JS event handlers.",
+      "version": "4.3.0",
+      "bower_packages": "bower install bootbox",
+      "popular": "user=makeusabrew&repo=bootbox",
+      "url_homepage": "http://bootboxjs.com",
+      "url_cdn": "https://cdnjs.com/libraries/bootbox.js"
+    },
+    {
+      "name": "Bootstrap",
+      "description": "Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.",
+      "version": "3.2.0",
+      "bower_packages": "bower install bootstrap",
+      "popular": "user=twbs&repo=bootstrap",
+      "url_homepage": "http://getbootstrap.com",
+      "url_cdn": "https://cdnjs.com/libraries/twitter-bootstrap"
+    },
+    {
+      "name": "Bootstrap calendar",
+      "description": "Full view calendar with year, month, week and day views based on templates with Twitter Bootstrap.",
+      "version": "-",
+      "bower_packages": "bower install bootstrap-calendar",
+      "popular": "user=Serhioromano&repo=bootstrap-calendar",
+      "url_homepage": "http://bootstrap-calendar.azurewebsites.net",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Bootstrap datepicker",
+      "description": "Add datepicker picker to field or to any other element.",
+      "version": "-",
+      "bower_packages": "bower install bootstrap-datepicker-vitalets",
+      "popular": "user=vitalets&repo=bootstrap-datepicker",
+      "url_homepage": "http://vitalets.github.io/bootstrap-datepicker",
+      "url_cdn": "https://cdnjs.com/libraries/bootstrap-datepicker"
+    },
+    {
+      "name": "Bootstrap datetimepicker",
+      "description": "As 'bootstrap-datepicker' is restricted to the date scope (day, month, year), this project aims to support too the time picking (hour, minutes).",
+      "version": "2.3.1",
+      "bower_packages": "bower install smalot-bootstrap-datetimepicker",
+      "popular": "user=smalot&repo=bootstrap-datetimepicker",
+      "url_homepage": "http://www.malot.fr/bootstrap-datetimepicker",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Bootstrap maxlength",
+      "description": "This plugin integrates by default with Twitter bootstrap using badges to display the maximum length of the field where the user is inserting text. This plugin uses the HTML5 attribute 'maxlength' to work.",
+      "version": "1.5.7",
+      "bower_packages": "bower install bootstrap-maxlength",
+      "popular": "user=mimo84&repo=bootstrap-maxlength",
+      "url_homepage": "http://mimo84.github.io/bootstrap-maxlength",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Bootstrap session timeout",
+      "description": "Session timeout and keep-alive control with a nice Bootstrap warning dialog.",
+      "version": "1.0.3",
+      "bower_packages": "bower install bootstrap-session-timeout",
+      "popular": "user=orangehill&repo=bootstrap-session-timeout",
+      "url_homepage": "https://github.com/orangehill/bootstrap-session-timeout",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Bootstrap switch",
+      "description": "Turn checkboxes and radio buttons in toggle switches.",
+      "version": "3.2.2",
+      "bower_packages": "bower install bootstrap-switch",
+      "popular": "user=nostalgiaz&repo=bootstrap-switch",
+      "url_homepage": "http://www.bootstrap-switch.org",
+      "url_cdn": "https://cdnjs.com/libraries/bootstrap-switch"
+    },
+    {
+      "name": "Bootstrap taginput",
+      "description": "jQuery plugin providing a Twitter Bootstrap user interface for managing tags.",
+      "version": "0.4",
+      "bower_packages": "bower install bootstrap-tagsinput",
+      "popular": "user=bootstrap-tagsinput&repo=bootstrap-tagsinput",
+      "url_homepage": "https://github.com/bootstrap-tagsinput/bootstrap-tagsinput",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Bootstrap wizard",
+      "description": "This twitter bootstrap plugin builds a wizard out of a formatter tabbable structure. It allows to build a wizard functionality using buttons to go through the different wizard steps and using events allows to hook into each step individually.",
+      "version": "1.0",
+      "bower_packages": "bower install twitter-bootstrap-wizard",
+      "popular": "user=VinceG&repo=twitter-bootstrap-wizard",
+      "url_homepage": "http://github.com/VinceG/twitter-bootstrap-wizard",
+      "url_cdn": "https://cdnjs.com/libraries/twitter-bootstrap-wizard"
+    },
+    {
+      "name": "Bootstrap wysihtml5",
+      "description": "bootstrap-wysihtml5 is a javascript plugin that makes it easy to create simple, beautiful wysiwyg editors with the help of wysihtml5 and Twitter Bootstrap.",
+      "version": "0.0.2",
+      "bower_packages": "bower install bootstrap-wysihtml5",
+      "popular": "user=jhollingworth&repo=bootstrap-wysihtml5",
+      "url_homepage": "http://jhollingworth.github.com/bootstrap-wysihtml5",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Chart | C3js",
+      "description": "C3 enables deeper integration of charts into your application.",
+      "version": "0.3.0",
+      "bower_packages": "bower install c3js-chart",
+      "popular": "user=masayuki0812&repo=c3",
+      "url_homepage": "http://c3js.org",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Chart | Chartjs",
+      "description": "Simple, clean and engaging charts for designers and developers.",
+      "version": "1.0.1",
+      "bower_packages": "bower install chartjs",
+      "popular": "user=nnnick&repo=Chart.js",
+      "url_homepage": "http://www.chartjs.org",
+      "url_cdn": "https://cdnjs.com/libraries/chart.js"
+    },
+    {
+      "name": "Chart | Flot",
+      "description": "Attractive JavaScript plotting for jQuery, Flot is a pure JavaScript plotting library for jQuery, with a focus on simple usage, attractive looks and interactive features. Works with Internet Explorer 6+, Chrome, Firefox 2+, Safari 3+ and Opera 9.5+.",
+      "version": "1.1",
+      "bower_packages": "bower install flot",
+      "popular": "user=flot&repo=flot",
+      "url_homepage": "http://www.flotcharts.org",
+      "url_cdn": "https://cdnjs.com/libraries/flot"
+    },
+    {
+      "name": "Chart | Morris",
+      "description": "Good-looking charts shouldn't be difficult.",
+      "version": "0.5.1",
+      "bower_packages": "bower install morrisjs",
+      "popular": "user=morrisjs&repo=morris.js",
+      "url_homepage": "http://morrisjs.github.io/morris.js",
+      "url_cdn": "https://cdnjs.com/libraries/morris.js"
+    },
+    {
+      "name": "Chosen",
+      "description": "Chosen is a jQuery plugin that makes long, unwieldy select boxes much more user-friendly.",
+      "version": "1.2.0",
+      "bower_packages": "bower install chosen",
+      "popular": "user=harvesthq&repo=chosen",
+      "url_homepage": "http://harvesthq.github.io/chosen",
+      "url_cdn": "https://cdnjs.com/libraries/chosen"
+    },
+    {
+      "name": "Counter Up",
+      "description": "Counter-Up is a lightweight jQuery plugin that counts up to a targeted number when the number becomes visible.",
+      "version": "1.0.0",
+      "bower_packages": "bower install counter-up",
+      "popular": "user=bfintal&repo=Counter-Up",
+      "url_homepage": "https://github.com/bfintal/Counter-Up",
+      "url_cdn": "-"
+    },
+    {
+      "name": "cube portfolio",
+      "description": "Cube Portfolio is a jQuery plugin that provide animated filtering, grid and slider system, built-in lightbox and is fully responsive for any ordored content.",
+      "version": "3.8.0",
+      "bower_packages": "-",
+      "popular": "-",
+      "url_homepage": "http://scriptpie.com/cubeportfolio/live-preview",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Datatables",
+      "description": "Datatables is hands down the best jQuery table plugin. I have enjoyed using it over the years and highly recommend it to all. Recently, I have tried to use Datatables in an responsive web project.",
+      "version": "0.2.0",
+      "bower_packages": "bower install datatables-responsive-helper",
+      "popular": "user=Comanche&repo=datatables-responsive",
+      "url_homepage": "https://github.com/Comanche/datatables-responsive",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Dropzone",
+      "description": "DropzoneJS is an open source library that provides drag'n'drop file uploads with image previews.",
+      "version": "3.10.2",
+      "bower_packages": "bower install dropzone",
+      "popular": "user=enyo&repo=dropzone",
+      "url_homepage": "http://www.dropzonejs.com",
+      "url_cdn": "https://cdnjs.com/libraries/dropzone"
+    },
+    {
+      "name": "Fuelux",
+      "description": "Extends Twitter Bootstrap with additional lightweight JavaScript controls. Easy to install, customize, update, and optimize. All functionality covered by live documentation and unit tests.",
+      "version": "3.0.2",
+      "bower_packages": "bower install fuelux",
+      "popular": "user=ExactTarget&repo=fuelux",
+      "url_homepage": "http://exacttarget.github.io/fuelux",
+      "url_cdn": "https://cdnjs.com/libraries/fuelux"
+    },
+    {
+      "name": "Gritter notification",
+      "description": "The super awesome background is just to show you that all notifications are transparent! Tested in: FF 3+, Opera 9, IE7, IE8, Safari 4+.",
+      "version": "1.7.4",
+      "bower_packages": "bower install jquery.gritter",
+      "popular": "user=jboesch&repo=Gritter",
+      "url_homepage": "https://github.com/jboesch/Gritter",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Holder.js",
+      "description": "Holder renders image placeholders entirely in browser. Placeholders can have custom colors, fonts, resizing behavior, and rendering engine (Canvas/SVG).",
+      "version": "2.3.2",
+      "bower_packages": "bower install holderjs",
+      "popular": "user=imsky&repo=holder",
+      "url_homepage": "http://imsky.github.io/holder",
+      "url_cdn": "-"
+    },
+    {
+      "name": "HTML5Shiv",
+      "description": "This script is the defacto way to enable use of HTML5 sectioning elements in legacy Internet Explorer.",
+      "version": "3.7.0",
+      "bower_packages": "bower install html5shiv",
+      "popular": "user=afarkas&repo=html5shiv",
+      "url_homepage": "https://github.com/afarkas/html5shiv",
+      "url_cdn": "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"
+    },
+    {
+      "name": "Icon | Font Awesome",
+      "description": "Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS. ",
+      "version": "4.3.0",
+      "bower_packages": "bower install fontawesome",
+      "popular": "user=FortAwesome&repo=Font-Awesome",
+      "url_homepage": "http://fortawesome.github.io/Font-Awesome",
+      "url_cdn": "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    },
+    {
+      "name": "Icon | Map Icons",
+      "description": "An icon font for use with Google Maps API and Google Places API using SVG markers and icon labels.",
+      "version": "2.1",
+      "bower_packages": "bower install map-icons",
+      "popular": "user=scottdejonge&repo=map-icons",
+      "url_homepage": "http://map-icons.com",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Icon | Simple line icon",
+      "description": "Simple line icons with CSS, SAAS, LESS & Web-fonts files.",
+      "version": "2.2.1",
+      "bower_packages": "bower install simple-line-icons",
+      "popular": "user=thesabbir&repo=simple-line-icons",
+      "url_homepage": "https://github.com/thesabbir/simple-line-icons",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Icon | Weather",
+      "description": "Weather Icons is a font of 123 weather themed icons, ready to be dropped right into Bootstrap or any other project.",
+      "version": "1.2",
+      "bower_packages": "bower install weather-icons",
+      "popular": "user=erikflowers&repo=weather-icons",
+      "url_homepage": "http://erikflowers.github.io/weather-icons",
+      "url_cdn": "https://cdnjs.com/libraries/weather-icons"
+    },
+    {
+      "name": "Image | Picjumbo",
+      "description": "Totally free photos for your commercial & personal works.",
+      "version": "-",
+      "bower_packages": "-",
+      "popular": "-",
+      "url_homepage": "http://picjumbo.com",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Image | Unsplash",
+      "description": "Free (do whatever you want) high-resolution stock photos.",
+      "version": "-",
+      "bower_packages": "-",
+      "popular": "-",
+      "url_homepage": "https://unsplash.com",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Ion rangeSlider",
+      "description": "Cool, comfortable and easily customizable range slider.",
+      "version": "1.9.2",
+      "bower_packages": "bower install ionrangeslider",
+      "popular": "user=IonDen&repo=ion.rangeSlider",
+      "url_homepage": "http://ionden.com/a/plugins/ion.rangeSlider/en.html",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Ion sounds",
+      "description": "JavaScript-plugin for playing sounds on user actions and page events.",
+      "version": "2.0.2",
+      "bower_packages": "bower install ionsound",
+      "popular": "user=IonDen&repo=ion.sound",
+      "url_homepage": "http://ionden.com/a/plugins/ion.sound/en.html",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Jasny bootstrap",
+      "description": "The missing components for your favorite front-end framework.",
+      "version": "3.1.0",
+      "bower_packages": "bower install jasny-bootstrap",
+      "popular": "user=jasny&repo=bootstrap",
+      "url_homepage": "http://jasny.github.io/bootstrap",
+      "url_cdn": "https://cdnjs.com/libraries/jasny-bootstrap"
+    },
+    {
+      "name": "JQuery",
+      "description": "jQuery is a fast, small, and feature-rich JavaScript library.",
+      "version": "2.1.4",
+      "bower_packages": "bower install jquery",
+      "popular": "user=jquery&repo=jquery",
+      "url_homepage": "http://jquery.com",
+      "url_cdn": "https://code.jquery.com"
+    },
+    {
+      "name": "JQuery backstretch",
+      "description": "a simple jQuery plugin that allows you to add a dynamically-resized, slideshow-capable background image to any page or element.",
+      "version": "2.0.4",
+      "bower_packages": "bower install jquery-backstretch",
+      "popular": "user=srobbin&repo=jquery-backstretch",
+      "url_homepage": "http://srobbin.com/jquery-plugins/backstretch",
+      "url_cdn": "https://cdnjs.com/libraries/jquery-backstretch"
+    },
+    {
+      "name": "JQuery cookie",
+      "description": "A simple, lightweight jQuery plugin for reading, writing and deleting cookies.",
+      "version": "1.4.1",
+      "bower_packages": "bower install jquery-cookie",
+      "popular": "user=js-cookie&repo=js-cookie",
+      "url_homepage": "https://github.com/js-cookie/js-cookie",
+      "url_cdn": "https://cdnjs.com/libraries/jquery-cookie"
+    },
+    {
+      "name": "JQuery easing",
+      "description": "A jQuery plugin from GSGD to give advanced easing options.",
+      "version": "1.3",
+      "bower_packages": "bower install jquery-easing-original",
+      "popular": "-",
+      "url_homepage": "http://gsgd.co.uk/sandbox/jquery/easing",
+      "url_cdn": "https://cdnjs.com/libraries/jquery-easing"
+    },
+    {
+      "name": "JQuery inputmask",
+      "description": "JQuery.inputmask is a jquery plugin which create an input mask. An inputmask helps the user with the input by ensuring a predefined format. This can be usefull for dates, numerics, phone numbers, ...",
+      "version": "3.0.67",
+      "bower_packages": "bower install jquery.inputmask",
+      "popular": "user=RobinHerbots&repo=jquery.inputmask",
+      "url_homepage": "http://robinherbots.github.io/jquery.inputmask",
+      "url_cdn": "-"
+    },
+    {
+      "name": "JQuery mockjax",
+      "description": "The jQuery Mockjax Plugin provides a simple and extremely flexible interface for mocking or simulating ajax requests and responses.",
+      "version": "1.5.3",
+      "bower_packages": "bower install jquery-mockjax",
+      "popular": "user=jakerella&repo=jquery-mockjax",
+      "url_homepage": "https://github.com/appendto/jquery-mockjax",
+      "url_cdn": "https://cdnjs.com/libraries/jquery-mockjax"
+    },
+    {
+      "name": "JQuery mousewheel",
+      "description": "A jQuery plugin that adds cross-browser mouse wheel support.",
+      "version": "3.1.12",
+      "bower_packages": "bower install jquery-mousewheel",
+      "popular": "user=jquery&repo=jquery-mousewheel",
+      "url_homepage": "http://plugins.jquery.com/mousewheel",
+      "url_cdn": "https://cdnjs.com/libraries/jquery-mousewheel"
+    },
+    {
+      "name": "JQuery nicescroll",
+      "description": "Nicescroll is a jquery plugin, for nice scrollbars with a very similar ios/mobile style.",
+      "version": "3.5.4",
+      "bower_packages": "bower install jquery-nicescroll",
+      "popular": "user=inuyaksa&repo=jquery.nicescroll",
+      "url_homepage": "http://areaaperta.com/nicescroll",
+      "url_cdn": "https://cdnjs.com/libraries/jquery.nicescroll"
+    },
+    {
+      "name": "JQuery smooth scroll",
+      "description": "Automatically make same-page links scroll smoothly. ",
+      "version": "1.5.3",
+      "bower_packages": "bower install jquery-smooth-scroll",
+      "popular": "user=kswedberg&repo=jquery-smooth-scroll",
+      "url_homepage": "https://github.com/kswedberg/jquery-smooth-scroll",
+      "url_cdn": "https://cdnjs.com/libraries/jquery-smooth-scroll"
+    },
+    {
+      "name": "JQuery snippet",
+      "description": "A plugins snippet code to clipboard.",
+      "version": "2.0.0",
+      "bower_packages": "-",
+      "popular": "https://github.com/sunlix/jquery.snippet-styles",
+      "url_homepage": "http://www.steamdev.com/snippet",
+      "url_cdn": "-"
+    },
+    {
+      "name": "JQuery sparklines",
+      "description": "This jQuery plugin generates sparklines (small inline charts) directly in the browser using data supplied either inline in the HTML, or via javascript.",
+      "version": "2.1.2",
+      "bower_packages": "bower install jquery.sparkline",
+      "popular": "user=gwatts&repo=jquery.sparkline",
+      "url_homepage": "http://omnipotent.net/jquery.sparkline",
+      "url_cdn": "https://cdnjs.com/libraries/jquery-sparklines"
+    },
+    {
+      "name": "JQuery validation",
+      "description": "This jQuery plugin makes simple clientside form validation easy, whilst still offering plenty of customization options.",
+      "version": "1.13.0",
+      "bower_packages": "bower install jquery-validation",
+      "popular": "user=jzaefferer&repo=jquery-validation",
+      "url_homepage": "http://jqueryvalidation.org",
+      "url_cdn": "-"
+    },
+    {
+      "name": "JQuery Waypoints",
+      "description": "Waypoints is a jQuery plugin that makes it easy to execute a function whenever you scroll to an element.",
+      "version": "2.0.5",
+      "bower_packages": "bower install jquery-waypoints",
+      "popular": "user=imakewebthings&repo=jquery-waypoints",
+      "url_homepage": "https://github.com/imakewebthings/jquery-waypoints",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Jstimezonedetect",
+      "description": "Automatic Timezone Detection Using JavaScript.",
+      "version": "1.0.5",
+      "bower_packages": "bower install jsTimezoneDetect",
+      "popular": "-",
+      "url_homepage": "http://pellepim.bitbucket.org/jstz",
+      "url_cdn": "https://cdnjs.com/libraries/jstimezonedetect"
+    },
+    {
+      "name": "LESS",
+      "description": "Less is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable.",
+      "version": "1.7.0",
+      "bower_packages": "bower install less.js",
+      "popular": "user=less&repo=less.js",
+      "url_homepage": "http://lesscss.org",
+      "url_cdn": "https://cdnjs.com/libraries/less.js"
+    },
+    {
+      "name": "Map | Gmap3",
+      "description": "Enrich your Google Maps using the jquery plugin Gmap3. Gmap3 allows you to easily understand the power of Google Maps 3, due to the simplicity of jQuery ",
+      "version": "6.0.0",
+      "bower_packages": "bower install gmap3",
+      "popular": "user=jbdemonte&repo=gmap3",
+      "url_homepage": "http://gmap3.net",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Map | jqvmap",
+      "description": "JQVMap is a jQuery plugin that renders Vector Maps.  It uses resizable Scalable Vector Graphics (SVG) for modern browsers like Firefox, Safari, Chrome, Opera and Internet Explorer 9.  Legacy support for older versions of Internet Explorer 6-8 is provided via VML.",
+      "version": "1.0",
+      "bower_packages": "bower install jqvmap",
+      "popular": "user=manifestinteractive&repo=jqvmap",
+      "url_homepage": "http://jqvmap.com",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Map | jvectormap",
+      "description": "jQuery plugin for embedding vector maps with reach API and methods for data visualization to the web-pages.",
+      "version": "2.0.4",
+      "bower_packages": "bower install jvectormap",
+      "popular": "user=bjornd&repo=jvectormap",
+      "url_homepage": "http://jvectormap.com/",
+      "url_cdn": "https://cdnjs.com/libraries/jvectormap"
+    },
+    {
+      "name": "Masonry",
+      "description": "Masonry is a JavaScript grid layout library. It works by placing elements in optimal position based on available vertical space, sort of like a mason fitting stones in a wall. You’ve probably seen it in use all over the Internet.",
+      "version": "3.1.5",
+      "bower_packages": "bower install masonry",
+      "popular": "user=desandro&repo=masonry",
+      "url_homepage": "http://masonry.desandro.com",
+      "url_cdn": "https://cdnjs.com/libraries/masonry"
+    },
+    {
+      "name": "Mixitup",
+      "description": "MixItUp is a jQuery plugin providing animated filtering and sorting.",
+      "version": "2.1.7",
+      "bower_packages": "bower install mixitup",
+      "popular": "user=patrickkunka&repo=mixitup",
+      "url_homepage": "https://mixitup.kunkalabs.com",
+      "url_cdn": "https://cdnjs.com/libraries/mixitup"
+    },
+    {
+      "name": "Noty",
+      "description": "NOTY is a jQuery plugin that makes it easy to create alert - success - error - warning - information - confirmation messages as an alternative the standard alert dialog.",
+      "version": "2.3.8",
+      "bower_packages": "bower install noty",
+      "popular": "user=needim&repo=noty",
+      "url_homepage": "http://ned.im/noty/#/about",
+      "url_cdn": "https://cdnjs.com/libraries/jquery-noty"
+    },
+    {
+      "name": "Prettify",
+      "description": "Syntax highlighting of code snippets in a web page.",
+      "version": "-",
+      "bower_packages": "bower install google-code-prettify",
+      "popular": "user=google&repo=code-prettify",
+      "url_homepage": "http://code.google.com/p/google-code-prettify/source/browse/trunk/src/prettify.css",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Raphael",
+      "description": "Raphaël is a small JavaScript library that should simplify your work with vector graphics on the web.",
+      "version": "2.1.2",
+      "bower_packages": "bower install raphael",
+      "popular": "user=DmitryBaranovskiy&repo=raphael",
+      "url_homepage": "http://raphaeljs.com",
+      "url_cdn": "https://cdnjs.com/libraries/raphael"
+    },
+    {
+      "name": "Respond",
+      "description": "A fast & lightweight polyfill for min/max-width CSS3 Media Queries (for IE 6-8, and more).",
+      "version": "1.4.2",
+      "bower_packages": "bower install respond-minmax",
+      "popular": "user=scottjehl&repo=Respond",
+      "url_homepage": "https://github.com/scottjehl/Respond",
+      "url_cdn": "https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"
+    },
+    {
+      "name": "retina.js",
+      "description": "JavaScript, Less and Sass helpers for rendering high-resolution image variants.",
+      "version": "1.2.0",
+      "bower_packages": "bower install retina.js",
+      "popular": "user=imulus&repo=retinajs",
+      "url_homepage": "https://github.com/imulus/retinajs",
+      "url_cdn": "https://cdnjs.com/libraries/retina.js"
+    },
+    {
+      "name": "Select2",
+      "description": "Select2 gives you a customizable select box with support for searching, tagging, remote data sets, infinite scrolling, and many other highly used options.",
+      "version": "3.5.2",
+      "bower_packages": "bower install select2-ng",
+      "popular": "user=select2&repo=select2",
+      "url_homepage": "https://select2.github.io",
+      "url_cdn": "https://cdnjs.com/libraries/select2"
+    },
+    {
+      "name": "Skycons",
+      "description": "Skycons is a set of ten animated weather glyphs, procedurally generated by JavaScript using the HTML5 canvas tag.",
+      "version": "-",
+      "bower_packages": "bower install skycons-html5",
+      "popular": "user=darkskyapp&repo=skycons",
+      "url_homepage": "http://darkskyapp.github.io/skycons",
+      "url_cdn": "https://cdnjs.com/libraries/skycons"
+    },
+    {
+      "name": "slider revolution",
+      "description": "Slider Revolution is an All-Purpose Slide Displaying Solution that allows for showing almost any kind of content.",
+      "version": "5.1.6",
+      "bower_packages": "-",
+      "popular": "-",
+      "url_homepage": "http://www.themepunch.com/portfolio/slider-revolution-jquery-plugin",
+      "url_cdn": "-"
+    },
+    {
+      "name": "spinkit",
+      "description": "A collection of loading indicators animated with CSS.",
+      "version": "1.2.2",
+      "bower_packages": "bower install spinkit",
+      "popular": "user=tobiasahlin&repo=SpinKit",
+      "url_homepage": "https://github.com/tobiasahlin/SpinKit",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Summernote",
+      "description": "Super Simple WYSIWYG Editor on Bootstrap.",
+      "version": "0.5.3",
+      "bower_packages": "bower install summernote",
+      "popular": "user=summernote&repo=summernote",
+      "url_homepage": "http://summernote.org/",
+      "url_cdn": "https://cdnjs.com/libraries/summernote"
+    },
+    {
+      "name": "Typeahead",
+      "description": "A flexible JavaScript library that provides a strong foundation for building robust typeaheads.",
+      "version": "0.10.5",
+      "bower_packages": "bower install typehead.js",
+      "popular": "user=twitter&repo=typeahead.js",
+      "url_homepage": "http://twitter.github.io/typeahead.js/",
+      "url_cdn": "-"
+    },
+    {
+      "name": "Underscore",
+      "description": "Underscore is a JavaScript library that provides a whole mess of useful functional programming helpers without extending any built-in objects.",
+      "version": "1.6.0",
+      "bower_packages": "bower install underscore",
+      "popular": "user=jashkenas&repo=underscore",
+      "url_homepage": "http://underscorejs.org",
+      "url_cdn": "https://cdnjs.com/libraries/underscore.js"
+    },
+    {
+      "name": "Viewport resizer",
+      "description": "Viewport resizer is a browser-based tool to test any website’s responsiveness. Just save the bookmarklet, go to the page you want to test, click on your created bookmarklet and check all kinds of screen resolutions of the page. ",
+      "version": "1.1.4",
+      "bower_packages": "bower install http://lab.maltewassermann.com/viewport-resizer/resizer.min.js",
+      "popular": "-",
+      "url_homepage": "http://lab.maltewassermann.com/viewport-resizer/",
+      "url_cdn": "-"
+    },
+    {
+      "name": "wow",
+      "description": "Reveal CSS animation as you scroll down a page.",
+      "version": "1.1.2",
+      "bower_packages": "bower install WOW",
+      "popular": "user=matthieua&repo=WOW",
+      "url_homepage": "https://github.com/matthieua/WOW",
+      "url_cdn": "https://cdnjs.com/libraries/wow"
+    },
+    {
+      "name": "Yamm 3",
+      "description": "This isYet another megamenu for Bootstrap 3 from Twitter. Lightweight and pure CSS megamenu that uses the standard navbar markup and the fluid grid system classes from Bootstrap 3.",
+      "version": "1.1.0",
+      "bower_packages": "bower install yamm3",
+      "popular": "user=geedmo&repo=yamm3",
+      "url_homepage": "http://geedmo.github.io/yamm3",
+      "url_cdn": "-"
+    }
+  ]
+}

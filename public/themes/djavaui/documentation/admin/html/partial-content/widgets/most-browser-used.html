@@ -1,0 +1,53 @@
+<div class="widgets-wrap">
+    <img src="../../../img/documentation/widget/overview/most-browser-used-doc.jpg" alt="..."/>
+    <div class="row">
+        <div class="col-sm-12">
+            <h4>Source code (HTML)</h4>
+<pre class="html-code">
+&lt;div class=&quot;panel&quot;&gt;
+    &lt;div class=&quot;panel-body rounded&quot;&gt;
+        &lt;div class=&quot;inner-all text-center&quot;&gt;
+            &lt;h4 class=&quot;no-margin&quot;&gt;Most Browser Used&lt;/h4&gt;
+            &lt;p class=&quot;text-muted&quot;&gt;Summary of browser used.&lt;/p&gt;
+            &lt;div id=&quot;browser-chart&quot;&gt;&lt;/div&gt;&lt;!-- /#browser-chart --&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- /.panel-body --&gt;
+&lt;/div&gt;&lt;!-- /.panel --&gt;
+</pre>
+
+            <h4>Required files (JS)</h4>
+<pre class="html-code">
+&lt;!-- PLUGINS JS --&gt;
+&lt;script src=&quot;assets/plugins/raphael/raphael-min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/plugins/jquery/jquery-1.11.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/plugins/morris/morris.min.js&quot;&gt;&lt;/script&gt;
+</pre>
+
+            <h4>Script (JS)</h4>
+<pre class="js-code">
+// =========================================================================
+// MOST BROWSER USED
+// =========================================================================
+$(window).resize(function() {
+    window.donut.redraw();
+});
+function chartBrowser(){
+    window.donut = Morris.Donut({
+        element: 'browser-chart',
+        data: [
+            {label: "Chrome", value: 40},
+            {label: "Firefox", value: 20},
+            {label: "Opera", value: 10},
+            {label: "Safari", value: 20},
+            {label: "Internet Explorer", value: 10}
+        ],
+        colors: ['#E9573F','#F6BB42','#906094','#00B1E1','#8CC152'],
+        resize: true
+    });
+}
+chartBrowser();
+</pre>
+        </div>
+    </div>
+
+</div>

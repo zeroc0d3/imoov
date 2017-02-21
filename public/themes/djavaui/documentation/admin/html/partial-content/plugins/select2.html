@@ -1,0 +1,49 @@
+<p>
+    Select2 gives you a customizable select box with support for searching, tagging, remote data sets, infinite scrolling, and many other highly used options.
+</p>
+<p>
+    Official website : <a href="https://select2.github.io/" target="_blank">https://select2.github.io</a>
+</p>
+<hr class="dotted"/>
+<h4>Using Select2 from a CDN</h4>
+<p>Select2 is hosted on both the cdnjs and jsDelivr CDNs, allowing you to quickly include Select2 on your website.</p>
+
+<ol class="list-number">
+    <li>
+        <p>Include the following lines of code in the <code>&lt;head&gt;</code> section of your HTML. </p>
+<pre class="html-code">
+&lt;link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" /&gt;
+&lt;script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"&gt;&lt;/script&gt;
+</pre>
+        <p class="alert alert-info"> Immediately following a new release, it takes some time for CDNs to catch up and get the new versions live on the CDN.</p>
+    </li>
+    <li>
+        <p>Initialize Select2 on the <code>&lt;select&gt;</code> element that you want to make awesome.</p>
+<pre class="js-code">
+&lt;script type="text/javascript"&gt;
+    $('select').select2();
+&lt;/script&gt;
+</pre>
+    </li>
+    <li>
+        Check out the <a href="https://select2.github.io/examples.html" target="_blank">examples page</a> to start using the additional features of Select2.
+    </li>
+</ol>
+
+<h4>Downloading the code locally</h4>
+<p>In some situations, you can't use Select2 from a CDN and you must include the files through your own static file servers.</p>
+<ol class="list-number">
+    <li>
+        <p><a href="https://github.com/select2/select2/tags" target="_blank">Download the code</a> from GitHub and copy the <code>dist</code> directory to your project. </p>
+    </li>
+    <li>
+        <p>Include the following lines of code in the <code>&lt;head&gt;</code> section of your HTML. </p>
+<pre class="html-code">
+&lt;link href="path/to/select2.min.css" rel="stylesheet" /&gt;
+&lt;script src="path/to/select2.min.js"&gt;&lt;/script&gt;
+</pre>
+    </li>
+    <li>
+        <p> Check out the <a href="https://select2.github.io/examples.html" target="_blank">examples page</a> to start using the additional features of Select2. </p>
+    </li>
+</ol>

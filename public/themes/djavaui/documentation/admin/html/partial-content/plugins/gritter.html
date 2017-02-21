@@ -1,0 +1,31 @@
+<p>
+    The super awesome background is just to show you that all notifications are transparent! Tested in: FF 3+, Opera 9, IE7, IE8, Safari 4+.
+</p>
+<p>
+    Official website : <a href="http://boedesign.com/demos/gritter/" target="_blank">http://boedesign.com/demos/gritter</a>
+</p>
+<hr class="dotted"/>
+<h4>REQUIRED FILES (CSS)</h4>
+<pre class="html-code">
+&lt;link href=&quot;../../../assets/global/plugins/bower_components/gritter/css/jquery.gritter.css&quot; rel=&quot;stylesheet&quot;&gt;
+</pre>
+<h4>REQUIRED FILES (JS)</h4>
+<pre class="html-code">
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/gritter/js/jquery.gritter.min.js&quot;&gt;&lt;/script&gt;
+</pre>
+<h4>SCRIPTS (JS)</h4>
+<pre class="js-code scroll no-margin">
+$.gritter.add(
+    {
+        title: 'Welcome to Blankon',
+        // (string | mandatory) the text inside the notification
+        text: 'Blankon is a theme fullpack admin template powered by Twitter bootstrap 3 front-end framework.',
+        // (string | optional) the image to display on the left
+        image: '../../assets/global/img/avatar/50/1.png',
+        // (bool | optional) if you want it to fade out on its own or just sit there
+        sticky: false,
+        // (int | optional) the time you want it to be alive for before fading out
+        time: ''
+    }
+);
+</pre>

@@ -1,0 +1,20 @@
+<p>
+    Viewport resizer is a browser-based tool to test any website’s responsiveness. Just save the bookmarklet, go to the page you want to test, click on your created bookmarklet and check all kinds of screen resolutions of the page.
+</p>
+<p>
+    Official website : <a href="http://lab.maltewassermann.com/viewport-resizer/" target="_blank">http://lab.maltewassermann.com/viewport-resizer</a>
+</p>
+<p>
+    Demo page : <a href="../../production/admin/html/index.html" target="_blank">index.html</a>
+</p>
+<hr class="dotted"/>
+
+<h4>SOURCE CODE (HTML)</h4>
+<pre class="html-code no-margin">
+&lt;a data-text=&quot;try&quot; href='javascript:void((function(d){if(self!=top||d.getElementById(&#039;toolbar&#039;)&amp;&amp;d.getElementById(&#039;toolbar&#039;).getAttribute(&#039;data-Try&#039;))return false;d.write(&#039;&lt;!DOCTYPE HTML&gt;&lt;html style=&quot;opacity:0;&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;/&gt;&lt;/head&gt;&lt;body&gt;&lt;a data-viewport=&quot;1024x600&quot; data-version=&quot;10&quot; data-icon=&quot;notebook&quot; class=&quot;active&quot;&gt;10&quot; Netbook&lt;/a&gt;&lt;script src=&quot;http://lab.maltewassermann.com/viewport-resizer/resizer.min.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;&#039;)})(document));'&gt;&lt;span&gt;&harr; Try&lt;/span&gt;&lt;/a&gt;
+</pre>
+
+<h4>REQUIRED FILES (JS)</h4>
+<pre class="html-code no-margin">
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/viewport-resizer/js/viewport-resizer.min.js&quot;&gt;&lt;/script&gt;
+</pre>

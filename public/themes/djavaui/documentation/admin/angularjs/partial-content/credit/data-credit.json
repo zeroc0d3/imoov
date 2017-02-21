@@ -1,0 +1,60 @@
+{
+  "data": [
+    {
+      "name": "AngularJS",
+      "description": "AngularJS lets you write client-side web applications as if you had a smarter browser. It lets you use good old HTML (or HAML, Jade and friends!) as your template language and lets you extend HTML’s syntax to express your application’s components clearly and succinctly.",
+      "version": "1.3.9",
+      "bower_packages": "bower install angular#1.3.9",
+      "url_homepage": "https://github.com/angular/angular.js",
+      "url_cdn": "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"
+    },
+    {
+      "name": "AngularUI (UI-Router)",
+      "description": "AngularUI Router is a routing framework for AngularJS, which allows you to organize the parts of your interface into a state machine. <p>Unlike the $route service in the Angular ngRoute module, which is organized around URL routes, UI-Router is organized around states, which may optionally have routes, as well as other behavior, attached.",
+      "version": "0.2.13",
+      "bower_packages": "bower install angular-ui-router",
+      "url_homepage": "http://angular-ui.github.io/ui-router/site/#/api/ui.router",
+      "url_cdn": "https://cdnjs.com/libraries/angular-ui-router"
+    },
+    {
+      "name": "AngularUI (UI-Bootstrap)",
+      "description": "Native AngularJS (Angular) directives for Bootstrap. Small footprint (5kB gzipped!), no 3rd party JS dependencies (jQuery, bootstrap JS) required!",
+      "version": "0.12.0",
+      "bower_packages": "bower install angular-bootstrap",
+      "url_homepage": "http://angular-ui.github.io/bootstrap",
+      "url_cdn": "https://cdnjs.com/libraries/angular-ui-bootstrap"
+    },
+    {
+      "name": "Angular Loading Bar",
+      "description": "An automatic loading bar using angular interceptors. It works automatically, so simply include it as a dependency and it will automatically display the progress of your $http requests.",
+      "version": "0.6.0",
+      "bower_packages": "bower install angular-loading-bar",
+      "url_homepage": "https://github.com/chieffancypants/angular-loading-bar",
+      "url_cdn": "https://cdnjs.com/libraries/angular-loading-bar"
+    },
+    {
+      "name": "ocLazyLoad",
+      "description": "Load on demand: With $ocLazyLoad you can load angular modules, but if you want to load controllers / services / filters / ... without defining a new module it's entirely possible, just use the name an existing module (your app name for example). There are multiple ways to use $ocLazyLoad to load your files, just choose the one that fits you the best.",
+      "version": "0.5.1",
+      "bower_packages": "bower install oclazyload",
+      "url_homepage": "https://github.com/ocombe/ocLazyLoad",
+      "url_cdn": "-"
+    },
+    {
+      "name": "tc-angular-chartjs",
+      "description": "tc-angular-chartjs provides you with directives for all chartjs chart types.",
+      "version": "1.0.9",
+      "bower_packages": "bower install tc-angular-chartjs",
+      "url_homepage": "https://github.com/carlcraig/tc-angular-chartjs",
+      "url_cdn": "-"
+    },
+    {
+      "name": "c3-angular-sample",
+      "description": "Contains some samples to use c3js together with angularjs to give it a dynamic feel.",
+      "version": "0.1.0",
+      "bower_packages": "bower install c3-angular",
+      "url_homepage": "https://github.com/jettro/c3-angular-sample",
+      "url_cdn": "-"
+    }
+  ]
+}

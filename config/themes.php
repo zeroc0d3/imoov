@@ -118,17 +118,17 @@ return [
             'logo'             => 'themes/coreui-front/assets/img/logo.png',
         ],
 
-		// DjavaUI Theme
-		'djavaui' => [
-			'extends'          => null,
-			'views-path'       => 'resources/views/themes/djavaui',
-			'asset-path'       => 'themes/djavaui/assets',
-			'node-module'      => 'themes/djavaui/assets/global/plugins/node_modules',
-			'bower-component'  => 'themes/djavaui/assets/global/plugins/bower_components',
-			'favicon'          => 'themes/djavaui/assets/img/favicon.png',
-			'avatar'           => 'themes/djavaui/assets/img/avatar.png',
-			'logo'             => 'themes/djavaui/assets/img/logo.png',
-		],
+				// DjavaUI Theme
+				'djavaui' => [
+						'extends'          => null,
+						'views-path'       => 'resources/views/themes/djavaui',
+						'asset-path'       => 'themes/djavaui/assets',
+						'node-module'      => 'themes/djavaui/assets/global/plugins/node_modules',
+						'bower-component'  => 'themes/djavaui/assets/global/plugins/bower_components',
+						'favicon'          => 'themes/djavaui/assets/img/favicon.png',
+						'avatar'           => 'themes/djavaui/assets/img/avatar.png',
+						'logo'             => 'themes/djavaui/assets/img/logo.png',
+				],
 
 
 	],

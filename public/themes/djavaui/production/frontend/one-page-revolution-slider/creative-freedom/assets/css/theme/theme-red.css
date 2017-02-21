@@ -1,0 +1,60 @@
+/* ========================================================================
+ * PLUGIN - PRELOADER
+ * ======================================================================== */
+#loader-wrapper .loader-section {
+  background-color: #E9573F;
+}
+
+/* ========================================================================
+ * PLUGIN - SLIDER REVOLUTION
+ * ======================================================================== */
+.tp-caption.Creative-SubTitle, .Creative-SubTitle,
+.tp-caption.Creative-Button, .Creative-Button {
+  color: #E9573F !important;
+}
+
+.metis .tp-tab.selected .tp-tab-divider {
+  border-right: 1px solid #E9573F !important;
+}
+
+/* ========================================================================
+ * SECTION - BANNER
+ * ======================================================================== */
+@media (max-width: 640px) {
+  #banner .banner-container {
+    background-color: #E9573F;
+  }
+}
+/* ========================================================================
+ * SECTION - FEATURES
+ * ======================================================================== */
+#features .feature-list .media-left i {
+  color: #E9573F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

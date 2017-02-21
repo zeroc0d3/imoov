@@ -30,8 +30,8 @@
     <link rel="shortcut icon" href="{!! asset('/') !!}themes/djavaui/assets/img/favicon.png">
 
     <!-- START @FONT STYLES -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Oswald:700,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700,400" rel="stylesheet">
     {{-- Theme::css('zeroc0d3/css/open-sans.css') --}}
     {{-- Theme::css('zeroc0d3/css/oswald.css') --}}
     <!--/ END FONT STYLES -->

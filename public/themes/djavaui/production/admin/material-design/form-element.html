@@ -1,0 +1,1968 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+    <!-- START @HEAD -->
+    <head>
+        <!-- START @META SECTION -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Blankon is a theme fullpack admin template powered by Twitter bootstrap 3 front-end framework. Included are multiple example pages, elements styles, and javascript widgets to get your project started.">
+        <meta name="keywords" content="admin, admin template, bootstrap3, clean, fontawesome4, good documentation, lightweight admin, responsive dashboard, webapp">
+        <meta name="author" content="Djava UI">
+        <title>FORM ELEMENT | BLANKON - Fullpack Admin Theme</title>
+        <!--/ END META SECTION -->
+
+        <!-- START @FAVICONS -->
+        <link href="http://themes.djavaui.com/blankon-fullpack-admin-theme/img/ico/html/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+        <link href="http://themes.djavaui.com/blankon-fullpack-admin-theme/img/ico/html/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+        <link href="http://themes.djavaui.com/blankon-fullpack-admin-theme/img/ico/html/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+        <link href="http://themes.djavaui.com/blankon-fullpack-admin-theme/img/ico/html/apple-touch-icon-57x57-precomposed.png" rel="apple-touch-icon-precomposed">
+        <link href="http://themes.djavaui.com/blankon-fullpack-admin-theme/img/ico/html/apple-touch-icon.png" rel="shortcut icon">
+        <!--/ END FAVICONS -->
+
+        <!-- START @FONT STYLES -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--/ END FONT STYLES -->
+
+        <!-- START @GLOBAL MANDATORY STYLES -->
+        <link href="../../../assets/global/plugins/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../assets/commercial/plugins/mdb/css/mdb.min.css" rel="stylesheet">
+        <!--/ END GLOBAL MANDATORY STYLES -->
+
+        <!-- START @PAGE LEVEL STYLES -->
+        <link href="../../../assets/global/plugins/bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../assets/global/plugins/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <link href="../../../assets/global/plugins/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" rel="stylesheet">
+        <link href="../../../assets/global/plugins/bower_components/jasny-bootstrap-fileinput/css/jasny-bootstrap-fileinput.min.css" rel="stylesheet">
+        <link href="../../../assets/global/plugins/bower_components/chosen_v1.2.0/chosen.min.css" rel="stylesheet">
+        <!--/ END PAGE LEVEL STYLES -->
+
+        <!-- START @THEME STYLES -->
+        <link href="../../../assets/admin/css/layout.css" rel="stylesheet">
+        <link href="../../../assets/admin/css/components.css" rel="stylesheet">
+        <link href="../../../assets/admin/css/plugins.css" rel="stylesheet">
+        <link href="../../../assets/admin/css/themes/material-design.theme.css" rel="stylesheet" id="theme">
+        <link href="../../../assets/admin/css/material-custom.css" rel="stylesheet">
+        <link href="../../../assets/admin/css/custom.css" rel="stylesheet">
+        <!--/ END THEME STYLES -->
+
+        <!-- START @IE SUPPORT -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="../../../assets/global/plugins/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/respond-minmax/dest/respond.min.js"></script>
+        <![endif]-->
+        <!--/ END IE SUPPORT -->
+    </head>
+    <!--/ END HEAD -->
+
+    <!-- START @BODY -->
+    <body>
+
+        <!--[if lt IE 9]>
+        <p class="upgrade-browser">Upps!! You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- START @WRAPPER -->
+        <section id="wrapper">
+
+            <!-- START @HEADER -->
+            <header id="header">
+
+                <!-- Start header left -->
+                <div class="header-left">
+                    <!-- Start offcanvas left: This menu will take position at the top of template header (mobile only). Make sure that only #header have the `position: relative`, or it may cause unwanted behavior -->
+                    <div class="navbar-minimize-mobile left">
+                        <div data-activates="slide-out" class="navbar-brand button-collapse waves-effect waves-light"><i class="fa fa-bars"></i></div>
+                    </div>
+                    <!--/ End offcanvas left -->
+
+                    <!-- Start navbar header -->
+                    <div class="navbar-header">
+
+                        <!-- Start brand -->
+                        <a class="navbar-brand waves-effect waves-light" href="dashboard.html">
+                            <img class="logo" src="http://img.djavaui.com/?create=175x50,2196F3?f=ffffff" alt="brand logo"/>
+                        </a><!-- /.navbar-brand -->
+                        <!--/ End brand -->
+
+                    </div><!-- /.navbar-header -->
+                    <!--/ End navbar header -->
+
+                    <div class="clearfix"></div>
+                </div><!-- /.header-left -->
+                <!--/ End header left -->
+
+                <!-- Start header right -->
+                <div class="header-right">
+                    <!-- Start navbar toolbar -->
+                    <div class="navbar navbar-toolbar">
+
+                        <!-- Start left navigation -->
+                        <ul class="nav navbar-nav navbar-left">
+
+                            <!-- Start sidebar shrink -->
+                            <li class="navbar-minimize">
+                                <div data-activates="slide-out" class="navbar-brand button-collapse waves-effect waves-ripple"><i class="fa fa-bars"></i></div>
+                            </li>
+                            <!--/ End sidebar shrink -->
+
+                        </ul><!-- /.nav navbar-nav navbar-left -->
+                        <!--/ End left navigation -->
+
+                        <!-- Start right navigation -->
+                        <ul class="nav navbar-nav navbar-right"><!-- /.nav navbar-nav navbar-right -->
+
+                            <!-- Start toggle search -->
+                            <li>
+                                <a href="#modal-search" class="modal-trigger waves-effect waves-ripple"><i class="fa fa-search"></i></a>
+                            </li>
+                            <!--/ End toggle search -->
+
+                            <!-- Start messages -->
+                            <li class="dropdown navbar-message">
+
+                                <a href="#" class="dropdown-toggle waves-effect waves-green" data-toggle="dropdown"><i class="fa fa-envelope-o"></i><span class="count label label-danger rounded">7</span></a>
+
+                                <!-- Start dropdown menu -->
+                                <div class="dropdown-menu animated flipInX z-depth-1">
+                                    <div class="dropdown-header">
+                                        <span class="title">Messages <strong>(7)</strong></span>
+                                        <span class="option text-right"><a href="#">+ New message</a></span>
+                                    </div>
+                                    <div class="dropdown-body">
+
+                                        <!-- Start message list -->
+                                        <div class="media-list niceScroll">
+
+                                            <a href="page-messages.html" class="media">
+                                                <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,2196F3?f=ffffff" class="media-object img-circle" alt="John Kribo"/></div>
+                                                <div class="media-body">
+                                                    <span class="media-heading">John Kribo</span>
+                                                    <span class="media-text">I was impressed how fast the content is loaded. Congratulations. nice design.</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta"><i class="fa fa-reply"></i></span>
+                                                    <span class="media-meta"><i class="fa fa-paperclip"></i></span>
+                                                    <span class="media-meta pull-right">13 minutes</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="page-messages.html" class="media">
+                                                <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,2196F3?f=ffffff" class="media-object img-circle" alt="Jennifer Poiyem"/></div>
+                                                <div class="media-body">
+                                                    <span class="media-heading">Jennifer Poiyem</span>
+                                                    <span class="media-text">It’s Simple, Clean & Nice .. Good work Dear .. GLWS</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta pull-right">17 hours</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="page-messages.html" class="media">
+                                                <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,2196F3?f=ffffff" class="media-object img-circle" alt="Clara Wati"/></div>
+                                                <div class="media-body">
+                                                    <span class="media-heading">Clara Wati</span>
+                                                    <span class="media-text">Great work! Do you have any plans to add loading indicators for AJAX calls that might take longer than normal?</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta pull-right">1 days</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="page-messages.html" class="media">
+                                                <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,2196F3?f=ffffff" class="media-object img-circle" alt="Toni Mriang"/></div>
+                                                <div class="media-body">
+                                                    <span class="media-heading">Toni Mriang</span>
+                                                    <span class="media-text">I am very interested in the theme and I’m thinking about buying it.</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta"><i class="fa fa-paperclip"></i></span>
+                                                    <span class="media-meta pull-right">2 days</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="page-messages.html" class="media">
+                                                <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,2196F3?f=ffffff" class="media-object img-circle" alt="Bella negoro"/></div>
+                                                <div class="media-body">
+                                                    <span class="media-heading">Bella negoro</span>
+                                                    <span class="media-text">Great work! Good luck!</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta"><i class="fa fa-paperclip"></i></span>
+                                                    <span class="media-meta"><i class="fa fa-user"></i></span>
+                                                    <span class="media-meta pull-right">1 week</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="page-messages.html" class="media">
+                                                <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,2196F3?f=ffffff" class="media-object img-circle" alt="Kim Mbako"/></div>
+                                                <div class="media-body">
+                                                    <span class="media-heading">Kim Mbako</span>
+                                                    <span class="media-text">Hi! First of all, thank you for the very nice theme for creating awesome web applications :)</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta"><i class="fa fa-paperclip"></i></span>
+                                                    <span class="media-meta pull-right">1 week</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="page-messages.html" class="media">
+                                                <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,2196F3?f=ffffff" class="media-object img-circle" alt="Pack Suparman"/></div>
+                                                <div class="media-body">
+                                                    <span class="media-heading">Pack Suparman</span>
+                                                    <span class="media-text">Apik temen kie jan template, nyong gep tuku jal..</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta pull-right">1 week</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                        </div>
+                                        <!--/ End message list -->
+
+                                    </div>
+                                    <div class="dropdown-footer">
+                                        <a href="page-messages.html">See All</a>
+                                    </div>
+                                </div>
+                                <!--/ End dropdown menu -->
+
+                            </li><!-- /.dropdown navbar-message -->
+                            <!--/ End messages -->
+
+                            <!-- Start notifications -->
+                            <li class="dropdown navbar-notification">
+
+                                <a href="#" class="dropdown-toggle waves-effect waves-red" data-toggle="dropdown"><i class="fa fa-bell-o"></i><span class="count label label-danger rounded">6</span></a>
+
+                                <!-- Start dropdown menu -->
+                                <div class="dropdown-menu animated flipInX">
+                                    <div class="dropdown-header">
+                                        <span class="title">Notifications <strong>(10)</strong></span>
+                                        <span class="option text-right"><a href="#"><i class="fa fa-cog"></i> Setting</a></span>
+                                    </div>
+                                    <div class="dropdown-body niceScroll">
+
+                                        <!-- Start notification list -->
+                                        <div class="media-list">
+
+                                            <a href="#" class="media">
+                                                <div class="media-object pull-left"><i class="fa fa-share-alt fg-info"></i></div>
+                                                <div class="media-body">
+                                                    <span class="media-text"><strong>Dolanan Remi : </strong><strong>Chris Job,</strong><strong>Denny Puk</strong> and <strong>Joko Fernandes</strong> sent you <strong>5 free energy boosts and other request</strong></span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta">3 minutes</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="#" class="media">
+                                                <div class="media-object pull-left"><i class="fa fa-cogs fg-success"></i></div>
+                                                <div class="media-body">
+                                                    <span class="media-text">Your sistem is updated</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta">5 minutes</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="#" class="media">
+                                                <div class="media-object pull-left"><i class="fa fa-ban fg-danger"></i></div>
+                                                <div class="media-body">
+                                                    <span class="media-text">3 Member is BANNED</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta">5 minutes</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="#" class="media">
+                                                <div class="media-object pull-left"><img class="img-circle" src="http://img.djavaui.com/?create=35x35,2196F3?f=ffffff" alt=""/></div>
+                                                <div class="media-body">
+                                                    <span class="media-text">daddy pushed to project Blankon version 1.0.0</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta">45 minutes</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="#" class="media">
+                                                <div class="media-object pull-left"><i class="fa fa-user fg-info"></i></div>
+                                                <div class="media-body">
+                                                    <span class="media-text">Change your user profile</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta">1 days</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="#" class="media">
+                                                <div class="media-object pull-left"><i class="fa fa-book fg-info"></i></div>
+                                                <div class="media-body">
+                                                    <span class="media-text">Added new article</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta">1 days</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                        </div>
+                                        <!--/ End notification list -->
+
+                                    </div>
+                                    <div class="dropdown-footer">
+                                        <a href="#">See All</a>
+                                    </div>
+                                </div>
+                                <!--/ End dropdown menu -->
+
+                            </li><!-- /.dropdown navbar-notification -->
+                            <!--/ End notifications -->
+
+                            <!-- Start profile -->
+                            <li class="dropdown navbar-profile">
+                                <a href="#" class="dropdown-toggle waves-effect waves-yellow" data-toggle="dropdown">
+                                <span class="meta">
+                                    <span class="avatar"><img src="http://img.djavaui.com/?create=35x35,2196F3?f=ffffff" class="img-circle" alt="admin"></span>
+                                    <span class="text hidden-xs hidden-sm text-muted">Tol Lee</span>
+                                    <span class="caret"></span>
+                                </span>
+                                </a>
+                                <!-- Start dropdown menu -->
+                                <ul class="dropdown-menu animated flipInX">
+                                    <li class="dropdown-header">Account</li>
+                                    <li><a href="page-profile.html"><i class="fa fa-user"></i>View profile</a></li>
+                                    <li><a href="mail-inbox.html"><i class="fa fa-envelope-square"></i>Inbox <span class="label label-info pull-right">30</span></a></li>
+                                    <li><a href="#"><i class="fa fa-share-square"></i>Invite a friend</a></li>
+                                    <li class="dropdown-header">Product</li>
+                                    <li><a href="#"><i class="fa fa-upload"></i>Upload</a></li>
+                                    <li><a href="#"><i class="fa fa-dollar"></i>Earning</a></li>
+                                    <li><a href="#"><i class="fa fa-download"></i>Withdrawals</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="page-signin.html"><i class="fa fa-sign-out"></i>Logout</a></li>
+                                </ul>
+                                <!--/ End dropdown menu -->
+                            </li><!-- /.dropdown navbar-profile -->
+                            <!--/ End profile -->
+
+                        </ul>
+                        <!--/ End right navigation -->
+
+                    </div><!-- /.navbar-toolbar -->
+                    <!--/ End navbar toolbar -->
+                </div><!-- /.header-right -->
+                <!--/ End header left -->
+
+            </header> <!-- /#header -->
+            <!--/ END HEADER -->
+
+            <!-- START @SIDEBAR LEFT -->
+            <aside id="sidebar-left">
+
+                <!-- Sidebar navigation -->
+                <div id="slide-out" class="side-nav admin-side-nav stylish-side-nav">
+                    <!-- Logo -->
+                    <div class="logo-wrapper">
+                        <img src="http://img.djavaui.com/?create=50x50,2196F3?f=ffffff" class="img-responsive img-circle">
+                        <div class="rgba-stylish-strong"><p class="user white-text">Hello, Lee<br>
+                            Web Designer</p></div>
+                    </div>
+                    <!--/. Logo -->
+
+                    <!-- Side navigation links -->
+                    <ul class="collapsible collapsible-accordion">
+                        <li><a href="dashboard.html" class="waves-effect waves-light"><i class="fa fa-home"></i> Dashboard</a></li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-light"><i class="fa fa-globe"></i> Blog <i class="material-icons pull-right">expand_more</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="blog-grid.html" class="waves-effect waves-light">Grid</a></li>
+                                    <li><a href="blog-list.html" class="waves-effect waves-light">List</a></li>
+                                    <li><a href="blog-single.html" class="waves-effect waves-light">Single</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-light"><i class="fa fa-envelope"></i> Mail <i class="material-icons pull-right">expand_more</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="mail-inbox.html" class="waves-effect waves-light">Inbox</a></li>
+                                    <li><a href="mail-compose.html" class="waves-effect waves-light">Compose Mail</a></li>
+                                    <li><a href="mail-view.html" class="waves-effect waves-light">View Mail</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-light"><i class="fa fa-file-o"></i> Pages <i class="material-icons pull-right">expand_more</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="page-gallery.html" class="waves-effect waves-light">Gallery</a></li>
+                                    <li><a href="page-faq.html" class="waves-effect waves-light">FAQ</a></li>
+                                    <li><a href="page-invoice.html" class="waves-effect waves-light">Invoice</a></li>
+                                    <li><a href="page-messages.html" class="waves-effect waves-light">Messages</a></li>
+                                    <li><a href="page-timeline.html" class="waves-effect waves-light">Timeline</a></li>
+                                    <li><a href="page-profile.html" class="waves-effect waves-light">Profile</a></li>
+                                    <li>
+                                        <ul class="collapsible collapsible-accordion">
+                                            <li>
+                                                <a class="collapsible-header waves-effect waves-light">Search <i class="material-icons pull-right">expand_more</i></a>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <li><a href="page-search-course.html" class="waves-effect waves-light">Courses</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="collapsible collapsible-accordion">
+                                            <li>
+                                                <a class="collapsible-header waves-effect waves-light">Error <i class="material-icons pull-right">expand_more</i></a>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <li><a href="page-error-403.html" class="waves-effect waves-light">Error 403</a></li>
+                                                        <li><a href="page-error-403-type-2.html" class="waves-effect waves-light">Error 403 type 2</a></li>
+                                                        <li><a href="page-error-404.html" class="waves-effect waves-light">Error 404</a></li>
+                                                        <li><a href="page-error-404-type-2.html" class="waves-effect waves-light">Error 404 type 2</a></li>
+                                                        <li><a href="page-error-500.html" class="waves-effect waves-light">Error 500</a></li>
+                                                        <li><a href="page-error-500-type-2.html" class="waves-effect waves-light">Error 500 type 2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="collapsible collapsible-accordion">
+                                            <li>
+                                                <a class="collapsible-header waves-effect waves-light">Account <i class="material-icons pull-right">expand_more</i></a>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <li><a href="page-signin.html" class="waves-effect waves-light">Sign In</a></li>
+                                                        <li><a href="page-signin-type-2.html" class="waves-effect waves-light">Sign In Type 2</a></li>
+                                                        <li><a href="page-signup.html" class="waves-effect waves-light">Sign Up</a></li>
+                                                        <li><a href="page-lost-password.html" class="waves-effect waves-light">Lost Password</a></li>
+                                                        <li><a href="page-lock-screen.html" class="waves-effect waves-light">Lock Screen</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="active">
+                            <a class="collapsible-header waves-effect waves-light active"><i class="fa fa-list-alt"></i> Forms <i class="material-icons pull-right">expand_more</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li class="active"><a href="form-element.html" class="waves-effect waves-light">Element</a></li>
+                                    <li><a href="form-advanced.html" class="waves-effect waves-light">Advanced</a></li>
+                                    <li><a href="form-layout.html" class="waves-effect waves-light">Layout</a></li>
+                                    <li><a href="form-validation.html" class="waves-effect waves-light">Validation</a></li>
+                                    <li><a href="form-wizard.html" class="waves-effect waves-light">Wizard</a></li>
+                                    <li><a href="form-wysiwyg.html" class="waves-effect waves-light">Text Editor</a></li>
+                                    <li><a href="form-xeditable.html" class="waves-effect waves-light">X-Editable</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-light"><i class="fa fa-table"></i> Tables <i class="material-icons pull-right">expand_more</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="table-default.html" class="waves-effect waves-light">Default</a></li>
+                                    <li><a href="table-color.html" class="waves-effect waves-light">Color</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-light"><i class="fa fa-map-marker"></i> Maps <i class="material-icons pull-right">expand_more</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="maps-google.html" class="waves-effect waves-light">Google</a></li>
+                                    <li><a href="maps-vector.html" class="waves-effect waves-light">Vector</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-light"><i class="fa fa-signal"></i> Charts <i class="material-icons pull-right">expand_more</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="chart-flot.html" class="waves-effect waves-light">Flot</a></li>
+                                    <li><a href="chart-morris.html" class="waves-effect waves-light">Morris</a></li>
+                                    <li><a href="chart-chartjs.html" class="waves-effect waves-light">Chartjs</a></li>
+                                    <li><a href="chart-c3js.html" class="waves-effect waves-light">C3js</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-light"><i class="fa fa-cube"></i> Components <i class="material-icons pull-right">expand_more</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="component-cards.html" class="waves-effect waves-light">Cards</a></li>
+                                    <li><a href="component-shadows.html" class="waves-effect waves-light">Shadows</a></li>
+                                    <li><a href="component-grid-system.html" class="waves-effect waves-light">Grid System</a></li>
+                                    <li><a href="component-buttons.html" class="waves-effect waves-light">Buttons</a></li>
+                                    <li><a href="component-typography.html" class="waves-effect waves-light">Typography</a></li>
+                                    <li><a href="component-panel.html" class="waves-effect waves-light">Panels</a></li>
+                                    <li><a href="component-alerts.html" class="waves-effect waves-light">Alerts</a></li>
+                                    <li><a href="component-modals.html" class="waves-effect waves-light">Modals</a></li>
+                                    <li><a href="component-video.html" class="waves-effect waves-light">Video</a></li>
+                                    <li><a href="component-tabsaccordion.html" class="waves-effect waves-light">Tabs & Accordion</a></li>
+                                    <li><a href="component-sliders.html" class="waves-effect waves-light">Sliders</a></li>
+                                    <li>
+                                        <ul class="collapsible collapsible-accordion">
+                                            <li>
+                                                <a class="collapsible-header waves-effect waves-light">Icons <i class="material-icons pull-right">expand_more</i></a>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <li><a href="component-glyphicons.html" class="waves-effect waves-light">Glyphicons</a></li>
+                                                        <li><a href="component-glyphicons-pro.html" class="waves-effect waves-light">Glyphicons PRO</a></li>
+                                                        <li><a href="component-font-awesome.html" class="waves-effect waves-light">Font Awesome</a></li>
+                                                        <li><a href="component-weather-icons.html" class="waves-effect waves-light">Weather Icons</a></li>
+                                                        <li><a href="component-map-icons.html" class="waves-effect waves-light">Map Icons</a></li>
+                                                        <li><a href="component-simple-line-icons.html" class="waves-effect waves-light">Simple Line Icons</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="component-other.html" class="waves-effect waves-light">Other</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-light"><i class="fa fa-align-left"></i> Sub Menu <i class="material-icons pull-right">expand_more</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <ul class="collapsible collapsible-accordion">
+                                            <li>
+                                                <a class="collapsible-header waves-effect waves-light">Level 1 <i class="material-icons pull-right">expand_more</i></a>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <li>
+                                                            <ul class="collapsible collapsible-accordion">
+                                                                <li>
+                                                                    <a class="collapsible-header waves-effect waves-light">Level 2 <i class="material-icons pull-right">expand_more</i></a>
+                                                                    <div class="collapsible-body">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <ul class="collapsible collapsible-accordion">
+                                                                                    <li>
+                                                                                        <a class="collapsible-header waves-effect waves-light">Level 3 <i class="material-icons pull-right">expand_more</i></a>
+                                                                                        <div class="collapsible-body">
+                                                                                            <ul>
+                                                                                                <li>
+                                                                                                    <ul class="collapsible collapsible-accordion">
+                                                                                                        <li>
+                                                                                                            <a class="collapsible-header waves-effect waves-light">Level 4 <i class="material-icons pull-right">expand_more</i></a>
+                                                                                                            <div class="collapsible-body">
+                                                                                                                <ul>
+                                                                                                                    <li><a href="#" class="waves-effect waves-light">Level 5</a></li>
+                                                                                                                    <li><a href="#" class="waves-effect waves-light">Level 5</a></li>
+                                                                                                                    <li><a href="#" class="waves-effect waves-light">Level 5</a></li>
+                                                                                                                </ul>
+                                                                                                            </div>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                </li>
+                                                                                                <li><a href="#" class="waves-effect waves-light">Level 4</a></li>
+                                                                                                <li><a href="#" class="waves-effect waves-light">Level 4</a></li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </li>
+                                                                            <li><a href="#" class="waves-effect waves-light">Level 3</a></li>
+                                                                            <li><a href="#" class="waves-effect waves-light">Level 3</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="#" class="waves-effect waves-light">Level 2</a></li>
+                                                        <li><a href="#" class="waves-effect waves-light">Level 2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="waves-effect waves-light">Level 1</a></li>
+                                    <li><a href="#" class="waves-effect waves-light">Level 1</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="animate.html" class="waves-effect waves-light"><i class="fa fa-forumbee"></i> Animate.css</a></li>
+                        <li><a href="widget-overview.html" class="waves-effect waves-light"><i class="fa fa-desktop"></i> Overview</a></li>
+                        <li><a href="widget-social.html" class="waves-effect waves-light"><i class="fa fa-group"></i> Social</a></li>
+                        <li><a href="widget-blog.html" class="waves-effect waves-light"><i class="fa fa-pencil"></i> Blog</a></li>
+                        <li><a href="widget-weather.html" class="waves-effect waves-light"><i class="fa fa-sun-o"></i> Weather</a></li>
+                        <li><a href="widget-misc.html" class="waves-effect waves-light"><i class="fa fa-puzzle-piece"></i> Misc</a></li>
+                    </ul>
+                    <!--/. Side navigation links -->
+
+                </div>
+                <!--/. Sidebar navigation -->
+
+            </aside><!-- /#sidebar-left -->
+            <!--/ END SIDEBAR LEFT -->
+
+            <!-- START @PAGE CONTENT -->
+            <section id="page-content">
+
+                <!-- Start page header -->
+                <div class="header-content">
+                    <h2><i class="fa fa-list-alt"></i> Form Elements <span>form elements and more</span></h2>
+                    <div class="breadcrumb-wrapper hidden-xs">
+                        <span class="label">You are here:</span>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-home"></i>
+                                <a href="dashboard.html">Dashboard</a>
+                                <i class="fa fa-angle-right"></i>
+                            </li>
+                            <li>
+                                <a href="#">Forms</a>
+                                <i class="fa fa-angle-right"></i>
+                            </li>
+                            <li class="active">Form Elements</li>
+                        </ol>
+                    </div><!-- /.breadcrumb-wrapper -->
+                </div><!-- /.header-content -->
+                <!--/ End page header -->
+
+                <!-- Start body content -->
+                <div class="body-content animated fadeIn">
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <!-- Start input fields - basic form -->
+                            <div class="panel z-depth-1">
+                                <div class="panel-heading">
+                                    <div class="pull-left">
+                                        <h3 class="panel-title">Input Fields</h3>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button class="btn btn-sm waves-effect waves-green" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse"><i class="fa fa-angle-up"></i></button>
+                                        <button class="btn btn-sm waves-effect waves-red" data-action="remove" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div><!-- /.panel-heading -->
+                                <div class="panel-sub-heading">
+                                    <div class="callout callout-info"><p>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group no-margin</code> for optimum spacing.</p></div>
+                                </div><!-- /.panel-subheading -->
+                                <div class="panel-body no-padding">
+
+                                    <form action="#">
+                                        <div class="form-body">
+                                            <div class="form-group">
+                                                <label class="control-label">Default Input</label>
+                                                <input class="form-control" type="text">
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">Focus Input</label>
+                                                <input class="form-control form-focus" type="text" value="Demonstrative focus state">
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">Left Icon</label>
+                                                <div class="input-icon">
+                                                    <i class="fa fa-microphone"></i>
+                                                    <input class="form-control" placeholder="Left icon" type="text">
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">Right Icon</label>
+                                                <div class="input-icon right">
+                                                    <i class="fa fa-microphone"></i>
+                                                    <input class="form-control" placeholder="Right icon" type="text">
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">With Spinner</label>
+                                                <input class="form-control spinner" placeholder="Loading something..." type="text">
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">With Spinner Flat</label>
+                                                <input class="form-control spinner flat" placeholder="Loading something..." type="text">
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label" for="disabledinput1">Disabled Input</label>
+                                                <input id="disabledinput1" class="form-control" disabled="" type="text">
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label" for="readonlyinput1">Read-Only Input</label>
+                                                <input value="Read Only Input" id="readonlyinput1" class="form-control" readonly="readonly" type="text">
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">Static control</label>
+                                                <div>
+                                                    <p class="form-control-static">email@example.com</p>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">Block Help Text</label>
+                                                <div>
+                                                    <input class="form-control" type="text">
+                                                    <span class="help-block no-margin">A block of help text that breaks onto a new line.</span>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">Input with Tooltip</label>
+                                                <input type="text" class="form-control tooltips" data-toggle="tooltip" data-placement="top" data-title="Tooltip goes here" placeholder="Hover me">
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">Input with Popover</label>
+                                                <input type="text" class="form-control popovers" data-toggle="popover" data-placement="top" data-title="The Title" data-content="Content goes here..." data-trigger="click" placeholder="Click Me">
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">Placeholder</label>
+                                                <input placeholder="This is a placeholder" class="form-control" type="text">
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">Input Tags</label>
+                                                <input type="text" value="Tag 1,Tag 2,Tag 3" data-role="tagsinput" class="form-control" placeholder="Type and enter" />
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">Character counter</label>
+                                                <div class="input-field">
+                                                    <input id="input-counter" class="input-counter" type="text" length="10">
+                                                    <label for="input-counter">Input text</label>
+                                                </div>
+                                            </div><!-- /.form-group -->
+                                        </div><!-- /.form-body -->
+                                        <div class="form-footer">
+                                            <div class="pull-right">
+                                                <button class="btn btn-danger mr-5">Cancel</button>
+                                                <button class="btn btn-success" type="submit">Submit</button>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div><!-- /.form-footer -->
+                                    </form>
+
+                                </div><!-- /.panel-body -->
+                            </div><!-- /.panel -->
+                            <!--/ End input fields - basic form-->
+
+                        </div><!-- /.col-md-6 -->
+                        <div class="col-md-6">
+
+                            <!-- Start input fields - horizontal form -->
+                            <div class="panel z-depth-1">
+                                <div class="panel-heading">
+                                    <div class="pull-left">
+                                        <h3 class="panel-title">Input Fields</h3>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button class="btn btn-sm waves-effect waves-green" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse"><i class="fa fa-angle-up"></i></button>
+                                        <button class="btn btn-sm waves-effect waves-red" data-action="remove" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div><!-- /.panel-heading -->
+                                <div class="panel-sub-heading">
+                                    <div class="callout callout-info"><p>Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout by adding <code>.form-horizontal</code> to the form. Doing so changes <code>.form-group</code>s to behave as grid rows, so no need for <code>.row</code>.</p></div>
+                                </div><!-- /.panel-subheading -->
+                                <div class="panel-body no-padding rounded-bottom">
+                                    <form action="#" class="form-horizontal form-bordered">
+                                        <div class="form-body">
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Default Input</label>
+                                                <div class="col-sm-9">
+                                                    <input class="form-control" type="text">
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Focus Input</label>
+                                                <div class="col-sm-9">
+                                                    <input value="Demonstrative focus state" class="form-control" type="text">
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Left Icon</label>
+                                                <div class="col-sm-9 input-icon">
+                                                    <i class="fa fa-microphone"></i>
+                                                    <input class="form-control" placeholder="Left icon" type="text">
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Right Icon</label>
+                                                <div class="col-sm-9 input-icon right">
+                                                    <i class="fa fa-microphone"></i>
+                                                    <input class="form-control" placeholder="Right icon" type="text">
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">With Spinner</label>
+                                                <div class="col-sm-9">
+                                                    <input class="form-control spinner" placeholder="Loading something..." type="text">
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">With Spinner Flat</label>
+                                                <div class="col-sm-9">
+                                                    <input class="form-control spinner flat" placeholder="Loading something..." type="text">
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Disabled Input</label>
+                                                <div class="col-sm-9">
+                                                    <input class="form-control" disabled="disabled" type="text">
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Read-Only Input</label>
+                                                <div class="col-sm-9">
+                                                    <input value="Read Only Input" class="form-control" readonly="readonly" type="text">
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Static control</label>
+                                                <div class="col-sm-9">
+                                                    <p class="form-control-static">email@example.com</p>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Block Help Text</label>
+                                                <div class="col-sm-9">
+                                                    <input placeholder="Help Text" class="form-control" type="text">
+                                                    <span class="help-block no-margin">A block of help text that breaks onto a new line.</span>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Input with Tooltip</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control tooltips" data-toggle="tooltip" data-placement="top" data-title="Tooltip goes here" placeholder="Hover me">
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Input with Popover</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control popovers" data-toggle="popover" data-placement="top" data-title="The Title" data-content="Content goes here..." data-trigger="click" placeholder="Click Me">
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Placeholder</label>
+                                                <div class="col-sm-9">
+                                                    <input placeholder="This is a placeholder" class="form-control" type="text">
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Input Tags</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" value="Tag 1,Tag 2,Tag 3" data-role="tagsinput" placeholder="Type and enter"/>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Character counter</label>
+                                                <div class="col-sm-9">
+                                                    <div class="input-field">
+                                                        <input id="input-counter-2" class="input-counter" type="text" length="10">
+                                                        <label for="input-counter-2">Input text</label>
+                                                    </div>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                        </div><!-- /.form-body -->
+                                        <div class="form-footer">
+                                            <div class="pull-right">
+                                                <button class="btn btn-danger mr-5">Cancel</button>
+                                                <button class="btn btn-success" type="submit">Submit</button>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div><!-- /.form-footer -->
+                                    </form>
+                                </div><!-- /.panel-body -->
+                            </div><!-- /.panel -->
+                            <!--/ End input fields - horizontal form -->
+
+                        </div><!-- /.col-md-6 -->
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="callout callout-info mb-20">
+                                <p>A checkbox or radio with the <code>disabled</code> attribute will be styled appropriately. To have the <code>&lt;label&gt;</code> for the checkbox or radio also display a "not-allowed" cursor when the user hovers over the label, add the <code>.disabled</code> class to your <code>.radio</code>, <code>.radio-inline</code>, <code>.checkbox</code>, <code>.checkbox-inline</code>, or <code>&lt;fieldset&gt;</code>.</p>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <!-- Start checkbox - basic form -->
+                            <div class="panel z-depth-1">
+                                <div class="panel-heading">
+                                    <div class="pull-left">
+                                        <h3 class="panel-title">Checkbox</h3>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button class="btn btn-sm waves-effect waves-green" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse"><i class="fa fa-angle-up"></i></button>
+                                        <button class="btn btn-sm waves-effect waves-red" data-action="remove" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div><!-- /.panel-heading -->
+                                <div class="panel-body no-padding">
+
+                                    <form action="#">
+                                        <div class="form-body">
+                                            <div class="form-group">
+                                                <label>Checkboxes</label>
+                                                <p>
+                                                    <input type="checkbox" id="checkbox-1" checked="checked" />
+                                                    <label for="checkbox-1">Basic</label>
+                                                </p>
+                                                <p>
+                                                    <input type="checkbox" class="filled-in" id="checkbox-2" checked="checked" />
+                                                    <label for="checkbox-2">Filled in</label>
+                                                </p>
+                                                <p>
+                                                    <input type="checkbox" id="checkbox-3" checked="checked" disabled="disabled" />
+                                                    <label for="checkbox-3">Basic disabled</label>
+                                                </p>
+                                                <p>
+                                                    <input type="checkbox" id="checkbox-4" disabled="disabled" />
+                                                    <label for="checkbox-4">Filled in disabled</label>
+                                                </p>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label>Checkboxes Inline</label>
+                                                <div class="checkbox">
+                                                    <label class="checkbox-inline">
+                                                        <p>
+                                                            <input type="checkbox" class="filled-in" id="filled-in-box-1" checked="checked" />
+                                                            <label for="filled-in-box-1">A</label>
+                                                        </p>
+                                                    </label>
+                                                    <label class="checkbox-inline">
+                                                        <p>
+                                                            <input type="checkbox" class="filled-in" id="filled-in-box-2" checked="checked" />
+                                                            <label for="filled-in-box-2">B</label>
+                                                        </p>
+                                                    </label>
+                                                    <label class="checkbox-inline">
+                                                        <p>
+                                                            <input type="checkbox" class="filled-in" id="filled-in-box-3" checked="checked" />
+                                                            <label for="filled-in-box-3">C</label>
+                                                        </p>
+                                                    </label>
+                                                    <label class="checkbox-inline">
+                                                        <p>
+                                                            <input type="checkbox" class="filled-in" id="filled-in-box-4" checked="checked" />
+                                                            <label for="filled-in-box-4">D</label>
+                                                        </p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div><!-- /.form-body -->
+                                        <div class="form-footer">
+                                            <div class="pull-right">
+                                                <button class="btn btn-danger mr-5">Cancel</button>
+                                                <button class="btn btn-success" type="submit">Submit</button>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div><!-- /.form-footer -->
+                                    </form>
+
+                                </div><!-- /.panel-body -->
+                            </div><!-- /.panel -->
+                            <!-- End checkbox - basic form -->
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <!-- Start checkbox - horizontal form -->
+                            <div class="panel z-depth-1">
+                                <div class="panel-heading">
+                                    <div class="pull-left">
+                                        <h3 class="panel-title">Checkbox</h3>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button class="btn btn-sm waves-effect waves-green" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse"><i class="fa fa-angle-up"></i></button>
+                                        <button class="btn btn-sm waves-effect waves-red" data-action="remove" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div><!-- /.panel-heading -->
+                                <div class="panel-body no-padding">
+
+                                    <form class="form-horizontal form-bordered">
+                                        <div class="form-body">
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Checkboxes</label>
+                                                <div class="col-md-8">
+                                                    <p>
+                                                        <input type="checkbox" id="checkbox-5" checked="checked" />
+                                                        <label for="checkbox-5">Basic</label>
+                                                    </p>
+                                                    <p>
+                                                        <input type="checkbox" class="filled-in" id="checkbox-6" checked="checked" />
+                                                        <label for="checkbox-6">Filled in</label>
+                                                    </p>
+                                                    <p>
+                                                        <input type="checkbox" id="checkbox-7" checked="checked" disabled="disabled" />
+                                                        <label for="checkbox-7">Basic disabled</label>
+                                                    </p>
+                                                    <p>
+                                                        <input type="checkbox" id="checkbox-8" disabled="disabled" />
+                                                        <label for="checkbox-8">Filled in disabled</label>
+                                                    </p>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Checkboxes Inline</label>
+                                                <div class="col-md-8">
+                                                    <div class="checkbox">
+                                                        <label class="checkbox-inline">
+                                                            <p>
+                                                                <input type="checkbox" class="filled-in" id="filled-in-box-5" checked="checked" />
+                                                                <label for="filled-in-box-5">A</label>
+                                                            </p>
+                                                        </label>
+                                                        <label class="checkbox-inline">
+                                                            <p>
+                                                                <input type="checkbox" class="filled-in" id="filled-in-box-6" checked="checked" />
+                                                                <label for="filled-in-box-6">B</label>
+                                                            </p>
+                                                        </label>
+                                                        <label class="checkbox-inline">
+                                                            <p>
+                                                                <input type="checkbox" class="filled-in" id="filled-in-box-7" checked="checked" />
+                                                                <label for="filled-in-box-7">C</label>
+                                                            </p>
+                                                        </label>
+                                                        <label class="checkbox-inline">
+                                                            <p>
+                                                                <input type="checkbox" class="filled-in" id="filled-in-box-8" checked="checked" />
+                                                                <label for="filled-in-box-8">D</label>
+                                                            </p>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- /.form-body -->
+                                        <div class="form-footer">
+                                            <div class="pull-right">
+                                                <button class="btn btn-danger mr-5">Cancel</button>
+                                                <button class="btn btn-success" type="submit">Submit</button>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div><!-- /.form-footer -->
+                                    </form>
+
+                                </div><!-- /.panel-body -->
+                            </div><!-- /.panel -->
+                            <!-- End checkbox - horizontal form -->
+
+                        </div>
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <!-- Start radio - basic form -->
+                            <div class="panel z-depth-1">
+                                <div class="panel-heading">
+                                    <div class="pull-left">
+                                        <h3 class="panel-title">Radio</h3>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button class="btn btn-sm waves-effect waves-green" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse"><i class="fa fa-angle-up"></i></button>
+                                        <button class="btn btn-sm waves-effect waves-red" data-action="remove" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div><!-- /.panel-heading -->
+                                <div class="panel-body no-padding">
+
+                                    <form action="#">
+                                        <div class="form-body">
+                                            <div class="form-group">
+                                                <label>Radios</label>
+                                                <p>
+                                                    <input name="group1" type="radio" id="radio-1" />
+                                                    <label for="radio-1">Red</label>
+                                                </p>
+                                                <p>
+                                                    <input name="group1" type="radio" id="radio-2" />
+                                                    <label for="radio-2">Yellow</label>
+                                                </p>
+                                                <p>
+                                                    <input name="group1" type="radio" id="radio-3" disabled="disabled" />
+                                                    <label for="radio-3">Brown</label>
+                                                </p>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label>Radios Inline</label>
+                                                <div class="radio">
+                                                    <label class="radio-inline">
+                                                        <p>
+                                                            <input name="group1" type="radio" id="radio-inline-1" />
+                                                            <label for="radio-inline-1">A</label>
+                                                        </p>
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <p>
+                                                            <input name="group1" type="radio" id="radio-inline-2" />
+                                                            <label for="radio-inline-2">B</label>
+                                                        </p>
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <p>
+                                                            <input name="group1" type="radio" id="radio-inline-3" />
+                                                            <label for="radio-inline-3">C</label>
+                                                        </p>
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <p>
+                                                            <input name="group1" type="radio" id="radio-inline-4" />
+                                                            <label for="radio-inline-4">D</label>
+                                                        </p>
+                                                    </label>
+                                                </div>
+                                            </div><!-- /.form-group -->
+                                        </div><!-- /.form-body -->
+                                        <div class="form-footer">
+                                            <div class="pull-right">
+                                                <button class="btn btn-danger mr-5">Cancel</button>
+                                                <button class="btn btn-success" type="submit">Submit</button>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div><!-- /.form-footer -->
+                                    </form>
+
+                                </div><!-- /.panel-body -->
+                            </div><!-- /.panel -->
+                            <!-- End radio - basic form -->
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <!-- Start radio - horizontal form -->
+                            <div class="panel z-depth-1">
+                                <div class="panel-heading">
+                                    <div class="pull-left">
+                                        <h3 class="panel-title">Radio</h3>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button class="btn btn-sm waves-effect waves-green" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse"><i class="fa fa-angle-up"></i></button>
+                                        <button class="btn btn-sm waves-effect waves-red" data-action="remove" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div><!-- /.panel-heading -->
+                                <div class="panel-body no-padding">
+
+                                    <form class="form-horizontal form-bordered">
+                                        <div class="form-body">
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Radios</label>
+                                                <div class="col-md-8">
+                                                    <p>
+                                                        <input name="group1" type="radio" id="radio-4" />
+                                                        <label for="radio-4">Red</label>
+                                                    </p>
+                                                    <p>
+                                                        <input name="group1" type="radio" id="radio-5" />
+                                                        <label for="radio-5">Yellow</label>
+                                                    </p>
+                                                    <p>
+                                                        <input name="group1" type="radio" id="radio-6" disabled="disabled" />
+                                                        <label for="radio-6">Brown</label>
+                                                    </p>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Radios Inline</label>
+                                                <div class="col-md-8">
+                                                    <div class="radio">
+                                                        <label class="radio-inline">
+                                                            <p>
+                                                                <input name="group1" type="radio" id="radio-inline-5" />
+                                                                <label for="radio-inline-5">A</label>
+                                                            </p>
+                                                        </label>
+                                                        <label class="radio-inline">
+                                                            <p>
+                                                                <input name="group1" type="radio" id="radio-inline-6" />
+                                                                <label for="radio-inline-6">B</label>
+                                                            </p>
+                                                        </label>
+                                                        <label class="radio-inline">
+                                                            <p>
+                                                                <input name="group1" type="radio" id="radio-inline-7" />
+                                                                <label for="radio-inline-7">C</label>
+                                                            </p>
+                                                        </label>
+                                                        <label class="radio-inline">
+                                                            <p>
+                                                                <input name="group1" type="radio" id="radio-inline-8" />
+                                                                <label for="radio-inline-8">D</label>
+                                                            </p>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div><!-- /.form-group -->
+                                        </div><!-- /.form-body -->
+                                        <div class="form-footer">
+                                            <div class="pull-right">
+                                                <button class="btn btn-danger mr-5">Cancel</button>
+                                                <button class="btn btn-success" type="submit">Submit</button>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div><!-- /.form-footer -->
+                                    </form>
+
+                                </div><!-- /.panel-body -->
+                            </div><!-- /.panel -->
+                            <!-- End radio - horizontal form -->
+
+                        </div>
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="callout callout-info mb-20">
+                                <p>Use the default option, or add <code>multiple</code> to show multiple options at once.</p>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <!-- Start select fields - basic form -->
+                            <div class="panel z-depth-1 no-overflow">
+                                <div class="panel-heading">
+                                    <div class="pull-left">
+                                        <h3 class="panel-title">Select Fields</h3>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button class="btn btn-sm waves-effect waves-green" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse"><i class="fa fa-angle-up"></i></button>
+                                        <button class="btn btn-sm waves-effect waves-red" data-action="remove" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div><!-- /.panel-heading -->
+                                <div class="panel-body no-padding">
+                                    <form action="#">
+                                        <div class="form-body">
+                                            <div class="form-group">
+                                                <select class="material-select" disabled="disabled">
+                                                    <option>Disabled select</option>
+                                                </select>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <select class="material-select">
+                                                    <option value="" selected>Choose your option</option>
+                                                    <option>Option 1</option>
+                                                    <option>Option 2</option>
+                                                    <option>Option 3</option>
+                                                </select>
+                                            </div><!-- /.form-group -->
+
+                                        </div><!-- /.form-body -->
+                                        <div class="form-footer">
+                                            <div class="pull-right">
+                                                <button class="btn btn-danger mr-5">Cancel</button>
+                                                <button class="btn btn-success" type="submit">Submit</button>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div><!-- /.form-footer -->
+                                    </form>
+                                </div><!-- /.panel-body -->
+                            </div><!-- /.panel -->
+                            <!--/ End select fields - basic form -->
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <!-- Start select fields - horizontal form -->
+                            <div class="panel z-depth-1 no-overflow">
+                                <div class="panel-heading">
+                                    <div class="pull-left">
+                                        <h3 class="panel-title">Select Fields</h3>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button class="btn btn-sm waves-effect waves-green" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse"><i class="fa fa-angle-up"></i></button>
+                                        <button class="btn btn-sm waves-effect waves-red" data-action="remove" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div><!-- /.panel-heading -->
+                                <div class="panel-body no-padding">
+                                    <form action="#" class="form-horizontal form-bordered">
+                                        <div class="form-body">
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">Disabled select menu</label>
+                                                <div class="col-sm-9">
+                                                    <select class="material-select" disabled="disabled">
+                                                        <option>Disabled select</option>
+                                                    </select>
+                                                    <select class="material-select">
+                                                        <option value="" selected>Choose your option</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div><!-- /.form-group -->
+                                        </div><!-- /.form-body -->
+                                        <div class="form-footer">
+                                            <div class="pull-right">
+                                                <button class="btn btn-danger mr-5">Cancel</button>
+                                                <button class="btn btn-success" type="submit">Submit</button>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div><!-- /.form-footer -->
+                                    </form>
+                                </div><!-- /.panel-body -->
+                            </div><!-- /.panel -->
+                            <!--/ End select fields - horizontal form -->
+
+                        </div>
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="callout callout-info mb-20">
+                                <p>The file input plugin allows you to create a visually appealing file or image input widgets.</p>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <!-- Start file input - basic form -->
+                            <div class="panel z-depth-1">
+                                <div class="panel-heading">
+                                    <div class="pull-left">
+                                        <h3 class="panel-title">File Input</h3>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button class="btn btn-sm waves-effect waves-green" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse"><i class="fa fa-angle-up"></i></button>
+                                        <button class="btn btn-sm waves-effect waves-red" data-action="remove" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div><!-- /.panel-heading -->
+                                <div class="panel-body no-padding">
+
+                                    <form action="#">
+                                        <div class="form-body">
+                                            <div class="form-group">
+                                                <label for="exampleInputFile" class="control-label">File input basic</label>
+                                                <input type="file" id="exampleInputFile">
+                                                <p class="help-block">Example block-level help text here.</p>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">File input widget type 1</label>
+                                                <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                                                    <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                                                    <span class="input-group-addon btn btn-success btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                                                    <a href="#" class="input-group-addon btn btn-danger fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">File input widget type 2</label>
+                                                <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                    <span class="btn btn-warning btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                                                    <span class="fileinput-filename"></span>
+                                                    <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">Image upload widget type 1</label>
+                                                <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                    <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
+                                                    <div>
+                                                        <span class="btn btn-info btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                                                        <a href="#" class="btn btn-danger fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                                    </div>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">Image upload widget type 2</label>
+                                                <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                    <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+                                                        <img data-src="holder.js/200x150/blankon/text:Static image" alt="...">
+                                                    </div>
+                                                    <div class="fileinput-preview fileinput-exists thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
+                                                    <div>
+                                                        <span class="btn btn-primary btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                                                        <a href="#" class="btn btn-danger fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                                    </div>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">Image upload widget type 3</label>
+                                                <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                    <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+                                                        <img data-src="holder.js/100%x100%/blankon/text:Fluid image" alt="...">
+                                                    </div>
+                                                    <div class="fileinput-preview fileinput-exists thumbnail" data-trigger="fileinput" style="max-width: 200px; max-height: 150px;"></div>
+                                                    <div>
+                                                        <span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                                                        <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                                    </div>
+                                                </div>
+                                            </div><!-- /.form-group -->
+                                        </div><!-- /.form-body -->
+                                        <div class="form-footer">
+                                            <div class="pull-right">
+                                                <button class="btn btn-danger mr-5">Cancel</button>
+                                                <button class="btn btn-success" type="submit">Submit</button>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div><!-- /.form-footer -->
+                                    </form>
+
+                                </div><!-- /.panel-body -->
+                            </div><!-- /.panel -->
+                            <!-- End file input - basic form -->
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <!-- Start file input - horizontal form -->
+                            <div class="panel z-depth-1">
+                                <div class="panel-heading">
+                                    <div class="pull-left">
+                                        <h3 class="panel-title">File Input</h3>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button class="btn btn-sm waves-effect waves-green" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse"><i class="fa fa-angle-up"></i></button>
+                                        <button class="btn btn-sm waves-effect waves-red" data-action="remove" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div><!-- /.panel-heading -->
+                                <div class="panel-body no-padding">
+
+                                    <form action="#" class="form-horizontal form-bordered">
+                                        <div class="form-body">
+                                            <div class="form-group">
+                                                <label for="exampleInputFile2" class="col-md-4 control-label">File input basic</label>
+                                                <div class="col-md-8">
+                                                    <input type="file" id="exampleInputFile2">
+                                                    <p class="help-block">Example block-level help text here.</p>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">File input widget type 1</label>
+                                                <div class="col-md-8">
+                                                    <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                                                        <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                                                        <span class="input-group-addon btn btn-success btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                                                        <a href="#" class="input-group-addon btn btn-danger fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                                    </div>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">File input widget type 2</label>
+                                                <div class="col-md-8">
+                                                    <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                        <span class="btn btn-warning btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                                                        <span class="fileinput-filename"></span>
+                                                        <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
+                                                    </div>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Image upload widget type 1</label>
+                                                <div class="col-md-8">
+                                                    <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                        <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
+                                                        <div>
+                                                            <span class="btn btn-info btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                                                            <a href="#" class="btn btn-danger fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Image upload widget type 2</label>
+                                                <div class="col-md-8">
+                                                    <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                        <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+                                                            <img data-src="holder.js/200x150/blankon/text:Static image" alt="...">
+                                                        </div>
+                                                        <div class="fileinput-preview fileinput-exists thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
+                                                        <div>
+                                                            <span class="btn btn-primary btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                                                            <a href="#" class="btn btn-danger fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Image upload widget type 3</label>
+                                                <div class="col-md-8">
+                                                    <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                        <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+                                                            <img data-src="holder.js/100%x100%/blankon/text:Fluid image" alt="...">
+                                                        </div>
+                                                        <div class="fileinput-preview fileinput-exists thumbnail" data-trigger="fileinput" style="max-width: 200px; max-height: 150px;"></div>
+                                                        <div>
+                                                            <span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                                                            <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- /.form-group -->
+                                        </div><!-- /.form-body -->
+                                        <div class="form-footer">
+                                            <div class="pull-right">
+                                                <button class="btn btn-danger mr-5">Cancel</button>
+                                                <button class="btn btn-success" type="submit">Submit</button>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div><!-- /.form-footer -->
+                                    </form>
+
+                                </div><!-- /.panel-body -->
+                            </div><!-- /.panel -->
+                            <!-- End file input - horizontal form -->
+
+                        </div>
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="callout callout-info mb-20">
+                                <p>Form control which supports multiple lines of text. Change <code>rows</code> attribute as necessary.</p>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <!-- Start textare - basic form -->
+                            <div class="panel z-depth-1">
+                                <div class="panel-heading">
+                                    <div class="pull-left">
+                                        <h3 class="panel-title">Textarea</h3>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button class="btn btn-sm waves-effect waves-green" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse"><i class="fa fa-angle-up"></i></button>
+                                        <button class="btn btn-sm waves-effect waves-red" data-action="remove" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div><!-- /.panel-heading -->
+                                <div class="panel-body no-padding">
+
+                                    <form action="#">
+                                        <div class="form-body">
+                                            <div class="form-group">
+                                                <label class="control-label">Textarea</label>
+                                                <textarea class="form-control" rows="5"></textarea>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">Without character count</label>
+                                                <textarea class="form-control" maxlength="20" rows="5" placeholder="20 character limit with no count character limit"></textarea>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">Character limit</label>
+                                                <textarea class="form-control character-limit" maxlength="20" rows="5" placeholder="20 character limit"></textarea>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">Character limit type 2</label>
+                                                <div class="input-field">
+                                                    <textarea id="textarea-counter" class="materialize-textarea input-counter" length="20"></textarea>
+                                                    <label for="textarea-counter">20 character limit</label>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="control-label">Textarea autosize</label>
+                                                <textarea class="form-control autosize" rows="1" placeholder="Try typing something..."></textarea>
+                                            </div><!-- /.form-group -->
+                                        </div><!-- /.form-body -->
+                                        <div class="form-footer">
+                                            <div class="pull-right">
+                                                <button class="btn btn-danger mr-5">Cancel</button>
+                                                <button class="btn btn-success" type="submit">Submit</button>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div><!-- /.form-footer -->
+                                    </form>
+
+                                </div><!-- /.panel-body -->
+                            </div><!-- /.panel -->
+                            <!-- End textare - basic form -->
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <!-- Start textare - horizontal form -->
+                            <div class="panel z-depth-1">
+                                <div class="panel-heading">
+                                    <div class="pull-left">
+                                        <h3 class="panel-title">Textarea</h3>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button class="btn btn-sm waves-effect waves-green" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse"><i class="fa fa-angle-up"></i></button>
+                                        <button class="btn btn-sm waves-effect waves-red" data-action="remove" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div><!-- /.panel-heading -->
+                                <div class="panel-body no-padding">
+
+                                    <form action="#" class="form-horizontal form-bordered">
+                                        <div class="form-body">
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Textarea</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" rows="5"></textarea>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Without character count</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" maxlength="20" rows="5" placeholder="20 character limit with no count character limit"></textarea>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Character limit</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control character-limit" maxlength="20" rows="5" placeholder="20 character limit"></textarea>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Character limit type 2</label>
+                                                <div class="col-md-8">
+                                                    <div class="input-field">
+                                                        <textarea id="textarea-counter-2" class="materialize-textarea input-counter" length="20"></textarea>
+                                                        <label for="textarea-counter-2">20 character limit</label>
+                                                    </div>
+                                                </div>
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Textarea autosize</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control autosize" rows="1" placeholder="Try typing something..."></textarea>
+                                                </div>
+                                            </div><!-- /.form-group -->
+                                        </div><!-- /.form-body -->
+                                        <div class="form-footer">
+                                            <div class="pull-right">
+                                                <button class="btn btn-danger mr-5">Cancel</button>
+                                                <button class="btn btn-success" type="submit">Submit</button>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div><!-- /.form-footer -->
+                                    </form>
+
+                                </div><!-- /.panel-body -->
+                            </div><!-- /.panel -->
+                            <!-- End textare - horizontal form -->
+
+                        </div>
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="callout callout-info mb-20">
+                                <p>Wrap inputs in grid columns, or any custom parent element, to easily enforce desired widths.</p>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Start input grid -->
+                            <div class="panel z-depth-1">
+                                <div class="panel-heading">
+                                    <div class="pull-left">
+                                        <h3 class="panel-title">Input Grid</h3>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button class="btn btn-sm waves-effect waves-green" data-action="collapse" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Collapse"><i class="fa fa-angle-up"></i></button>
+                                        <button class="btn btn-sm waves-effect waves-red" data-action="remove" data-container="body" data-toggle="tooltip" data-placement="top" data-title="Remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div><!-- /.panel-heading -->
+                                <div class="panel-body no-padding">
+
+                                    <form action="#">
+                                        <div class="form-body">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <input placeholder=".col-md-12" class="form-control" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <input placeholder=".col-md-6" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input placeholder=".col-md-6" class="form-control" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <input placeholder=".col-md-4" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input placeholder=".col-md-4" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <input placeholder=".col-md-4" class="form-control" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <input placeholder=".col-md-3" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <input placeholder=".col-md-3" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <input placeholder=".col-md-3" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <input placeholder=".col-md-3" class="form-control" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <input placeholder=".col-md-2" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <input placeholder=".col-md-2" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <input placeholder=".col-md-2" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <input placeholder=".col-md-2" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <input placeholder=".col-md-2" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <input placeholder=".col-md-2" class="form-control" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group no-margin">
+                                                <div class="row">
+                                                    <div class="col-md-1">
+                                                        <input placeholder=".col-md-1" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <input placeholder=".col-md-1" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <input placeholder=".col-md-1" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <input placeholder=".col-md-1" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <input placeholder=".col-md-1" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <input placeholder=".col-md-1" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <input placeholder=".col-md-1" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <input placeholder=".col-md-1" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <input placeholder=".col-md-1" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <input placeholder=".col-md-1" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <input placeholder=".col-md-1" class="form-control" type="text">
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <input placeholder=".col-md-1" class="form-control" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- /.form-body -->
+                                        <div class="form-footer">
+                                            <div class="pull-right">
+                                                <button class="btn btn-danger mr-5">Cancel</button>
+                                                <button class="btn btn-success" type="submit">Submit</button>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div><!-- /.form-footer -->
+                                    </form>
+
+                                </div><!-- /.panel-body -->
+                            </div><!-- /.panel -->
+                            <!--/ End input grid -->
+                        </div>
+                    </div><!-- /.row -->
+
+                </div><!-- /.body-content -->
+                <!--/ End body content -->
+
+                <!-- Start footer content -->
+                <footer class="footer-content">
+                    2014 - <span id="copyright-year"></span> &copy; Blankon Admin. Created by <a href="http://djavaui.com/" target="_blank">Djava UI</a>, Yogyakarta ID
+                    <span class="pull-right">0.01 GB(0%) of 15 GB used</span>
+                </footer><!-- /.footer-content -->
+                <!--/ End footer content -->
+
+            </section><!-- /#page-content -->
+            <!--/ END PAGE CONTENT -->
+
+        </section><!-- /#wrapper -->
+        <!--/ END WRAPPER -->
+
+        <!-- START @ADDITIONAL ELEMENT -->
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+            <a class="btn-floating btn-large red">
+                <i class="large material-icons">add</i>
+            </a>
+
+            <ul>
+                <li><a class="btn-floating red" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="All overview website"><i class="material-icons">insert_chart</i></a></li>
+                <li><a class="btn-floating yellow darken-1" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="All new members"><i class="material-icons">account_circle</i></a></li>
+                <li><a class="btn-floating green" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="All new post"><i class="material-icons">create</i></a></li>
+                <li><a class="btn-floating blue" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="Gallery images"><i class="material-icons">photo_camera</i></a></li>
+            </ul>
+        </div>
+
+        <div id="modal-search" class="modal bottom-sheet">
+
+            <div class="modal-content">
+                <h4 class="text-center">Type for searching...</h4>
+                <div class="container-fluid">
+                    <form class="col-md-12">
+                        <div class="row">
+                            <div class="input-field col-md-12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Type on here</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-success waves-effect">Search</button>
+            </div>
+        </div>
+        <!--/ END ADDITIONAL ELEMENT -->
+
+        <!-- START @BACK TOP -->
+        <div id="back-top" class="animated pulse circle">
+            <i class="fa fa-angle-up"></i>
+        </div> <!-- /#back-top -->
+        <!--/ END BACK TOP -->
+
+        <!-- START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time) -->
+        <!-- START @CORE PLUGINS -->
+        <script src="../../../assets/global/plugins/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/jquery-cookie/jquery.cookie.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/jquery-nicescroll/jquery.nicescroll.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/jquery.sparkline.min/index.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/jquery-easing-original/jquery.easing.1.3.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/ionsound/js/ion.sound.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/bootbox/bootbox.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/retina.js/dist/retina.min.js"></script>
+        <script src="../../../assets/commercial/plugins/mdb/js/mdb.min.js"></script>
+        <!--/ END CORE PLUGINS -->
+
+        <!-- START @PAGE LEVEL PLUGINS -->
+        <script src="../../../assets/global/plugins/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/jasny-bootstrap-fileinput/js/jasny-bootstrap.fileinput.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/holderjs/holder.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/jquery-autosize/jquery.autosize.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/chosen_v1.2.0/chosen.jquery.min.js"></script>
+        <!--/ END PAGE LEVEL PLUGINS -->
+
+        <!-- START @PAGE LEVEL SCRIPTS -->
+        <script src="../../../assets/admin/js/apps-material-design.js"></script>
+        <script src="../../../assets/admin/js/pages/blankon.form.element.js"></script>
+        <script src="../../../assets/admin/js/demo.js"></script>
+        <!--/ END PAGE LEVEL SCRIPTS -->
+        <!--/ END JAVASCRIPT SECTION -->
+
+        <!-- START GOOGLE ANALYTICS -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-55892530-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <!--/ END GOOGLE ANALYTICS -->
+
+    </body>
+    <!--/ END BODY -->
+
+</html>

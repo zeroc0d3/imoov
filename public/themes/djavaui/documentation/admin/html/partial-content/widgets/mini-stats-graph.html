@@ -1,0 +1,59 @@
+<div class="widgets-wrap">
+    <img src="../../../img/documentation/widget/overview/mini-stats-graph-doc.jpg" alt="..."/>
+    <div class="row">
+        <div class="col-sm-12">
+            <h4>Source code (HTML)</h4>
+<pre class="html-code">
+&lt;div class=&quot;mini-stat clearfix bg-lilac rounded&quot;&gt;
+    &lt;span class=&quot;mini-stat-chart&quot;&gt;
+        &lt;span id=&quot;sparkline&quot;&gt;1,2,3,4,5,6,7,8,9,10&lt;/span&gt;
+    &lt;/span&gt;&lt;!-- /.mini-stat-chart --&gt;
+    &lt;div class=&quot;mini-stat-info&quot;&gt;
+        &lt;span&gt;15,201&lt;/span&gt;
+        Average Sales
+    &lt;/div&gt;&lt;!-- /.mini-stat-info --&gt;
+&lt;/div&gt;&lt;!-- /.mini-stat --&gt;
+
+&lt;div class=&quot;mini-stat clearfix bg-success rounded&quot;&gt;
+    &lt;span class=&quot;mini-stat-chart&quot;&gt;
+        &lt;span id=&quot;sparkline2&quot;&gt;1,3,2,4,3,5,4,6,5,7&lt;/span&gt;
+    &lt;/span&gt;&lt;!-- /.mini-stat-chart --&gt;
+    &lt;div class=&quot;mini-stat-info&quot;&gt;
+        &lt;span&gt;15,201&lt;/span&gt;
+        Unique Visitors
+    &lt;/div&gt;&lt;!-- /.mini-stat-info --&gt;
+&lt;/div&gt;&lt;!-- /.mini-stat --&gt;
+</pre>
+
+            <h4>Required files (JS)</h4>
+<pre class="html-code">
+&lt;!-- PLUGINS JS --&gt;
+&lt;script src=&quot;assets/plugins/jquery/jquery-1.11.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/plugins/jquery-sparkline/jquery.sparkline.min.js&quot;&gt;&lt;/script&gt;
+</pre>
+
+            <h4>Script (JS)</h4>
+<pre class="js-code">
+// =========================================================================
+// MINI STAT GRAPH
+// =========================================================================
+$('#sparkline').sparkline('html',{
+    type: 'bar',
+    barColor: '#FFFFFF',
+    height: '50px',
+    barWidth: '5px'
+});
+$('#sparkline2').sparkline('html',{
+    type: 'line',
+    height: '60px',
+    defaultPixelsPerValue: 6,
+    spotColor: '#FFFFFF',
+    highlightSpotColor: '#FFFFFF',
+    highlightLineColor: '#FFFFFF',
+    fillColor: '#FFFFFF'
+});
+</pre>
+        </div>
+    </div>
+
+</div>

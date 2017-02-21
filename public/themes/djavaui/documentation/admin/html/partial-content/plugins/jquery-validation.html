@@ -1,0 +1,61 @@
+<p>
+    This jQuery plugin makes simple clientside form validation easy, whilst still offering plenty of customization options.
+</p>
+<p>
+    Official website : <a href="http://omnipotent.net/jquery.sparkline/" target="_blank">http://omnipotent.net/jquery.sparkline</a>
+</p>
+<p>
+    Demo page : <a href="../../../production/admin/html/form-validation.html" target="_blank">form-validation.html</a>
+</p>
+<hr class="dotted"/>
+<h4>SOURCE CODE (HTML)</h4>
+<pre class="html-code scroll">
+&lt;form class=&quot;form-horizontal form-bordered&quot; role=&quot;form&quot; id=&quot;basic-validate&quot; action=&quot;#&quot;&gt;
+    &lt;div class=&quot;form-body&quot;&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label class=&quot;col-sm-3 control-label&quot;&gt;Required &lt;span class=&quot;asterisk&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+            &lt;div class=&quot;col-sm-7&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;form-control input-sm&quot; name=&quot;bv_required&quot; placeholder=&quot;just type&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- /.form-group --&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label class=&quot;col-sm-3 control-label&quot;&gt;Email&lt;/label&gt;
+            &lt;div class=&quot;col-sm-7&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;form-control input-sm&quot; name=&quot;bv_email&quot; placeholder=&quot;your@mail.com&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- /.form-group --&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label class=&quot;col-sm-3 control-label&quot;&gt;Date&lt;/label&gt;
+            &lt;div class=&quot;col-sm-7&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;form-control input-sm&quot; name=&quot;bv_date&quot; placeholder=&quot;mm/dd/yyyy&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- /.form-group --&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label class=&quot;col-sm-3 control-label&quot;&gt;URL&lt;/label&gt;
+            &lt;div class=&quot;col-sm-7&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;form-control input-sm&quot; name=&quot;bv_url&quot; placeholder=&quot;http://yourwebsite.com&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- /.form-group --&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;label class=&quot;col-sm-3 control-label&quot;&gt;Username&lt;/label&gt;
+            &lt;div class=&quot;col-sm-7&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;form-control input-sm&quot; name=&quot;bv_username&quot; placeholder=&quot;just sample user ready : john, peter, bill, jokowi&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- /.form-group --&gt;
+    &lt;/div&gt;&lt;!-- /.form-body --&gt;
+    &lt;div class=&quot;form-footer&quot;&gt;
+        &lt;div class=&quot;col-sm-offset-3&quot;&gt;
+            &lt;button type=&quot;submit&quot; class=&quot;btn btn-theme&quot;&gt;Validate&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- /.form-footer --&gt;
+&lt;/form&gt;
+</pre>
+<h4>REQUIRED FILES (CSS)</h4>
+<pre class="html-code-no-menu">
+No CSS available
+</pre>
+
+<h4>REQUIRED FILES (JS)</h4>
+<pre class="html-code no-margin">
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/jquery-validation/jquery.validate.js&quot;&gt;&lt;/script&gt;
+</pre>

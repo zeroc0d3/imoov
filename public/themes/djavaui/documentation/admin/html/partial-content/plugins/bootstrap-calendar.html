@@ -1,0 +1,102 @@
+<p>
+    Full view calendar with year, month, week and day views based on templates with Twitter Bootstrap.
+</p>
+<p>
+    Official website : <a href="http://bootstrap-calendar.azurewebsites.net/" target="_blank">http://bootstrap-calendar.azurewebsites.net</a>
+</p>
+<p>
+    Demo page : <a href="../../../production/admin/html/page-calendar.html" target="_blank">page-calendar.html</a>
+</p>
+<hr class="dotted"/>
+<h4>SOURCE CODE (HTML)</h4>
+<pre class="html-code scroll">
+&lt;div class=&quot;calendar-toolbar&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-4 col-sm-4 col-xs-4&quot;&gt;
+            &lt;!-- Start offcanvas btn menu calendar: This menu will take position at the top of calendar (mobile only). --&gt;
+            &lt;div class=&quot;btn-group hidden-lg hidden-md&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-theme btn-sm dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
+                    &lt;i class=&quot;fa fa-bars fa-2x&quot;&gt;&lt;/i&gt;
+                &lt;/button&gt;
+                &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot; data-calendar-nav=&quot;prev&quot;&gt;Prev&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot; data-calendar-nav=&quot;today&quot;&gt;Today&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot; data-calendar-nav=&quot;next&quot;&gt;Next&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;hidden-sm hidden-xs&quot;&gt;
+                &lt;button class=&quot;btn btn-theme btn-sm rounded&quot; data-calendar-nav=&quot;prev&quot;&gt;&lt;i class=&quot;fa fa-angle-left&quot;&gt;&lt;/i&gt; Prev&lt;/button&gt;
+                &lt;button class=&quot;btn btn-theme btn-sm rounded&quot; data-calendar-nav=&quot;today&quot;&gt;Today&lt;/button&gt;
+                &lt;button class=&quot;btn btn-theme btn-sm rounded&quot; data-calendar-nav=&quot;next&quot;&gt;Next &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-4 col-sm-4 col-xs-4&quot;&gt;
+            &lt;div class=&quot;page-header no-border no-margin no-padding&quot;&gt;&lt;h4 class=&quot;no-border no-margin no-padding text-center text-capitalize&quot;&gt;&nbsp;&lt;/h4&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-4 col-sm-4 col-xs-4&quot;&gt;
+            &lt;!-- Start offcanvas btn menu calendar: This menu will take position at the top of calendar (mobile only). --&gt;
+            &lt;div class=&quot;btn-group calendar-menu-mobile pull-right hidden-lg hidden-md&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-theme btn-sm dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
+                    &lt;i class=&quot;fa fa-bars fa-2x&quot;&gt;&lt;/i&gt;
+                &lt;/button&gt;
+                &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot; data-calendar-view=&quot;year&quot;&gt;Prev&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot; data-calendar-view=&quot;month&quot;&gt;Month&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot; data-calendar-view=&quot;week&quot;&gt;Week&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;#&quot; data-calendar-view=&quot;day&quot;&gt;Day&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;pull-right hidden-sm hidden-xs&quot;&gt;
+                &lt;button class=&quot;btn btn-theme btn-sm rounded&quot; data-calendar-view=&quot;year&quot;&gt;Year&lt;/button&gt;
+                &lt;button class=&quot;btn btn-theme btn-sm active rounded&quot; data-calendar-view=&quot;month&quot;&gt;Month&lt;/button&gt;
+                &lt;button class=&quot;btn btn-theme btn-sm rounded&quot; data-calendar-view=&quot;week&quot;&gt;Week&lt;/button&gt;
+                &lt;button class=&quot;btn btn-theme btn-sm rounded&quot; data-calendar-view=&quot;day&quot;&gt;Day&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;calendar&quot; class=&quot;rounded&quot;&gt;&lt;/div&gt;
+</pre>
+<h4>REQUIRED FILES (CSS)</h4>
+<pre class="html-code">
+&lt;link href=&quot;../../../assets/global/plugins/bower_components/bootstrap-calendar/css/calendar.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+</pre>
+
+<h4>REQUIRED FILES (JS)</h4>
+<pre class="html-code no-margin">
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/jstimezonedetect/jstz.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/bootstrap-calendar/js/language/nl-NL.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/bootstrap-calendar/js/language/fr-FR.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/bootstrap-calendar/js/language/de-DE.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/bootstrap-calendar/js/language/el-GR.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/bootstrap-calendar/js/language/it-IT.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/bootstrap-calendar/js/language/pl-PL.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/bootstrap-calendar/js/language/pt-BR.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/bootstrap-calendar/js/language/ro-RO.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/bootstrap-calendar/js/language/es-MX.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/bootstrap-calendar/js/language/es-ES.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/bootstrap-calendar/js/language/ru-RU.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/bootstrap-calendar/js/language/sv-SE.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/bootstrap-calendar/js/language/zh-CN.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/bootstrap-calendar/js/language/cs-CZ.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/bootstrap-calendar/js/language/ko-KR.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/bootstrap-calendar/js/language/id-ID.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/bootstrap-calendar/js/calendar.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- EXAMPLE USING BOOTSTRAP CALENDAR, OPEN THIS FILE TO EDIT --&gt;
+&lt;script src=&quot;../../../assets/admin/js/pages/blankon.calendar.js&quot;&gt;&lt;/script&gt;
+</pre>

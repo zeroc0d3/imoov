@@ -1,0 +1,44 @@
+/* ========================================================================
+ * COMPONENT MISC
+ * ======================================================================== */
+.no-margin{
+  margin: 0 !important;
+}
+.no-padding{
+  padding: 0 !important;
+}
+.mt-25{
+  margin-top: 25px !important;
+}
+
+/* ========================================================================
+ * COMMON
+ * ======================================================================== */
+.section-header{
+  margin-bottom: 45px;
+}
+
+/* ========================================================================
+ * BACK TOP
+ * ======================================================================== */
+#back-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #FCFCFC;
+  border: 1px solid $color-border;
+  @include resize(40px);
+  @include transition(all 0.2s ease-out 0s);
+  &:hover{
+    i{
+      color: darken($color-border, 10%);
+    }
+  }
+  i{
+    font-size: 20px;
+    line-height: 35px;
+    color: $color-border;
+  }
+}

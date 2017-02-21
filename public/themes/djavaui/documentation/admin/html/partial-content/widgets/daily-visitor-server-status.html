@@ -1,0 +1,253 @@
+<div class="widgets-wrap">
+    <img src="../../../img/documentation/widget/overview/daily-visitor-server-status-doc.jpg" alt="daily visitor and server status"/>
+    <h4>Source code (HTML)</h4>
+    <div class="row">
+        <div class="col-sm-12">
+<pre class="html-code scroll">
+&lt;!-- Start widget visitor chart --&gt;
+&lt;div class=&quot;panel stat-stack widget-visitor rounded&quot;&gt;
+    &lt;div class=&quot;panel-body no-padding br-3&quot;&gt;
+        &lt;div class=&quot;row row-merge&quot;&gt;
+            &lt;div class=&quot;col-sm-8&quot;&gt;
+                &lt;div class=&quot;panel panel-theme stat-left no-margin no-box-shadow&quot;&gt;
+                    &lt;div class=&quot;panel-heading no-border&quot;&gt;
+                        &lt;div class=&quot;pull-left&quot;&gt;
+                            &lt;h3 class=&quot;panel-title&quot;&gt;Daily Visitor&lt;/h3&gt;
+                        &lt;/div&gt;&lt;!-- /.pull-left --&gt;
+                        &lt;div class=&quot;pull-right&quot;&gt;
+                            &lt;div class=&quot;btn-group&quot;&gt;
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-sm btn-theme dropdown-toggle no-border&quot; data-toggle=&quot;dropdown&quot;&gt;
+                                    Duration &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+                                &lt;/button&gt;
+                                &lt;ul class=&quot;dropdown-menu dropdown-menu-right no-border&quot;&gt;
+                                    &lt;li class=&quot;dropdown-header&quot;&gt;Select duration :&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Year&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Month&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Week&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Day&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;&lt;!-- /.pull-right --&gt;
+                        &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+                    &lt;/div&gt;&lt;!-- /.panel-heading --&gt;
+                    &lt;div class=&quot;panel-body bg-theme&quot;&gt;
+                        &lt;div id=&quot;visitor-chart&quot; class=&quot;resize-chart&quot;&gt;&lt;/div&gt;&lt;!-- /#visitor-chart --&gt;
+                    &lt;/div&gt;&lt;!-- /.panel-body --&gt;
+                    &lt;div class=&quot;panel-footer no-border-top&quot;&gt;
+                        &lt;div class=&quot;row text-center&quot;&gt;
+                            &lt;div class=&quot;col-xs-4 col-xs-override border-right dotted&quot;&gt;
+                                &lt;p class=&quot;text-danger text-strong mb-0&quot;&gt;- 5%&lt;/p&gt;
+                                &lt;p class=&quot;h3 text-strong mb-0 mt-10&quot;&gt;7,341&lt;/p&gt;
+                                &lt;p class=&quot;text-muted&quot;&gt;Visits Today&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-xs-4 col-xs-override border-right dotted&quot;&gt;
+                                &lt;p class=&quot;text-success text-strong mb-0&quot;&gt;+ 32%&lt;/p&gt;
+                                &lt;p class=&quot;h3 text-strong mb-0 mt-10&quot;&gt;23,762&lt;/p&gt;
+                                &lt;p class=&quot;text-muted&quot;&gt;Unique Visitors&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;col-xs-4 col-xs-override&quot;&gt;
+                                &lt;p class=&quot;text-success text-strong mb-0&quot;&gt;+ 76%&lt;/p&gt;
+                                &lt;p class=&quot;h3 text-strong mb-0 mt-10&quot;&gt;70,112&lt;/p&gt;
+                                &lt;p class=&quot;text-muted&quot;&gt;Page Views&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;&lt;!-- /.panel-footer --&gt;
+                &lt;/div&gt;&lt;!-- /.panel --&gt;
+            &lt;/div&gt;&lt;!-- /.col-sm-8 --&gt;
+            &lt;div class=&quot;col-sm-4&quot;&gt;
+                &lt;div class=&quot;panel stat-right no-margin no-box-shadow&quot;&gt;
+                    &lt;div class=&quot;panel-body&quot;&gt;
+                        &lt;h4 class=&quot;no-margin&quot;&gt;Server Status&lt;/h4&gt;
+                        &lt;p class=&quot;text-muted&quot;&gt;Summary of the server status.&lt;/p&gt;
+
+                        &lt;span&gt;Domains&lt;/span&gt;&lt;span class=&quot;pull-right&quot;&gt;(7/10)&lt;/span&gt;
+                        &lt;div class=&quot;progress progress-xs rounded&quot;&gt;
+                            &lt;div class=&quot;progress-bar progress-bar-lilac&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;70&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 70%&quot;&gt;&lt;/div&gt;
+                        &lt;/div&gt;&lt;!-- /.progress --&gt;
+
+                        &lt;span&gt;Databases&lt;/span&gt;&lt;span class=&quot;pull-right&quot;&gt;(45/100)&lt;/span&gt;
+                        &lt;div class=&quot;progress progress-xs rounded&quot;&gt;
+                            &lt;div class=&quot;progress-bar progress-bar-teal&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;45&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 45%&quot;&gt;&lt;/div&gt;
+                        &lt;/div&gt;&lt;!-- /.progress --&gt;
+
+                        &lt;span&gt;Email Account&lt;/span&gt;&lt;span class=&quot;pull-right&quot;&gt;(30/50)&lt;/span&gt;
+                        &lt;div class=&quot;progress progress-xs rounded&quot;&gt;
+                            &lt;div class=&quot;progress-bar progress-bar-warning&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 60%&quot;&gt;&lt;/div&gt;
+                        &lt;/div&gt;&lt;!-- /.progress --&gt;
+
+                        &lt;span&gt;Memory Usage&lt;/span&gt;&lt;span class=&quot;pull-right&quot;&gt;(45.2%)&lt;/span&gt;
+                        &lt;div class=&quot;progress progress-xs rounded&quot;&gt;
+                            &lt;div class=&quot;progress-bar progress-bar-success&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;45&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 45%&quot;&gt;&lt;/div&gt;
+                        &lt;/div&gt;&lt;!-- /.progress --&gt;
+
+                        &lt;span&gt;Disk Usage&lt;/span&gt;&lt;span class=&quot;pull-right&quot;&gt;(68.2%)&lt;/span&gt;
+                        &lt;div class=&quot;progress progress-xs rounded&quot;&gt;
+                            &lt;div class=&quot;progress-bar progress-bar-danger&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;68&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 68%&quot;&gt;&lt;/div&gt;
+                        &lt;/div&gt;&lt;!-- /.progress --&gt;
+
+                        &lt;span&gt;CPU Usage&lt;/span&gt;&lt;span class=&quot;pull-right&quot;&gt;(35.05 - 30 cpus)&lt;/span&gt;
+                        &lt;div class=&quot;progress progress-xs rounded&quot;&gt;
+                            &lt;div class=&quot;progress-bar progress-bar-primary&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;78&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 78%&quot;&gt;&lt;/div&gt;
+                        &lt;/div&gt;&lt;!-- /.progress --&gt;
+                    &lt;/div&gt;&lt;!-- /.panel-body --&gt;
+                    &lt;div class=&quot;panel-footer&quot;&gt;
+                        &lt;div id=&quot;realtime-status-chart&quot; class=&quot;resize-chart&quot;&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;!-- /.panel --&gt;
+            &lt;/div&gt;&lt;!-- /.col-sm-4 --&gt;
+        &lt;/div&gt;&lt;!-- /.row --&gt;
+    &lt;/div&gt;&lt;!-- /.panel-body --&gt;
+&lt;/div&gt;&lt;!-- /.panel --&gt;
+&lt;!--/ End widget visitor chart --&gt;
+</pre>
+
+            <h4>Required files (JS)</h4>
+<pre class="html-code">
+&lt;!-- PLUGINS JS --&gt;
+&lt;script src=&quot;assets/plugins/jquery/jquery-1.11.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/plugins/flot/jquery.flot.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/plugins/flot/jquery.flot.spline.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/plugins/flot/jquery.flot.categories.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/plugins/flot/jquery.flot.tooltip.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/plugins/flot/jquery.flot.resize.min.js&quot;&gt;&lt;/script&gt;
+</pre>
+
+            <h4>Script (JS)</h4>
+<pre class="js-code scroll">
+// =========================================================================
+// VISITOR CHART & SERVER STATUS
+// =========================================================================
+if($('#visitor-chart').length){
+    $.plot("#visitor-chart", [{
+        label: "New Visitor",
+        color: "rgba(0, 177, 225, 0.35)",
+        data: [
+            ["Jan", 450],
+            ["Feb", 532],
+            ["Mar", 367],
+            ["Apr", 245],
+            ["May", 674],
+            ["Jun", 897],
+            ["Jul", 745]
+        ]
+    }, {
+        label: "Old Visitor",
+        color: "rgba(233, 87, 63, 0.36)",
+        data: [
+            ["Jan", 362],
+            ["Feb", 452],
+            ["Mar", 653],
+            ["Apr", 756],
+            ["May", 670],
+            ["Jun", 352],
+            ["Jul", 243]
+        ]
+    }], {
+        series: {
+            lines: { show: false },
+            splines: {
+                show: true,
+                tension: 0.4,
+                lineWidth: 2,
+                fill: 0.5
+            },
+            points: {
+                show: true,
+                radius: 4
+            }
+        },
+        grid: {
+            borderColor: "transparent",
+            borderWidth: 0,
+            hoverable: true,
+            backgroundColor: "transparent"
+        },
+        tooltip: true,
+        tooltipOpts: { content: "%x : %y" },
+        xaxis: {
+            tickColor: "transparent",
+            mode: "categories"
+        },
+        yaxis: { tickColor: "transparent" },
+        shadowSize: 0
+    });
+}
+</pre>
+<pre class="js-code scroll no-margin">
+// =========================================================================
+// REAL TIME STATUS
+// =========================================================================
+if($('#realtime-status-chart').length){
+    var data = [], totalPoints = 50;
+
+    function getRandomData() {
+
+        if (data.length > 0)
+            data = data.slice(1);
+
+        // Do a random walk
+        while (data.length < totalPoints) {
+
+            var prev = data.length > 0 ? data[data.length - 1] : 50,
+                y = prev + Math.random() * 10 - 5;
+
+            if (y < 0) {
+                y = 0;
+            } else if (y > 100) {
+                y = 100;
+            }
+            data.push(y);
+        }
+
+        // Zip the generated y values with the x values
+        var res = [];
+        for (var i = 0; i < data.length; ++i) {
+            res.push([i, data[i]])
+        }
+        return res;
+    }
+
+
+    // Set up the control widget
+    var updateInterval = 1000;
+
+    var plot4 = $.plot("#realtime-status-chart", [ getRandomData() ], {
+        colors: ["#F6BB42"],
+        series: {
+            lines: {
+                fill: true,
+                lineWidth: 0
+            },
+            shadowSize: 0	// Drawing is faster without shadows
+        },
+        grid: {
+            borderColor: '#ddd',
+            borderWidth: 1,
+            labelMargin: 10
+        },
+        xaxis: {
+            color: '#eee'
+        },
+        yaxis: {
+            min: 0,
+            max: 100,
+            color: '#eee'
+        }
+    });
+
+    function update() {
+
+        plot4.setData([getRandomData()]);
+
+        // Since the axes don't change, we don't need to call plot.setupGrid()
+        plot4.draw();
+        setTimeout(update, updateInterval);
+    }
+
+    update();
+}
+</pre>
+        </div>
+    </div>
+
+</div>

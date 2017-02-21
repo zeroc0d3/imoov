@@ -1,0 +1,85 @@
+<p>
+    Add Chart.js to your angular applications
+
+    tc-angular-chartjs provides you with directives for all chartjs chart types.
+</p>
+<ul>
+    <li>Line Charts</li>
+    <li>Bar Charts</li>
+    <li>Radar Charts</li>
+    <li>Polar Area Charts</li>
+    <li>Pie Charts</li>
+    <li>Doughnut Charts</li>
+</ul>
+<p>
+    Official website : <a href="http://carlcraig.github.io/tc-angular-chartjs/" target="_blank">http://carlcraig.github.io/tc-angular-chartjs</a>
+</p>
+<hr class="dotted"/>
+<h4>SOURCE CODE (JS)</h4>
+<pre class="js-code scroll">
+angular.module('blankonApp.charts.chartjs', [])
+
+        // =========================================================================
+        // BAR
+        // =========================================================================
+        .controller('ChartjsBarCtrl', function ($scope) {
+
+            // Chart.js Data
+            $scope.data = {
+                labels : ["January","February","March","April","May","June","July"],
+                datasets : [
+                    {
+                        fillColor : "#E9573F",
+                        strokeColor : "#f55b43",
+                        data : [65,59,90,81,56,55,40]
+                    },
+                    {
+                        fillColor : "#00B1E1",
+                        strokeColor : "#00c3f4",
+                        data : [28,48,40,19,96,27,100]
+                    }
+                ]
+            };
+
+            // Chart.js Options
+            $scope.options =  {
+
+                // Sets the chart to be responsive
+                responsive: true,
+
+                //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
+                scaleBeginAtZero : true,
+
+                //Boolean - Whether grid lines are shown across the chart
+                scaleShowGridLines : true,
+
+                //String - Colour of the grid lines
+                scaleGridLineColor : "rgba(0,0,0,.05)",
+
+                //Number - Width of the grid lines
+                scaleGridLineWidth : 1,
+
+                //Boolean - If there is a stroke on each bar
+                barShowStroke : true,
+
+                //Number - Pixel width of the bar stroke
+                barStrokeWidth : 2,
+
+                //Number - Spacing between each of the X value sets
+                barValueSpacing : 5,
+
+                //Number - Spacing between data sets within X values
+                barDatasetSpacing : 1
+
+                //String - A legend template
+                // If you use legend just type on attribut element "auto-legend"
+                //legendTemplate : '<ul class="tc-chart-js-legend"><% for (var i=0; i<datasets.length; i++){%><li><span style="background-color:<%=datasets[i].fillColor%>"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>'
+            };
+
+        })
+
+</pre>
+<h4>REQUIRED FILES (JS)</h4>
+<pre class="html-code">
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/chartjs/Chart.min.js&quot;&gt;&lt;/script&gt;
+</pre>

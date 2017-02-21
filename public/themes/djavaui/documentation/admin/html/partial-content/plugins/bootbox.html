@@ -1,0 +1,64 @@
+<p>
+    Bootbox.js is a small JavaScript library which allows you to create programmatic dialog boxes using Bootstrap modals, without having to worry about creating, managing or removing any of the required DOM elements or JS event handlers.
+</p>
+<p>
+    Official website : <a href="http://bootboxjs.com/" target="_blank">http://bootboxjs.com</a>
+</p>
+<hr class="dotted"/>
+<h4>REQUIRED FILES (JS)</h4>
+<pre class="html-code">
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/bootbox/bootbox.js&quot;&gt;&lt;/script&gt;
+</pre>
+<h4>SCRIPT (JS)</h4>
+<pre class="js-code no-margin">
+&lt;!-- ALERT --&gt;
+bootbox.alert(&quot;Hello world!&quot;, function() {
+    Example.show(&quot;Hello world callback&quot;);
+});
+
+&lt;!-- CONFIRM --&gt;
+bootbox.confirm(&quot;Are you sure?&quot;, function(result) {
+    Example.show(&quot;Confirm result: &quot;+result);
+});
+
+&lt;!-- PROMPT --&gt;
+bootbox.prompt(&quot;What is your name?&quot;, function(result) {
+    if (result === null) {
+        Example.show(&quot;Prompt dismissed&quot;);
+    } else {
+        Example.show(&quot;Hi &lt;b&gt;&quot;+result+&quot;&lt;/b&gt;&quot;);
+    }
+});
+
+&lt;!-- CUSTOM DIALOG --&gt;
+bootbox.dialog(
+    {
+        message: &quot;I am a custom dialog&quot;,
+        title: &quot;Custom title&quot;,
+        buttons: {
+        success: {
+        label: &quot;Success!&quot;,
+        className: &quot;btn-success&quot;,
+        callback: function() {
+        Example.show(&quot;great success&quot;);
+    }
+},
+danger:
+    {
+        label: &quot;Danger!&quot;,
+        className: &quot;btn-danger&quot;,
+        callback: function() {
+        Example.show(&quot;uh oh, look out!&quot;);
+    }
+},
+main:
+    {
+        label: &quot;Click ME!&quot;,
+        className: &quot;btn-primary&quot;,
+        callback: function() {
+        Example.show(&quot;Primary button&quot;);
+    }
+}
+}
+});
+</pre>

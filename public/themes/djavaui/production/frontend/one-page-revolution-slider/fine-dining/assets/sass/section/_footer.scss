@@ -1,0 +1,60 @@
+/* ========================================================================
+ * SECTION FOOTER
+ * ======================================================================== */
+#footer{
+  border-top: 1px solid $color-border;
+  text-align: center;
+  padding: 40px 0;
+  .navbar{
+    margin-bottom: 15px;
+  }
+  .navbar-nav{
+    float: inherit;
+    width: 370px;
+    margin: 0 auto;
+    li{
+      a{
+        color: #969696;
+        opacity: 0.5;
+        @include transition(opacity 0.3s linear 0s);
+        &:hover, &:focus, &:visited, &:active{
+          background-color: transparent;
+          opacity: 1;
+        }
+      }
+      &.active{
+        a{
+          opacity: 1 !important;
+        }
+      }
+    }
+  }
+  .footer-btn-social{
+    margin-bottom: 20px;
+    .btn{
+      &:first-child{
+        margin-right: 6px;
+      }
+    }
+  }
+  .footer-copyright{
+    p, a{
+      margin-bottom: 0;
+      color: #A9A9A9;
+    }
+  }
+}
+@media (max-width: 767px) {
+  #footer{
+    .navbar-toggle{
+      float: left;
+    }
+  }
+}
+@media (max-width: 640px) {
+  #footer{
+    .navbar-nav{
+      width: 100%;
+    }
+  }
+}

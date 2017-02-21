@@ -1,0 +1,129 @@
+<p>
+    a flexible JavaScript library that provides a strong foundation for building robust typeaheads.
+</p>
+<p>
+    Official website : <a href="http://twitter.github.io/typeahead.js/" target="_blank">http://twitter.github.io/typeahead.js</a>
+</p>
+<p>
+    Demo page : try typing word on input search navbar top Blankon
+</p>
+<p class="no-margin">
+    Available on Blankon : All page
+</p>
+<hr class="dotted"/>
+<h4>SOURCE CODE (HTML)</h4>
+<pre class="html-code">
+&lt;input type=&quot;text&quot; class=&quot;typeahead&quot;&gt;
+</pre>
+<h4>REQUIRED FILES (CSS)</h4>
+<pre class="html-code-no-menu">
+No CSS available
+</pre>
+<h4>REQUIRED FILES (JS)</h4>
+<pre class="html-code">
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/typeahead/handlebars.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/typeahead/typeahead.bundle.min.js&quot;&gt;&lt;/script&gt;
+</pre>
+<h4>REQUIRED FILES (JSON)</h4>
+<pre class="js-code scroll">
+[
+    {
+        "value": "typeahead",
+        "name": "typeahead",
+        "description": "This is a really nice typeahead using json file – typing a lot of words here as 'blankon'",
+        "icon": "smile-o",
+        "color": "success",
+        "tokens": [
+            "a","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"
+        ]
+    },
+    {
+        "value": "blankon",
+        "name": "blankon - fullpack admin theme",
+        "description": "Blankon is a theme fullpack admin template powered by Twitter bootstrap 3 front-end framework. Included are multiple example pages, elements styles, and javascript widgets to get your project started.",
+        "icon": "thumbs-o-up",
+        "color": "success",
+        "tokens": [
+            "blankon"
+        ]
+    },
+    {
+        "value": "behance",
+        "name": "behance",
+        "description": "Showcase and discover the latest work from top online portfolios by creative professionals across industries.",
+        "icon": "behance-square",
+        "color": "primary",
+        "tokens": [
+            "behance"
+        ]
+    },
+    {
+        "value": "bitbucket",
+        "name": "bitbucket",
+        "description": "Bitbucket is a free code DVCS hosting site for Git and Mercurial. Manage your development with a hosted wiki, issue tracker and source code.",
+        "icon": "bitbucket",
+        "color": "info",
+        "tokens": [
+            "bitbucket"
+        ]
+    },
+    {
+        "value": "bobo",
+        "name": "bobo - istilahe wong jowo turu dab",
+        "description": "Inyong ngimpi karo jupe, wealah ....",
+        "icon": "heart",
+        "color": "danger",
+        "tokens": [
+            "bobo"
+        ]
+    }
+    ,
+    {
+        "value": "bootstrap",
+        "name": "Bootstrap",
+        "description": "Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.",
+        "icon": "code",
+        "color": "lilac",
+        "tokens": [
+            "bootstrap"
+        ]
+    }
+]
+</pre>
+<h4>SCRIPTS (JS)</h4>
+<pre class="js-code scroll no-margin">
+$(document).ready(function(){
+    var repos;
+
+    repos = new Bloodhound({
+        datumTokenizer: function(d) { return d.tokens; },
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        prefetch: '[PATH JSON RESOURCES]'
+    });
+
+    repos.initialize();
+
+    $('.typeahead').typeahead(null, {
+        name: 'typeahead-sample',
+        source: repos.ttAdapter(),
+        templates: {
+        empty: [
+            '&lt;div class=&quot;empty-message&quot;&gt;',
+            'unable to find your type that match the current query',
+            '&lt;/div&gt;'
+        ].join('\n'),
+        suggestion: Handlebars.compile([
+            '&lt;a href=&quot;javascript:void(0);&quot; class=&quot;media border-dotted animated fadeIn&quot;&gt;',
+            '&lt;span class=&quot;media-object pull-left&quot;&gt;',
+            '&lt;i class=&quot;fa fa-{{icon}} bg-{{color}}&quot;&gt;&lt;/i&gt;',
+            '&lt;/span&gt;',
+            '&lt;span class=&quot;media-body&quot;&gt;',
+            '&lt;span class=&quot;media-heading&quot;&gt;{{name}}&lt;/span&gt;',
+            '&lt;span class=&quot;media-text&quot;&gt;{{description}}&lt;/span&gt;',
+            '&lt;/span&gt;',
+            '&lt;/a&gt;'
+        ].join(''))
+        }
+    });
+});
+</pre>

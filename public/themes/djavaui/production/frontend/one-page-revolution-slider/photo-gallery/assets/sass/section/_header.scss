@@ -1,0 +1,106 @@
+/* ========================================================================
+ * SECTION HEADER
+ * ======================================================================== */
+#header{
+  @include transition(opacity 0.3s linear 0s);
+  &:hover{
+    opacity: 1;
+  }
+  .navbar{
+    margin: 0 60px;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0.6;
+    .navbar-brand{
+      padding: 6px 0 0 6px;
+      > img{
+        width: 130px;
+        height: auto;
+      }
+    }
+  }
+  .navbar-collapse{
+    .navbar-navigation{
+      margin-right: 15px;
+      li{
+        a{
+          color: darken(#ffffff, 15%);
+          opacity: 0.7;
+          padding: 15px 10px !important;
+          @include transition(opacity 0.3s linear 0s);
+          &:hover, &:focus, &:visited, &:active{
+            background-color: transparent;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .navbar-account{
+      margin: 11px 0 9px 0;
+      li{
+        .btn{
+          padding: 3px 8px !important;
+          outline: none;
+          &:first-child{
+            margin-right: 10px;
+          }
+          &.btn-success{
+            &:hover, &:focus, &:visited{
+              background-color: darken($brand-success, 10%);
+              border: 1px solid darken($brand-success, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: $screen-lg+ 200px){
+  #header{
+    width: 1280px;
+    margin: 0 auto;
+    .navbar{
+      width: 1280px;
+      margin: 0 auto;
+    }
+  }
+}
+@media(min-width:767px) {
+  #header{
+    .navbar {
+      padding: 10px 0;
+      @include transition(background .5s ease-in-out,padding .5s ease-in-out);
+    }
+    .top-nav-collapse {
+      padding: 0;
+      &.navbar{
+        opacity: 1;
+        background-color: #2D2D2D;
+        margin: 0;
+        .navbar-nav{
+          li{
+            a{
+              color: #E7E7E7;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  #header{
+    .navbar{
+      background-color: #2D2D2D;
+      opacity: 1;
+      padding: 5px 0;
+      .navbar-brand{
+        padding: 6px 0 0 9px;
+        > img{
+          width: 115px;
+          margin-left: 10px;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+<p>
+    The idea is simple: Add a loading bar / progress bar whenever an XHR request goes out in angular. Multiple requests within the same time period get bundled together such that each response increments the progress bar by the appropriate amount.
+
+    This is mostly cool because you simply include it in your app, and it works. There's no complicated setup, and no need to maintain the state of the loading bar; it's all handled automatically by the interceptor.
+
+</p>
+<p>
+    <b>Requirements: AngularJS 1.2+</b>
+</p>
+<p>
+    <b>File Size: 2.4Kb minified, 0.5Kb gzipped</b>
+</p>
+<p>
+    Official website : <a href="https://chieffancypants.github.io/angular-loading-bar/" target="_blank">https://chieffancypants.github.io/angular-loading-bar</a>
+</p>
+<hr class="dotted"/>
+<h4>SOURCE CODE (JS)</h4>
+<pre class="js-code">
+angular.module('myApp', ['angular-loading-bar'])
+</pre>
+<h4>REQUIRED FILES (CSS)</h4>
+<pre class="html-code">
+&lt;link data-ng-href=&quot;{{settings.pluginPath}}/angular-loading-bar/build/loading-bar.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+</pre>
+<h4>REQUIRED FILES (JS)</h4>
+<pre class="html-code">
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/angular-loading-bar/build/loading-bar.min.js&quot;&gt;&lt;/script&gt;
+</pre>
+<h4>HOW TO USE</h4>
+<dl class="dl-horizontal plugins">
+    <dt>BOWER</dt>
+    <dd>: bower install angular-loading-bar</dd>
+    <dt>NPM</dt>
+    <dd>: npm install angular-loading-bar</dd>
+</dl>

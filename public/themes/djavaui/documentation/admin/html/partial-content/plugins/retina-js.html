@@ -1,0 +1,47 @@
+<p>
+    retina.js is an open source script that makes it easy to serve high-resolution images to devices with retina displays.
+</p>
+<p>
+    Official website : <a href="http://imulus.github.io/retinajs/" target="_blank">http://imulus.github.io/retinajs</a>
+</p>
+<hr class="dotted"/>
+<h4>How it works</h4>
+<p>
+    When your users load a page, retina.js checks each image on the page to see if there is a high-resolution version of that image on your server. If a high-resolution variant exists, the script will swap in that image in-place.
+</p>
+<p>
+    The script assumes you use Apple's prescribed high-resolution modifier (@2x) to denote high-resolution image variants on your server. It is also possible to override this by manually specifying the URL for the @2x images using data-at2x attributes.
+</p>
+<p>
+    For example, if you have an image on your page that looks like this:
+</p>
+<pre class="html-code">&lt;img src="/images/my_image.png" /&gt;</pre>
+<p>
+    The script will check your server to see if an alternative image exists at /images/my_image@2x.png
+
+    However, if you have:
+</p>
+<pre class="html-code">&lt;img src="/images/my_image.png" data-at2x="http://example.com/my_image@2x.png" /&gt;</pre>
+<p>The script will use <code>http://example.com/my_image@2x.png</code> as the high-resolution image. No checks to the server will be performed.</p>
+
+<h4>How to use</h4>
+<p>
+    The JavaScript helper script automatically replaces images on your page with high-resolution variants (if they exist). To use it, download the script and include it at the bottom of your page.
+</p>
+<ol class="list-number">
+    <li>
+        <p>
+            Place the retina.js file on your server
+        </p>
+    </li>
+    <li>
+        <p>
+            Include the script on your page (put it at the bottom of your template, before your closing <code>&lt;/body&gt;</code> tag)
+        </p>
+        <pre class="html-code">&lt;script type="text/javascript" src="/scripts/retina.js"&gt;&lt;/script&gt;</pre>
+        <p>
+            You can also exclude images that have no high-res version. Simply add the data-no-retina attribute.
+        </p>
+        <pre class="html-code">&lt;img src="/path/to/image" data-no-retina /&gt;</pre>
+    </li>
+</ol>

@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+    <!-- START @HEAD -->
+    <head>
+        <!-- START @META SECTION -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Blankon is a theme fullpack admin template powered by Twitter bootstrap 3 front-end framework. Included are multiple example pages, elements styles, and javascript widgets to get your project started.">
+        <meta name="keywords" content="admin, admin template, bootstrap3, clean, fontawesome4, good documentation, lightweight admin, responsive dashboard, webapp">
+        <meta name="author" content="Djava UI">
+        <title>INVOICE | BLANKON - Fullpack Admin Theme</title>
+        <!--/ END META SECTION -->
+
+        <!-- START @FAVICONS -->
+        <link href="http://themes.djavaui.com/blankon-fullpack-admin-theme/img/ico/html/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+        <link href="http://themes.djavaui.com/blankon-fullpack-admin-theme/img/ico/html/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+        <link href="http://themes.djavaui.com/blankon-fullpack-admin-theme/img/ico/html/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+        <link href="http://themes.djavaui.com/blankon-fullpack-admin-theme/img/ico/html/apple-touch-icon-57x57-precomposed.png" rel="apple-touch-icon-precomposed">
+        <link href="http://themes.djavaui.com/blankon-fullpack-admin-theme/img/ico/html/apple-touch-icon.png" rel="shortcut icon">
+        <!--/ END FAVICONS -->
+
+        <!-- START @FONT STYLES -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--/ END FONT STYLES -->
+
+        <!-- START @GLOBAL MANDATORY STYLES -->
+        <link href="../../../assets/global/plugins/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../assets/commercial/plugins/mdb/css/mdb.min.css" rel="stylesheet">
+        <!--/ END GLOBAL MANDATORY STYLES -->
+
+        <!-- START @PAGE LEVEL STYLES -->
+        <link href="../../../assets/global/plugins/bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../assets/global/plugins/bower_components/animate.css/animate.min.css" rel="stylesheet">
+        <!--/ END PAGE LEVEL STYLES -->
+
+        <!-- START @PAGE LEVEL STYLES -->
+        <!-- load cubeportfolio css file -->
+        <link href="../../../assets/commercial/plugins/cube-portfolio/cubeportfolio/css/cubeportfolio.css" rel="stylesheet">
+        <!--/ END PAGE LEVEL STYLES -->
+
+        <!-- START @THEME STYLES -->
+        <link href="../../../assets/admin/css/layout.css" rel="stylesheet">
+        <link href="../../../assets/admin/css/components.css" rel="stylesheet">
+        <link href="../../../assets/admin/css/plugins.css" rel="stylesheet">
+        <link href="../../../assets/admin/css/themes/material-design.theme.css" rel="stylesheet" id="theme">
+        <link href="../../../assets/admin/css/material-custom.css" rel="stylesheet">
+        <link href="../../../assets/admin/css/pages/invoice.css" rel="stylesheet">
+        <link href="../../../assets/admin/css/custom.css" rel="stylesheet">
+        <!--/ END THEME STYLES -->
+
+        <!-- START @IE SUPPORT -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="../../../assets/global/plugins/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/respond-minmax/dest/respond.min.js"></script>
+        <![endif]-->
+        <!--/ END IE SUPPORT -->
+    </head>
+    <!--/ END HEAD -->
+
+    <!-- START @BODY -->
+    <body>
+
+        <!--[if lt IE 9]>
+        <p class="upgrade-browser">Upps!! You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- START @WRAPPER -->
+        <section id="wrapper">
+
+            <!-- START @HEADER -->
+            <header id="header">
+
+                <!-- Start header left -->
+                <div class="header-left">
+                    <!-- Start offcanvas left: This menu will take position at the top of template header (mobile only). Make sure that only #header have the `position: relative`, or it may cause unwanted behavior -->
+                    <div class="navbar-minimize-mobile left">
+                        <div data-activates="slide-out" class="navbar-brand button-collapse waves-effect waves-light"><i class="fa fa-bars"></i></div>
+                    </div>
+                    <!--/ End offcanvas left -->
+
+                    <!-- Start navbar header -->
+                    <div class="navbar-header">
+
+                        <!-- Start brand -->
+                        <a class="navbar-brand waves-effect waves-light" href="dashboard.html">
+                            <img class="logo" src="http://img.djavaui.com/?create=175x50,2196F3?f=ffffff" alt="brand logo"/>
+                        </a><!-- /.navbar-brand -->
+                        <!--/ End brand -->
+
+                    </div><!-- /.navbar-header -->
+                    <!--/ End navbar header -->
+
+                    <div class="clearfix"></div>
+                </div><!-- /.header-left -->
+                <!--/ End header left -->
+
+                <!-- Start header right -->
+                <div class="header-right">
+                    <!-- Start navbar toolbar -->
+                    <div class="navbar navbar-toolbar">
+
+                        <!-- Start left navigation -->
+                        <ul class="nav navbar-nav navbar-left">
+
+                            <!-- Start sidebar shrink -->
+                            <li class="navbar-minimize">
+                                <div data-activates="slide-out" class="navbar-brand button-collapse waves-effect waves-ripple"><i class="fa fa-bars"></i></div>
+                            </li>
+                            <!--/ End sidebar shrink -->
+
+                        </ul><!-- /.nav navbar-nav navbar-left -->
+                        <!--/ End left navigation -->
+
+                        <!-- Start right navigation -->
+                        <ul class="nav navbar-nav navbar-right"><!-- /.nav navbar-nav navbar-right -->
+
+                            <!-- Start toggle search -->
+                            <li>
+                                <a href="#modal-search" class="modal-trigger waves-effect waves-ripple"><i class="fa fa-search"></i></a>
+                            </li>
+                            <!--/ End toggle search -->
+
+                            <!-- Start messages -->
+                            <li class="dropdown navbar-message">
+
+                                <a href="#" class="dropdown-toggle waves-effect waves-green" data-toggle="dropdown"><i class="fa fa-envelope-o"></i><span class="count label label-danger rounded">7</span></a>
+
+                                <!-- Start dropdown menu -->
+                                <div class="dropdown-menu animated flipInX z-depth-1">
+                                    <div class="dropdown-header">
+                                        <span class="title">Messages <strong>(7)</strong></span>
+                                        <span class="option text-right"><a href="#">+ New message</a></span>
+                                    </div>
+                                    <div class="dropdown-body">
+
+                                        <!-- Start message list -->
+                                        <div class="media-list niceScroll">
+
+                                            <a href="page-messages.html" class="media">
+                                                <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,2196F3?f=ffffff" class="media-object img-circle" alt="John Kribo"/></div>
+                                                <div class="media-body">
+                                                    <span class="media-heading">John Kribo</span>
+                                                    <span class="media-text">I was impressed how fast the content is loaded. Congratulations. nice design.</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta"><i class="fa fa-reply"></i></span>
+                                                    <span class="media-meta"><i class="fa fa-paperclip"></i></span>
+                                                    <span class="media-meta pull-right">13 minutes</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="page-messages.html" class="media">
+                                                <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,2196F3?f=ffffff" class="media-object img-circle" alt="Jennifer Poiyem"/></div>
+                                                <div class="media-body">
+                                                    <span class="media-heading">Jennifer Poiyem</span>
+                                                    <span class="media-text">It’s Simple, Clean & Nice .. Good work Dear .. GLWS</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta pull-right">17 hours</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="page-messages.html" class="media">
+                                                <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,2196F3?f=ffffff" class="media-object img-circle" alt="Clara Wati"/></div>
+                                                <div class="media-body">
+                                                    <span class="media-heading">Clara Wati</span>
+                                                    <span class="media-text">Great work! Do you have any plans to add loading indicators for AJAX calls that might take longer than normal?</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta pull-right">1 days</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="page-messages.html" class="media">
+                                                <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,2196F3?f=ffffff" class="media-object img-circle" alt="Toni Mriang"/></div>
+                                                <div class="media-body">
+                                                    <span class="media-heading">Toni Mriang</span>
+                                                    <span class="media-text">I am very interested in the theme and I’m thinking about buying it.</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta"><i class="fa fa-paperclip"></i></span>
+                                                    <span class="media-meta pull-right">2 days</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="page-messages.html" class="media">
+                                                <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,2196F3?f=ffffff" class="media-object img-circle" alt="Bella negoro"/></div>
+                                                <div class="media-body">
+                                                    <span class="media-heading">Bella negoro</span>
+                                                    <span class="media-text">Great work! Good luck!</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta"><i class="fa fa-paperclip"></i></span>
+                                                    <span class="media-meta"><i class="fa fa-user"></i></span>
+                                                    <span class="media-meta pull-right">1 week</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="page-messages.html" class="media">
+                                                <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,2196F3?f=ffffff" class="media-object img-circle" alt="Kim Mbako"/></div>
+                                                <div class="media-body">
+                                                    <span class="media-heading">Kim Mbako</span>
+                                                    <span class="media-text">Hi! First of all, thank you for the very nice theme for creating awesome web applications :)</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta"><i class="fa fa-paperclip"></i></span>
+                                                    <span class="media-meta pull-right">1 week</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="page-messages.html" class="media">
+                                                <div class="pull-left"><img src="http://img.djavaui.com/?create=50x50,2196F3?f=ffffff" class="media-object img-circle" alt="Pack Suparman"/></div>
+                                                <div class="media-body">
+                                                    <span class="media-heading">Pack Suparman</span>
+                                                    <span class="media-text">Apik temen kie jan template, nyong gep tuku jal..</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta pull-right">1 week</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                        </div>
+                                        <!--/ End message list -->
+
+                                    </div>
+                                    <div class="dropdown-footer">
+                                        <a href="page-messages.html">See All</a>
+                                    </div>
+                                </div>
+                                <!--/ End dropdown menu -->
+
+                            </li><!-- /.dropdown navbar-message -->
+                            <!--/ End messages -->
+
+                            <!-- Start notifications -->
+                            <li class="dropdown navbar-notification">
+
+                                <a href="#" class="dropdown-toggle waves-effect waves-red" data-toggle="dropdown"><i class="fa fa-bell-o"></i><span class="count label label-danger rounded">6</span></a>
+
+                                <!-- Start dropdown menu -->
+                                <div class="dropdown-menu animated flipInX">
+                                    <div class="dropdown-header">
+                                        <span class="title">Notifications <strong>(10)</strong></span>
+                                        <span class="option text-right"><a href="#"><i class="fa fa-cog"></i> Setting</a></span>
+                                    </div>
+                                    <div class="dropdown-body niceScroll">
+
+                                        <!-- Start notification list -->
+                                        <div class="media-list">
+
+                                            <a href="#" class="media">
+                                                <div class="media-object pull-left"><i class="fa fa-share-alt fg-info"></i></div>
+                                                <div class="media-body">
+                                                    <span class="media-text"><strong>Dolanan Remi : </strong><strong>Chris Job,</strong><strong>Denny Puk</strong> and <strong>Joko Fernandes</strong> sent you <strong>5 free energy boosts and other request</strong></span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta">3 minutes</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="#" class="media">
+                                                <div class="media-object pull-left"><i class="fa fa-cogs fg-success"></i></div>
+                                                <div class="media-body">
+                                                    <span class="media-text">Your sistem is updated</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta">5 minutes</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="#" class="media">
+                                                <div class="media-object pull-left"><i class="fa fa-ban fg-danger"></i></div>
+                                                <div class="media-body">
+                                                    <span class="media-text">3 Member is BANNED</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta">5 minutes</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="#" class="media">
+                                                <div class="media-object pull-left"><img class="img-circle" src="http://img.djavaui.com/?create=35x35,2196F3?f=ffffff" alt=""/></div>
+                                                <div class="media-body">
+                                                    <span class="media-text">daddy pushed to project Blankon version 1.0.0</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta">45 minutes</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="#" class="media">
+                                                <div class="media-object pull-left"><i class="fa fa-user fg-info"></i></div>
+                                                <div class="media-body">
+                                                    <span class="media-text">Change your user profile</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta">1 days</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                            <a href="#" class="media">
+                                                <div class="media-object pull-left"><i class="fa fa-book fg-info"></i></div>
+                                                <div class="media-body">
+                                                    <span class="media-text">Added new article</span>
+                                                    <!-- Start meta icon -->
+                                                    <span class="media-meta">1 days</span>
+                                                    <!--/ End meta icon -->
+                                                </div><!-- /.media-body -->
+                                            </a><!-- /.media -->
+
+                                        </div>
+                                        <!--/ End notification list -->
+
+                                    </div>
+                                    <div class="dropdown-footer">
+                                        <a href="#">See All</a>
+                                    </div>
+                                </div>
+                                <!--/ End dropdown menu -->
+
+                            </li><!-- /.dropdown navbar-notification -->
+                            <!--/ End notifications -->
+
+                            <!-- Start profile -->
+                            <li class="dropdown navbar-profile">
+                                <a href="#" class="dropdown-toggle waves-effect waves-yellow" data-toggle="dropdown">
+                                <span class="meta">
+                                    <span class="avatar"><img src="http://img.djavaui.com/?create=35x35,2196F3?f=ffffff" class="img-circle" alt="admin"></span>
+                                    <span class="text hidden-xs hidden-sm text-muted">Tol Lee</span>
+                                    <span class="caret"></span>
+                                </span>
+                                </a>
+                                <!-- Start dropdown menu -->
+                                <ul class="dropdown-menu animated flipInX">
+                                    <li class="dropdown-header">Account</li>
+                                    <li><a href="page-profile.html"><i class="fa fa-user"></i>View profile</a></li>
+                                    <li><a href="mail-inbox.html"><i class="fa fa-envelope-square"></i>Inbox <span class="label label-info pull-right">30</span></a></li>
+                                    <li><a href="#"><i class="fa fa-share-square"></i>Invite a friend</a></li>
+                                    <li class="dropdown-header">Product</li>
+                                    <li><a href="#"><i class="fa fa-upload"></i>Upload</a></li>
+                                    <li><a href="#"><i class="fa fa-dollar"></i>Earning</a></li>
+                                    <li><a href="#"><i class="fa fa-download"></i>Withdrawals</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="page-signin.html"><i class="fa fa-sign-out"></i>Logout</a></li>
+                                </ul>
+                                <!--/ End dropdown menu -->
+                            </li><!-- /.dropdown navbar-profile -->
+                            <!--/ End profile -->
+
+                        </ul>
+                        <!--/ End right navigation -->
+
+                    </div><!-- /.navbar-toolbar -->
+                    <!--/ End navbar toolbar -->
+                </div><!-- /.header-right -->
+                <!--/ End header left -->
+
+            </header> <!-- /#header -->
+            <!--/ END HEADER -->
+
+            <!-- START @SIDEBAR LEFT -->
+            <aside id="sidebar-left">
+
+                <!-- Sidebar navigation -->
+                <div id="slide-out" class="side-nav admin-side-nav stylish-side-nav">
+                    <!-- Logo -->
+                    <div class="logo-wrapper">
+                        <img src="http://img.djavaui.com/?create=50x50,2196F3?f=ffffff" class="img-responsive img-circle">
+                        <div class="rgba-stylish-strong"><p class="user white-text">Hello, Lee<br>
+                            Web Designer</p></div>
+                    </div>
+                    <!--/. Logo -->
+
+                    <!-- Side navigation links -->
+                    <ul class="collapsible collapsible-accordion">
+                        <li><a href="dashboard.html" class="waves-effect waves-light"><i class="fa fa-home"></i> Dashboard</a></li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-light"><i class="fa fa-globe"></i> Blog <i class="material-icons pull-right">expand_more</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="blog-grid.html" class="waves-effect waves-light">Grid</a></li>
+                                    <li><a href="blog-list.html" class="waves-effect waves-light">List</a></li>
+                                    <li><a href="blog-single.html" class="waves-effect waves-light">Single</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-light"><i class="fa fa-envelope"></i> Mail <i class="material-icons pull-right">expand_more</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="mail-inbox.html" class="waves-effect waves-light">Inbox</a></li>
+                                    <li><a href="mail-compose.html" class="waves-effect waves-light">Compose Mail</a></li>
+                                    <li><a href="mail-view.html" class="waves-effect waves-light">View Mail</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="active">
+                            <a class="collapsible-header waves-effect waves-light active"><i class="fa fa-file-o"></i> Pages <i class="material-icons pull-right">expand_more</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="page-gallery.html" class="waves-effect waves-light">Gallery</a></li>
+                                    <li><a href="page-faq.html" class="waves-effect waves-light">FAQ</a></li>
+                                    <li class="active"><a href="page-invoice.html" class="waves-effect waves-light">Invoice</a></li>
+                                    <li><a href="page-messages.html" class="waves-effect waves-light">Messages</a></li>
+                                    <li><a href="page-timeline.html" class="waves-effect waves-light">Timeline</a></li>
+                                    <li><a href="page-profile.html" class="waves-effect waves-light">Profile</a></li>
+                                    <li>
+                                        <ul class="collapsible collapsible-accordion">
+                                            <li>
+                                                <a class="collapsible-header waves-effect waves-light">Search <i class="material-icons pull-right">expand_more</i></a>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <li><a href="page-search-course.html" class="waves-effect waves-light">Courses</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="collapsible collapsible-accordion">
+                                            <li>
+                                                <a class="collapsible-header waves-effect waves-light">Error <i class="material-icons pull-right">expand_more</i></a>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <li><a href="page-error-403.html" class="waves-effect waves-light">Error 403</a></li>
+                                                        <li><a href="page-error-403-type-2.html" class="waves-effect waves-light">Error 403 type 2</a></li>
+                                                        <li><a href="page-error-404.html" class="waves-effect waves-light">Error 404</a></li>
+                                                        <li><a href="page-error-404-type-2.html" class="waves-effect waves-light">Error 404 type 2</a></li>
+                                                        <li><a href="page-error-500.html" class="waves-effect waves-light">Error 500</a></li>
+                                                        <li><a href="page-error-500-type-2.html" class="waves-effect waves-light">Error 500 type 2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="collapsible collapsible-accordion">
+                                            <li>
+                                                <a class="collapsible-header waves-effect waves-light">Account <i class="material-icons pull-right">expand_more</i></a>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <li><a href="page-signin.html" class="waves-effect waves-light">Sign In</a></li>
+                                                        <li><a href="page-signin-type-2.html" class="waves-effect waves-light">Sign In Type 2</a></li>
+                                                        <li><a href="page-signup.html" class="waves-effect waves-light">Sign Up</a></li>
+                                                        <li><a href="page-lost-password.html" class="waves-effect waves-light">Lost Password</a></li>
+                                                        <li><a href="page-lock-screen.html" class="waves-effect waves-light">Lock Screen</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-light"><i class="fa fa-list-alt"></i> Forms <i class="material-icons pull-right">expand_more</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="form-element.html" class="waves-effect waves-light">Element</a></li>
+                                    <li><a href="form-advanced.html" class="waves-effect waves-light">Advanced</a></li>
+                                    <li><a href="form-layout.html" class="waves-effect waves-light">Layout</a></li>
+                                    <li><a href="form-validation.html" class="waves-effect waves-light">Validation</a></li>
+                                    <li><a href="form-wizard.html" class="waves-effect waves-light">Wizard</a></li>
+                                    <li><a href="form-wysiwyg.html" class="waves-effect waves-light">Text Editor</a></li>
+                                    <li><a href="form-xeditable.html" class="waves-effect waves-light">X-Editable</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-light"><i class="fa fa-table"></i> Tables <i class="material-icons pull-right">expand_more</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="table-default.html" class="waves-effect waves-light">Default</a></li>
+                                    <li><a href="table-color.html" class="waves-effect waves-light">Color</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-light"><i class="fa fa-map-marker"></i> Maps <i class="material-icons pull-right">expand_more</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="maps-google.html" class="waves-effect waves-light">Google</a></li>
+                                    <li><a href="maps-vector.html" class="waves-effect waves-light">Vector</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-light"><i class="fa fa-signal"></i> Charts <i class="material-icons pull-right">expand_more</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="chart-flot.html" class="waves-effect waves-light">Flot</a></li>
+                                    <li><a href="chart-morris.html" class="waves-effect waves-light">Morris</a></li>
+                                    <li><a href="chart-chartjs.html" class="waves-effect waves-light">Chartjs</a></li>
+                                    <li><a href="chart-c3js.html" class="waves-effect waves-light">C3js</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-light"><i class="fa fa-cube"></i> Components <i class="material-icons pull-right">expand_more</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="component-cards.html" class="waves-effect waves-light">Cards</a></li>
+                                    <li><a href="component-shadows.html" class="waves-effect waves-light">Shadows</a></li>
+                                    <li><a href="component-grid-system.html" class="waves-effect waves-light">Grid System</a></li>
+                                    <li><a href="component-buttons.html" class="waves-effect waves-light">Buttons</a></li>
+                                    <li><a href="component-typography.html" class="waves-effect waves-light">Typography</a></li>
+                                    <li><a href="component-panel.html" class="waves-effect waves-light">Panels</a></li>
+                                    <li><a href="component-alerts.html" class="waves-effect waves-light">Alerts</a></li>
+                                    <li><a href="component-modals.html" class="waves-effect waves-light">Modals</a></li>
+                                    <li><a href="component-video.html" class="waves-effect waves-light">Video</a></li>
+                                    <li><a href="component-tabsaccordion.html" class="waves-effect waves-light">Tabs & Accordion</a></li>
+                                    <li><a href="component-sliders.html" class="waves-effect waves-light">Sliders</a></li>
+                                    <li>
+                                        <ul class="collapsible collapsible-accordion">
+                                            <li>
+                                                <a class="collapsible-header waves-effect waves-light">Icons <i class="material-icons pull-right">expand_more</i></a>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <li><a href="component-glyphicons.html" class="waves-effect waves-light">Glyphicons</a></li>
+                                                        <li><a href="component-glyphicons-pro.html" class="waves-effect waves-light">Glyphicons PRO</a></li>
+                                                        <li><a href="component-font-awesome.html" class="waves-effect waves-light">Font Awesome</a></li>
+                                                        <li><a href="component-weather-icons.html" class="waves-effect waves-light">Weather Icons</a></li>
+                                                        <li><a href="component-map-icons.html" class="waves-effect waves-light">Map Icons</a></li>
+                                                        <li><a href="component-simple-line-icons.html" class="waves-effect waves-light">Simple Line Icons</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="component-other.html" class="waves-effect waves-light">Other</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="collapsible-header waves-effect waves-light"><i class="fa fa-align-left"></i> Sub Menu <i class="material-icons pull-right">expand_more</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <ul class="collapsible collapsible-accordion">
+                                            <li>
+                                                <a class="collapsible-header waves-effect waves-light">Level 1 <i class="material-icons pull-right">expand_more</i></a>
+                                                <div class="collapsible-body">
+                                                    <ul>
+                                                        <li>
+                                                            <ul class="collapsible collapsible-accordion">
+                                                                <li>
+                                                                    <a class="collapsible-header waves-effect waves-light">Level 2 <i class="material-icons pull-right">expand_more</i></a>
+                                                                    <div class="collapsible-body">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <ul class="collapsible collapsible-accordion">
+                                                                                    <li>
+                                                                                        <a class="collapsible-header waves-effect waves-light">Level 3 <i class="material-icons pull-right">expand_more</i> </a>
+                                                                                        <div class="collapsible-body">
+                                                                                            <ul>
+                                                                                                <li>
+                                                                                                    <ul class="collapsible collapsible-accordion">
+                                                                                                        <li>
+                                                                                                            <a class="collapsible-header waves-effect waves-light">Level 4 <i class="material-icons pull-right">expand_more</i></a>
+                                                                                                            <div class="collapsible-body">
+                                                                                                                <ul>
+                                                                                                                    <li><a href="#" class="waves-effect waves-light">Level 5</a></li>
+                                                                                                                    <li><a href="#" class="waves-effect waves-light">Level 5</a></li>
+                                                                                                                    <li><a href="#" class="waves-effect waves-light">Level 5</a></li>
+                                                                                                                </ul>
+                                                                                                            </div>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                </li>
+                                                                                                <li><a href="#" class="waves-effect waves-light">Level 4</a></li>
+                                                                                                <li><a href="#" class="waves-effect waves-light">Level 4</a></li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </li>
+                                                                            <li><a href="#" class="waves-effect waves-light">Level 3</a></li>
+                                                                            <li><a href="#" class="waves-effect waves-light">Level 3</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="#" class="waves-effect waves-light">Level 2</a></li>
+                                                        <li><a href="#" class="waves-effect waves-light">Level 2</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="waves-effect waves-light">Level 1</a></li>
+                                    <li><a href="#" class="waves-effect waves-light">Level 1</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="animate.html" class="waves-effect waves-light"><i class="fa fa-forumbee"></i> Animate.css</a></li>
+                        <li><a href="widget-overview.html" class="waves-effect waves-light"><i class="fa fa-desktop"></i> Overview</a></li>
+                        <li><a href="widget-social.html" class="waves-effect waves-light"><i class="fa fa-group"></i> Social</a></li>
+                        <li><a href="widget-blog.html" class="waves-effect waves-light"><i class="fa fa-pencil"></i> Blog</a></li>
+                        <li><a href="widget-weather.html" class="waves-effect waves-light"><i class="fa fa-sun-o"></i> Weather</a></li>
+                        <li><a href="widget-misc.html" class="waves-effect waves-light"><i class="fa fa-puzzle-piece"></i> Misc</a></li>
+                    </ul>
+                    <!--/. Side navigation links -->
+
+                </div>
+                <!--/. Sidebar navigation -->
+
+            </aside><!-- /#sidebar-left -->
+            <!--/ END SIDEBAR LEFT -->
+
+            <!-- START @PAGE CONTENT -->
+            <section id="page-content">
+
+                <!-- Start page header -->
+                <div class="header-content">
+                    <h2><i class="fa fa-file-o"></i> Invoice <span>invoice sample</span></h2>
+                    <div class="breadcrumb-wrapper hidden-xs">
+                        <span class="label">You are here:</span>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-home"></i>
+                                <a href="dashboard.html">Dashboard</a>
+                                <i class="fa fa-angle-right"></i>
+                            </li>
+                            <li>
+                                <a href="#">Pages</a>
+                                <i class="fa fa-angle-right"></i>
+                            </li>
+                            <li class="active">Invoice</li>
+                        </ol>
+                    </div><!-- /.breadcrumb-wrapper -->
+                </div><!-- /.header-content -->
+                <!--/ End page header -->
+
+                <!-- Start body content -->
+                <div class="body-content animated fadeIn">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-invoice z-depth-1">
+                                <div class="panel-heading">
+                                    <div class="pull-left">
+                                        <h3 class="no-margin">Invoice #PR9KL</h3>
+                                    </div>
+                                    <div class="pull-right">
+                                        <div class="logo-block"><img data-no-retina src="http://img.djavaui.com/?create=100x60,4888E1?f=ffffff" alt="Logo"></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div><!-- /.panel-heading -->
+                                <div class="panel-sub-heading">
+                                    <div class="row inner-all">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <div class="text-left mb-10">
+                                                <h3 class="mt-0">Company information</h3>
+                                                <strong>FROM</strong>
+                                                <address>
+                                                    <strong>Djava UI, Inc.</strong><br>
+                                                    Tambak bayan no.13, Babarsari, Sleman<br>
+                                                    Yogyakarta, DIY 94107<br>
+                                                    <abbr title="Phone">P:</abbr> (777) 777-66666
+                                                </address>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <div class="text-right">
+                                                <h3 class="mt-0">Client information</h3>
+                                                <strong>TO</strong>
+                                                <address>
+                                                    <strong>Twitter, Inc.</strong><br>
+                                                    795 Folsom Ave, Suite 600<br>
+                                                    San Francisco, CA 94107<br>
+                                                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                                                </address>
+                                                <br/>
+                                                <p class="text-right"><strong>Invoice Date:</strong> June 07, 2014</p>
+                                                <p class="text-right"><strong>Due Date:</strong> June 08, 2014</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /.panel-sub-heading -->
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <h5>Invoice for Services Under Contract #777 from 12.08.2013</h5>
+                                        <table class="table table-striped table-theme">
+                                            <thead>
+                                            <tr>
+                                                <th>Product/Product description</th>
+                                                <th>Qty</th>
+                                                <th>Unit Price $</th>
+                                                <th>Tax Rate %</th>
+                                                <th>Tax</th>
+                                                <th>Total Price $</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><div class="product-name">
+                                                    <div class="product-num">1</div>
+                                                    <h4>Wordpress Theme Development</h4>
+                                                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</small> </div></td>
+                                                <td>2</td>
+                                                <td>$600</td>
+                                                <td>Reverse Charge</td>
+                                                <td>0.00</td>
+                                                <td>$1200</td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="product-name">
+                                                    <div class="product-num rounded">2</div>
+                                                    <h4>Logo design and custom graphics design</h4>
+                                                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small> </div></td>
+                                                <td>1</td>
+                                                <td>$400</td>
+                                                <td>Reverse Charge</td>
+                                                <td>0.00</td>
+                                                <td>$400</td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="product-name">
+                                                    <div class="product-num circle">3</div>
+                                                    <h4>Maintenance Contract</h4>
+                                                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small> </div></td>
+                                                <td>3</td>
+                                                <td>$200</td>
+                                                <td>Reverse Charge</td>
+                                                <td>0.00</td>
+                                                <td>$600</td>
+                                            </tr>
+                                            </tbody>
+                                            <tfoot>
+                                            <tr>
+                                                <td colspan="3" rowspan="3">&nbsp;</td>
+                                                <td colspan="2">Total (Net)</td>
+                                                <td colspan="2">$2200</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">VAT</td>
+                                                <td colspan="2">0.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><b>Total</b></td>
+                                                <td colspan="2"><b>$2200</b></td>
+                                            </tr>
+                                            </tfoot>
+
+                                        </table>
+                                    </div><!-- /.table-responsive -->
+                                </div><!-- /.panel-body -->
+                                <div class="panel-footer">
+                                    <div class="pull-left hidden-sm hidden-xs">
+                                        <p class="no-margin">Thank you for your business. Please make sure all cheques payable with Account No. 7564534 </p>
+                                    </div>
+                                    <div class="pull-right">
+                                        <button type="submit" class="btn btn-success pull-right rounded waves-effect waves-light"><i class="fa fa-fw fa-arrow-right"></i> Proceed to Payment</button>
+                                        <button class="btn btn-default pull-right mr-5 rounded waves-effect waves-light"><i class="fa fa-print"></i> Print</button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div><!-- /.panel-footer -->
+                            </div><!-- /.panel-invoice -->
+                        </div>
+                    </div><!-- /.row -->
+
+                </div><!-- /.body-content -->
+                <!--/ End body content -->
+
+                <!-- Start footer content -->
+                <footer class="footer-content">
+                    2014 - <span id="copyright-year"></span> &copy; Blankon Admin. Created by <a href="http://djavaui.com/" target="_blank">Djava UI</a>, Yogyakarta ID
+                    <span class="pull-right">0.01 GB(0%) of 15 GB used</span>
+                </footer><!-- /.footer-content -->
+                <!--/ End footer content -->
+
+            </section><!-- /#page-content -->
+            <!--/ END PAGE CONTENT -->
+
+        </section><!-- /#wrapper -->
+        <!--/ END WRAPPER -->
+
+        <!-- START @ADDITIONAL ELEMENT -->
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+            <a class="btn-floating btn-large red">
+                <i class="large material-icons">add</i>
+            </a>
+
+            <ul>
+                <li><a class="btn-floating red" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="All overview website"><i class="material-icons">insert_chart</i></a></li>
+                <li><a class="btn-floating yellow darken-1" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="All new members"><i class="material-icons">account_circle</i></a></li>
+                <li><a class="btn-floating green" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="All new post"><i class="material-icons">create</i></a></li>
+                <li><a class="btn-floating blue" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="Gallery images"><i class="material-icons">photo_camera</i></a></li>
+            </ul>
+        </div>
+
+        <div id="modal-search" class="modal bottom-sheet">
+
+            <div class="modal-content">
+                <h4 class="text-center">Type for searching...</h4>
+                <div class="container-fluid">
+                    <form class="col-md-12">
+                        <div class="row">
+                            <div class="input-field col-md-12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Type on here</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-success waves-effect">Search</button>
+            </div>
+        </div>
+        <!--/ END ADDITIONAL ELEMENT -->
+
+        <!-- START @BACK TOP -->
+        <div id="back-top" class="animated pulse circle">
+            <i class="fa fa-angle-up"></i>
+        </div> <!-- /#back-top -->
+        <!--/ END BACK TOP -->
+
+        <!-- START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time) -->
+        <!-- START @CORE PLUGINS -->
+        <script src="../../../assets/global/plugins/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/jquery-cookie/jquery.cookie.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/jquery-nicescroll/jquery.nicescroll.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/jquery.sparkline.min/index.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/jquery-easing-original/jquery.easing.1.3.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/ionsound/js/ion.sound.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/bootbox/bootbox.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/retina.js/dist/retina.min.js"></script>
+        <script src="../../../assets/commercial/plugins/mdb/js/mdb.min.js"></script>
+        <!--/ END CORE PLUGINS -->
+
+        <!-- START @PAGE LEVEL PLUGINS -->
+        <script src="../../../assets/global/plugins/bower_components/bootstrap-session-timeout/dist/bootstrap-session-timeout.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/flot/jquery.flot.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/flot/jquery.flot.spline.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/flot/jquery.flot.categories.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/flot/jquery.flot.tooltip.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/flot/jquery.flot.resize.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/flot/jquery.flot.pie.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/jquery.gritter/js/jquery.gritter.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/skycons-html5/skycons.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/counter-up/jquery.counterup.min.js"></script>
+        <script src="../../../assets/global/plugins/bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script>
+        <!--/ END PAGE LEVEL PLUGINS -->
+
+        <!-- START @PAGE LEVEL SCRIPTS -->
+        <script src="../../../assets/admin/js/apps-material-design.js"></script>
+        <script src="../../../assets/admin/js/demo.js"></script>
+        <!--/ END PAGE LEVEL SCRIPTS -->
+        <!--/ END JAVASCRIPT SECTION -->
+
+        <!-- START GOOGLE ANALYTICS -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-55892530-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <!--/ END GOOGLE ANALYTICS -->
+
+    </body>
+    <!--/ END BODY -->
+
+</html>

@@ -1,0 +1,37 @@
+/* ========================================================================
+ * PLUGIN - PRELOADER
+ * ======================================================================== */
+#loader-wrapper .loader-section {
+  background-color: #f87c09;
+}
+
+/* ========================================================================
+ * PLUGIN - SLIDER REVOLUTION
+ * ======================================================================== */
+.rev-custom-slidebg {
+  background-color: #f87c09 !important;
+}
+
+.rev-custom-slidefg,
+.tp-caption.Agency-SmallLink, .Agency-SmallLink {
+  color: #f87c09 !important;
+}
+
+.tp-caption.Agency-SmallLink, .Agency-SmallLink {
+  border-bottom: #f87c09 !important;
+}
+
+/* ========================================================================
+ * SECTION - BANNER
+ * ======================================================================== */
+@media (max-width: 640px) {
+  #banner .banner-container {
+    background-color: #f87c09;
+  }
+}
+/* ========================================================================
+ * SECTION - FEATURES
+ * ======================================================================== */
+#features .feature-list .media-left i {
+  color: #f87c09;
+}

@@ -1,0 +1,48 @@
+/* ========================================================================
+ * SECTION FEATURE
+ * ======================================================================== */
+#features{
+  position: relative;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  .headline{
+    .text-title{
+      margin-bottom: 3px;
+    }
+  }
+  .feature-list{
+    margin-bottom: 20px;
+    .media-left{
+      i{
+        font-size: 15px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  #features{
+    padding-top: 60px;
+  }
+}
+@media (max-width: 767px) {
+  #features{
+    .media{
+      .media-body{
+        font-size: 13px;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  #features{
+    padding: 0;
+    .text-title{
+      margin: 0 0 5px 0;
+      font-size: 23px;
+    }
+    .col-xs-6{
+      width: 100%;
+    }
+  }
+}

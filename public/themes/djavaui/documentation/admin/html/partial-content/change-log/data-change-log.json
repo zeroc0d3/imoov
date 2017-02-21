@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "version": "1.0.0",
+      "patching": "Initial release",
+      "date": "November 7, 2014"
+    },
+    {
+      "version": "1.0.1",
+      "patching": [
+        {
+          "new":
+        }
+      ],
+      "date": "February 17, 2015"
+    }
+  ]
+}

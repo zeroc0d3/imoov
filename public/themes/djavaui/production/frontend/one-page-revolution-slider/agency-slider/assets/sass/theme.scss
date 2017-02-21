@@ -1,0 +1,58 @@
+// Import compass library
+@import "compass/css3";
+
+// Import Bootstrap library
+@import "../../../../../../assets/global/plugins/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+// Core preprocessor
+@import "core/variable";
+@import "core/mixins";
+@import "core/functions";
+
+// Set up variable color theme
+$color-theme: #f87c09;
+
+/* ========================================================================
+ * PLUGIN - PRELOADER
+ * ======================================================================== */
+#loader-wrapper .loader-section {
+  background-color: $color-theme;
+}
+
+/* ========================================================================
+ * PLUGIN - SLIDER REVOLUTION
+ * ======================================================================== */
+.rev-custom-slidebg{
+  background-color: $color-theme !important;
+}
+.rev-custom-slidefg,
+.tp-caption.Agency-SmallLink, .Agency-SmallLink{
+  color: $color-theme !important;
+}
+.tp-caption.Agency-SmallLink, .Agency-SmallLink{
+  border-bottom: $color-theme !important;
+}
+
+/* ========================================================================
+ * SECTION - BANNER
+ * ======================================================================== */
+@media (max-width: 640px) {
+  #banner{
+    .banner-container{
+      background-color: $color-theme;
+    }
+  }
+}
+
+/* ========================================================================
+ * SECTION - FEATURES
+ * ======================================================================== */
+#features{
+  .feature-list{
+    .media-left{
+      i{
+        color: $color-theme;
+      }
+    }
+  }
+}

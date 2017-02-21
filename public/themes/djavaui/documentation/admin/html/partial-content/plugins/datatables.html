@@ -1,0 +1,76 @@
+<p>
+    Datatables is hands down the best jQuery table plugin. I have enjoyed using it over the years and highly recommend it to all. Recently, I have tried to use Datatables in an responsive web project.
+</p>
+<p>
+    Official website : <a href="https://github.com/Comanche/datatables-responsive" target="_blank">https://github.com/Comanche/datatables-responsive</a>
+</p>
+<p>
+    Demo page : <a href="../../../production/admin/html/table-datatable.html" target="_blank">table-datatable.html</a>
+</p>
+<hr class="dotted"/>
+<h4>SOURCE CODE (HTML)</h4>
+<pre class="html-code scroll">
+&lt;table id=&quot;datatable-dom&quot; class=&quot;table table-striped table-lilac&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th data-class=&quot;expand&quot;&gt;Name&lt;/th&gt;
+            &lt;th data-hide=&quot;phone&quot;&gt;Position&lt;/th&gt;
+            &lt;th data-hide=&quot;phone&quot;&gt;Office&lt;/th&gt;
+            &lt;th data-hide=&quot;phone&quot;&gt;Age&lt;/th&gt;
+            &lt;th data-hide=&quot;phone,tablet&quot;&gt;Start date&lt;/th&gt;
+            &lt;th data-hide=&quot;phone,tablet&quot;&gt;Salary&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Tiger Nixon&lt;/td&gt;
+            &lt;td&gt;System Architect&lt;/td&gt;
+            &lt;td&gt;Edinburgh&lt;/td&gt;
+            &lt;td&gt;61&lt;/td&gt;
+            &lt;td&gt;2011/04/25&lt;/td&gt;
+            &lt;td&gt;$320,800&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Garrett Winters&lt;/td&gt;
+            &lt;td&gt;Accountant&lt;/td&gt;
+            &lt;td&gt;Tokyo&lt;/td&gt;
+            &lt;td&gt;63&lt;/td&gt;
+            &lt;td&gt;2011/07/25&lt;/td&gt;
+            &lt;td&gt;$170,750&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Ashton Cox&lt;/td&gt;
+            &lt;td&gt;Junior Technical Author&lt;/td&gt;
+            &lt;td&gt;San Francisco&lt;/td&gt;
+            &lt;td&gt;66&lt;/td&gt;
+            &lt;td&gt;2009/01/12&lt;/td&gt;
+            &lt;td&gt;$86,000&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Position&lt;/th&gt;
+            &lt;th&gt;Office&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+            &lt;th&gt;Start date&lt;/th&gt;
+            &lt;th&gt;Salary&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+</pre>
+<h4>REQUIRED FILES (CSS)</h4>
+<pre class="html-code">
+&lt;link href=&quot;../../../assets/global/plugins/bower_components/datatables/css/dataTables.bootstrap.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;../../../assets/global/plugins/bower_components/datatables/css/datatables.responsive.css&quot; rel=&quot;stylesheet&quot;&gt;
+</pre>
+
+<h4>REQUIRED FILES (JS)</h4>
+<pre class="html-code no-margin">
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/datatables/js/jquery.dataTables.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/datatables/js/dataTables.bootstrap.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/datatables/js/datatables.responsive.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- EXAMPLE USING DATATABLES, OPEN THIS FILE TO EDIT --&gt;
+&lt;script src=&quot;../../../assets/admin/js/pages/blankon.table.js&quot;&gt;&lt;/script&gt;
+</pre>

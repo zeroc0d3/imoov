@@ -1,0 +1,36 @@
+/**
+ * ZeroC0D3-CoreUI Modified
+ * @version v1.0.0-alpha.3
+ * @link http://coreui.io
+ * Copyright (c) 2017 ZeroC0D3 Team
+ * @license MIT
+ */
+
+.flash {
+  font-style: normal;
+  color: white; }
+
+.img-logo {
+  width: 200px;  }
+
+.img-header {
+  width: 60%; }
+
+.hidden {
+  display: none!important;
+  visibility: hidden!important; }
+
+.clearfix-button {
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+.clearfix-top {
+  padding-top: -15px; }
+
+.captcha-img {
+  max-width: 300px;
+  padding: 5px 5px 5px 5px; }
+
+.text-danger {
+  color: red;
+  margin-left: 5px;  }

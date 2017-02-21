@@ -1,0 +1,16 @@
+/* ========================================================================
+ * COMPONENT BUTTON
+ * ======================================================================== */
+// Add transition effect on trigger hover
+.btn{
+  @include transition(all 0.2s ease-out 0s);
+  @include border-radius(2px);
+}
+
+// Alternate buttons social
+.btn-facebook {
+  @include button-variant(#ffffff, $color-social-facebook, $color-social-facebook);
+}
+.btn-twitter {
+  @include button-variant(#ffffff, $color-social-twitter, $color-social-twitter);
+}

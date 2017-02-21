@@ -1,0 +1,19 @@
+/* ========================================================================
+ * SECTION TESTIMONIAL
+ * ======================================================================== */
+#testimonials{
+  .cbp-l-testimonials-wrap{
+    border-top: 1px solid $color-border;
+    background-color: #FCFCFC;
+  }
+  .cbp-l-testimonials-title-block{
+    color: $color-text-title;
+    font-weight: 300;
+  }
+  .cbp-l-grid-testimonials-body{
+    color: #656565;
+  }
+  .cbp-l-grid-testimonials-footer{
+    color: #B3B3B3;
+  }
+}

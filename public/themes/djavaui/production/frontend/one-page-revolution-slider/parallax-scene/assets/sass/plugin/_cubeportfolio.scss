@@ -1,0 +1,28 @@
+/* ========================================================================
+ * CUBEPORTFOLIO
+ * ======================================================================== */
+.cbp-l-caption-buttonLeft, .cbp-l-caption-buttonRight{
+  text-transform: capitalize;
+  &:hover{
+    color: #ffffff;
+  }
+}
+.cbp-l-inline-desc,
+.cbp-l-inline-title,
+.cbp-l-inline-subtitle,
+.cbp-l-inline-view,
+.cbp-l-filters-button .cbp-filter-item,
+.cbp-l-caption-title,
+.cbp-l-caption-desc,
+.cbp-search-input,
+.cbp-l-loadMore-button .cbp-l-loadMore-link, .cbp-l-loadMore-button .cbp-l-loadMore-button-link{
+  font-family: "proxima-nova" !important;
+}
+.cbp-l-caption-alignCenter .cbp-l-caption-buttonLeft, .cbp-l-caption-alignCenter .cbp-l-caption-buttonRight{
+  &:hover, &:active, &:focus, &:visited{
+    color: #FFFFFF !important;
+  }
+}
+.cbp-popup-singlePageInline .cbp-popup-close{
+  top: 40px;
+}

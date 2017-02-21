@@ -1,0 +1,211 @@
+<p>
+    This twitter bootstrap plugin builds a wizard out of a formatter tabbable structure. It allows to build a wizard functionality using buttons to go through the different wizard steps and using events allows to hook into each step individually.
+</p>
+<p>
+    Official website : <a href="https://github.com/VinceG/twitter-bootstrap-wizard" target="_blank">https://github.com/VinceG/twitter-bootstrap-wizard</a>
+</p>
+<p>
+    Demo page : <a href="../../../production/admin/html/form-wizard.html" target="_blank">form-wizard.html</a>
+</p>
+<hr class="dotted"/>
+<h4>SOURCE CODE (HTML)</h4>
+<pre class="html-code scroll">
+&lt;div id=&quot;basic-wizard-horizontal&quot;&gt;
+    &lt;h4&gt;Basic Wizard Horizontal&lt;/h4&gt;
+    &lt;div class=&quot;panel panel-tab rounded shadow&quot;&gt;
+        &lt;!-- Start tabs heading --&gt;
+        &lt;div class=&quot;panel-heading no-padding&quot;&gt;
+            &lt;ul class=&quot;nav nav-tabs&quot;&gt;
+                &lt;li class=&quot;active&quot;&gt;
+                    &lt;a href=&quot;#tab1-1&quot; data-toggle=&quot;tab&quot;&gt;
+                        &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;
+                        &lt;div&gt;
+                            &lt;span class=&quot;text-strong&quot;&gt;Step 1&lt;/span&gt;
+                            &lt;span&gt;Personal&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#tab1-2&quot; data-toggle=&quot;tab&quot;&gt;
+                        &lt;i class=&quot;fa fa-file-text&quot;&gt;&lt;/i&gt;
+                        &lt;div&gt;
+                            &lt;span class=&quot;text-strong&quot;&gt;Step 2&lt;/span&gt;
+                            &lt;span&gt;Product&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#tab1-3&quot; data-toggle=&quot;tab&quot;&gt;
+                        &lt;i class=&quot;fa fa-credit-card&quot;&gt;&lt;/i&gt;
+                        &lt;div&gt;
+                            &lt;span class=&quot;text-strong&quot;&gt;Step 3&lt;/span&gt;
+                            &lt;span&gt;Payment&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#tab1-4&quot; data-toggle=&quot;tab&quot;&gt;
+                        &lt;i class=&quot;fa fa-check-circle&quot;&gt;&lt;/i&gt;
+                        &lt;div&gt;
+                            &lt;span class=&quot;text-strong&quot;&gt;Step 4&lt;/span&gt;
+                            &lt;span&gt;Confirmation&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;&lt;!-- /.panel-heading --&gt;
+        &lt;!--/ End tabs heading --&gt;
+
+        &lt;!-- Start tabs content --&gt;
+        &lt;div class=&quot;panel-body&quot;&gt;
+            &lt;form action=&quot;#&quot; class=&quot;tab-content form-horizontal&quot;&gt;
+                &lt;div class=&quot;tab-pane fade in active inner-all&quot; id=&quot;tab1-1&quot;&gt;
+                    &lt;h4 class=&quot;page-header&quot;&gt;Personal&lt;/h4&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label class=&quot;col-sm-2&quot;&gt;First Name&lt;/label&gt;
+                        &lt;div class=&quot;col-sm-4&quot;&gt;
+                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label class=&quot;col-sm-2&quot;&gt;Last Name&lt;/label&gt;
+                        &lt;div class=&quot;col-sm-4&quot;&gt;
+                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group mb-0&quot;&gt;
+                        &lt;label class=&quot;col-sm-2&quot;&gt;Gender&lt;/label&gt;
+                        &lt;div class=&quot;col-sm-4&quot;&gt;
+                            &lt;div class=&quot;rdio rdio-theme inline mr-10&quot;&gt;
+                                &lt;input checked=&quot;checked&quot; id=&quot;male&quot; name=&quot;radio&quot; type=&quot;radio&quot;&gt;
+                                &lt;label for=&quot;male&quot;&gt;Male&lt;/label&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;rdio rdio-theme inline&quot;&gt;
+                                &lt;input id=&quot;female&quot; name=&quot;radio&quot; type=&quot;radio&quot;&gt;
+                                &lt;label for=&quot;female&quot;&gt;Female&lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;tab-pane fade inner-all&quot; id=&quot;tab1-2&quot;&gt;
+                    &lt;h4 class=&quot;page-header&quot;&gt;Product&lt;/h4&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label class=&quot;col-sm-2&quot;&gt;Product ID&lt;/label&gt;
+                        &lt;div class=&quot;col-sm-4&quot;&gt;
+                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label class=&quot;col-sm-2&quot;&gt;Product Name&lt;/label&gt;
+                        &lt;div class=&quot;col-sm-4&quot;&gt;
+                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group mb-0&quot;&gt;
+                        &lt;label class=&quot;col-sm-2&quot;&gt;Category&lt;/label&gt;
+                        &lt;div class=&quot;col-sm-4&quot;&gt;
+                            &lt;select class=&quot;form-control&quot;&gt;
+                                &lt;option value=&quot;&quot;&gt;Choose One&lt;/option&gt;
+                                &lt;option value=&quot;Iphone&quot;&gt;Iphone&lt;/option&gt;
+                                &lt;option value=&quot;Android&quot;&gt;Android&lt;/option&gt;
+                                &lt;option value=&quot;Blackberry&quot;&gt;Blackberry&lt;/option&gt;
+                            &lt;/select&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;tab-pane fade inner-all&quot; id=&quot;tab1-3&quot;&gt;
+                    &lt;h4 class=&quot;page-header&quot;&gt;Payment&lt;/h4&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label class=&quot;col-sm-2&quot;&gt;Credit Card Type&lt;/label&gt;
+                        &lt;div class=&quot;col-sm-4&quot;&gt;
+                            &lt;select class=&quot;form-control&quot;&gt;
+                                &lt;option value=&quot;&quot;&gt;Choose Credit Card&lt;/option&gt;
+                                &lt;option value=&quot;amex&quot;&gt;American Express&lt;/option&gt;
+                                &lt;option value=&quot;discover&quot;&gt;Discover&lt;/option&gt;
+                                &lt;option value=&quot;mastercard&quot;&gt;MasterCard&lt;/option&gt;
+                                &lt;option value=&quot;visa&quot;&gt;Visa&lt;/option&gt;
+                            &lt;/select&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label class=&quot;col-sm-2&quot;&gt;Expiration&lt;/label&gt;
+                        &lt;div class=&quot;col-sm-4&quot;&gt;
+                            &lt;div class=&quot;row&quot;&gt;
+                                &lt;div class=&quot;col-sm-6&quot;&gt;
+                                    &lt;select class=&quot;form-control&quot;&gt;
+                                        &lt;option value=&quot;&quot;&gt;Date Month&lt;/option&gt;
+                                        &lt;option value=&quot;01&quot;&gt;01 - Jan&lt;/option&gt;
+                                        &lt;option value=&quot;02&quot;&gt;02 - Feb&lt;/option&gt;
+                                        &lt;option value=&quot;03&quot;&gt;03 - Mar&lt;/option&gt;
+                                        &lt;option value=&quot;04&quot;&gt;04 - Apr&lt;/option&gt;
+                                        &lt;option value=&quot;05&quot;&gt;05 - May&lt;/option&gt;
+                                        &lt;option value=&quot;06&quot;&gt;06 - Jun&lt;/option&gt;
+                                        &lt;option value=&quot;07&quot;&gt;07 - Jul&lt;/option&gt;
+                                        &lt;option value=&quot;08&quot;&gt;08 - Aug&lt;/option&gt;
+                                        &lt;option value=&quot;09&quot;&gt;09 - Sep&lt;/option&gt;
+                                        &lt;option value=&quot;10&quot;&gt;10 - Oct&lt;/option&gt;
+                                        &lt;option value=&quot;11&quot;&gt;11 - Nov&lt;/option&gt;
+                                        &lt;option value=&quot;12&quot;&gt;12 - Dec&lt;/option&gt;
+                                    &lt;/select&gt;
+                                &lt;/div&gt;
+                                &lt;div class=&quot;col-sm-6&quot;&gt;
+                                    &lt;select class=&quot;form-control&quot;&gt;
+                                        &lt;option value=&quot;&quot;&gt;Year&lt;/option&gt;
+                                        &lt;option value=&quot;2007&quot;&gt;2007&lt;/option&gt;
+                                        &lt;option value=&quot;2008&quot;&gt;2008&lt;/option&gt;
+                                        &lt;option value=&quot;2009&quot;&gt;2009&lt;/option&gt;
+                                        &lt;option value=&quot;2010&quot;&gt;2010&lt;/option&gt;
+                                        &lt;option value=&quot;2011&quot;&gt;2011&lt;/option&gt;
+                                        &lt;option value=&quot;2012&quot;&gt;2012&lt;/option&gt;
+                                        &lt;option value=&quot;2013&quot;&gt;2013&lt;/option&gt;
+                                        &lt;option value=&quot;2014&quot;&gt;2014&lt;/option&gt;
+                                        &lt;option value=&quot;2015&quot;&gt;2015&lt;/option&gt;
+                                        &lt;option value=&quot;2016&quot;&gt;2016&lt;/option&gt;
+                                    &lt;/select&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group mb-0&quot;&gt;
+                        &lt;label class=&quot;col-sm-2&quot;&gt;Credit Card Number&lt;/label&gt;
+                        &lt;div class=&quot;col-sm-4&quot;&gt;
+                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;tab-pane fade inner-all&quot; id=&quot;tab1-4&quot;&gt;
+                    &lt;h4 class=&quot;page-header&quot;&gt;Confirmation&lt;/h4&gt;
+                    &lt;div class=&quot;pl-10&quot;&gt;
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-success ml-10&quot;&gt;Submit&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;&lt;!-- /.panel-body --&gt;
+        &lt;!--/ End tabs content --&gt;
+
+        &lt;!-- Start pager --&gt;
+        &lt;div class=&quot;panel-footer&quot;&gt;
+            &lt;ul class=&quot;pager wizard no-margin&quot;&gt;
+                &lt;li class=&quot;previous&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;next&quot;&gt;&lt;a href=&quot;javascript:void(0);&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;&lt;!-- /.panel-footer --&gt;
+        &lt;!--/ End pager --&gt;
+
+    &lt;/div&gt;&lt;!-- /.panel --&gt;
+&lt;/div&gt;&lt;!-- /#basic-wizard-horizontal --&gt;
+</pre>
+<h4>REQUIRED FILES (CSS)</h4>
+<pre class="html-code-no-menu">
+No CSS available
+</pre>
+
+<h4>REQUIRED FILES (JS)</h4>
+<pre class="html-code no-margin">
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- EXAMPLE USING BOOTSTRAP WIZARD, OPEN THIS FILE TO EDIT --&gt;
+&lt;script src=&quot;../../../assets/admin/js/pages/blankon.form.js&quot;&gt;&lt;/script&gt;
+</pre>

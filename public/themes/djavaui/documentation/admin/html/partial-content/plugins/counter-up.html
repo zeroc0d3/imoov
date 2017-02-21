@@ -1,0 +1,38 @@
+<p>
+    Counter-Up is a lightweight jQuery plugin that counts up to a targeted number when the number becomes visible.
+</p>
+<p>
+    Official website : <a href="http://bfintal.github.io/Counter-Up/demo/demo.html" target="_blank">http://bfintal.github.io/Counter-Up/demo/demo.html</a>
+</p>
+<hr class="dotted"/>
+<h4>Include</h4>
+<pre class="html-code">
+&lt;script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"&gt;&lt;/script&gt;
+&lt;script src="jquery.counterup.min.js"&gt;&lt;/script&gt;
+</pre>
+
+<h4>HTML</h4>
+<pre class="html-code">
+&lt;span class="counter"&gt;1,234,567.00&lt;/span&gt;
+&lt;span&gt;$&lt;/span&gt;&lt;span class="counter"&gt;1.99&lt;/span&gt;
+&lt;span class="counter"&gt;12345&lt;/span&gt;
+</pre>
+
+<h4>jQuery</h4>
+<pre class="js-code">
+$('.counter').counterUp();
+</pre>
+<h4>or with extra parameters</h4>
+<pre class="js-code">
+$('.counter').counterUp({
+    delay: 10,
+    time: 1000
+});
+</pre>
+
+<p>
+    <code>delay</code> - The delay in milliseconds per number count up
+</p>
+<p>
+    <code>time</code> - The total duration of the count up animation
+</p>

@@ -1,0 +1,67 @@
+<p>
+    Load on demand: With $ocLazyLoad you can load angular modules, but if you want to load controllers / services / filters / ... without defining a new module it's entirely possible, just use the name an existing module (your app name for example).
+
+    There are multiple ways to use $ocLazyLoad to load your files, just choose the one that fits you the best.
+</p>
+<p>
+    Official website : <a href="https://github.com/ocombe/ocLazyLoad" target="_blank">https://github.com/ocombe/ocLazyLoad</a>
+</p>
+<hr class="dotted"/>
+<h4>SOURCE CODE (JS)</h4>
+<pre class="js-code scroll">
+            // =========================================================================
+            // SAMPLE DASHBOARD ROUTE
+            // =========================================================================
+            .state('dashboard', {
+                url: '/dashboard',
+                templateUrl: 'views/dashboard.html',
+                data: {
+                    pageTitle: 'DASHBOARD',
+                    pageHeader: {
+                        icon: 'fa fa-home',
+                        title: 'Dashboard',
+                        subtitle: 'dashboard & statistics'
+                    }
+                },
+                controller: 'DashboardCtrl',
+                resolve: {
+                    deps: ['$ocLazyLoad', 'settings', function($ocLazyLoad, settings) {
+
+                        var pluginPath = settings.pluginPath; // Create variable plugin path
+
+                        // you can lazy load files for an existing module
+                        return $ocLazyLoad.load(
+                            [
+                                {
+                                    insertBefore: '#load_css_before',
+                                    files: [
+                                        pluginPath+'/dropzone/downloads/css/dropzone.css',
+                                        pluginPath+'/jquery.gritter/css/jquery.gritter.css'
+                                    ]
+                                },
+                                {
+                                    name: 'blankonApp.dashboard',
+                                    files: [
+                                        pluginPath+'/bootstrap-session-timeout/dist/bootstrap-session-timeout.min.js',
+                                        pluginPath+'/flot/jquery.flot.js',
+                                        pluginPath+'/flot/jquery.flot.spline.min.js',
+                                        pluginPath+'/flot/jquery.flot.categories.js',
+                                        pluginPath+'/flot/jquery.flot.tooltip.min.js',
+                                        pluginPath+'/flot/jquery.flot.resize.js',
+                                        pluginPath+'/flot/jquery.flot.pie.js',
+                                        pluginPath+'/dropzone/downloads/dropzone.min.js',
+                                        pluginPath+'/jquery.gritter/js/jquery.gritter.min.js',
+                                        pluginPath+'/skycons-html5/skycons.js',
+                                        'js/modules/dashboard.js'
+                                    ]
+                                }
+                            ]
+                        );
+                    }]
+                }
+            })
+</pre>
+<h4>REQUIRED FILES (JS)</h4>
+<pre class="html-code">
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/oclazyload/dist/ocLazyLoad.min.js&quot;&gt;&lt;/script&gt;
+</pre>

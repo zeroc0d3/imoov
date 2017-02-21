@@ -1,0 +1,54 @@
+// Import compass library
+@import "compass/css3";
+
+// Import Bootstrap library
+@import "../../../../../../assets/global/plugins/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+// Core preprocessor
+@import "core/variable";
+@import "core/mixins";
+@import "core/functions";
+
+// Set up variable color theme
+$color-theme: #d50000;
+
+/* ========================================================================
+ * PLUGIN - PRELOADER
+ * ======================================================================== */
+#loader-wrapper .loader-section {
+  background-color: $color-theme;
+}
+
+/* ========================================================================
+ * PLUGIN - SLIDER REVOLUTION
+ * ======================================================================== */
+.tp-caption.RedDot, .RedDot{
+  background-color: $color-theme !important;
+  &:hover{
+    border-color: darken($color-theme, 10%) !important;
+  }
+}
+
+/* ========================================================================
+ * SECTION - BANNER
+ * ======================================================================== */
+@media (max-width: 640px) {
+  #banner{
+    .banner-container{
+      background-color: $color-theme;
+    }
+  }
+}
+
+/* ========================================================================
+ * SECTION - FEATURES
+ * ======================================================================== */
+#features{
+  .feature-list{
+    .media-left{
+      i{
+        color: $color-theme;
+      }
+    }
+  }
+}

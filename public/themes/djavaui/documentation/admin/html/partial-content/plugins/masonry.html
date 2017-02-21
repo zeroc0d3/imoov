@@ -1,0 +1,40 @@
+<p>
+    Masonry is a JavaScript grid layout library. It works by placing elements in optimal position based on available vertical space, sort of like a mason fitting stones in a wall. You’ve probably seen it in use all over the Internet.
+</p>
+<p>
+    Official website : <a href="http://masonry.desandro.com/" target="_blank">http://masonry.desandro.com</a>
+</p>
+<p>
+    Demo page : <a href="../../production/admin/html/page-blog-list.html" target="_blank">page-blog-list.html</a>
+</p>
+<hr class="dotted"/>
+<h4>REQUIRED FILES (CSS)</h4>
+<pre class="html-code-no-menu">
+No CSS available
+</pre>
+<h4>REQUIRED FILES (JS)</h4>
+<pre class="html-code">
+&lt;script src=&quot;../../../assets/global/plugins/bower_components/masonry/masonry.pkgd.min.js&quot;&gt;&lt;/script&gt;
+</pre>
+<h4>SCRIPT (JS)</h4>
+<pre class="js-code no-margin">
+$(window).load(function(){
+                var container = document.querySelector('#blog-list');
+                var msnry = new Masonry( container, {
+                    // options
+                    columnWidth: '.col-xs-6',
+                    itemSelector: '.col-xs-6',
+                    isAnimated: true
+                });
+
+                // CHECK ON LOAD
+                if($(window).width() <= 480 )
+                    msnry.destroy();
+
+                // CHECK ON RESIZE
+                $(window).resize(function(){
+                    if($(this).width() <= 480 )
+                        msnry.destroy();
+                });
+            });
+</pre>
