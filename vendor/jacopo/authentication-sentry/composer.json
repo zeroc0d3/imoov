@@ -1,0 +1,71 @@
+{
+	"name": "jacopo/authentication-sentry",
+	"description": "PHP 5.3+ Sentry fork for laravel authentication acl package",
+	"keywords": ["auth", "security", "laravel", "codeigniter", "fuelphp", "kohana"],
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Cartalyst LLC",
+			"email": "help@cartalyst.com"
+		},
+		{
+			"name": "Dan Syme",
+			"email": "dan.syme@cartalyst.com",
+			"role": "Creator & Designer"
+		},
+		{
+			"name": "Ben Corlett",
+			"email": "ben.corlett@cartalyst.com",
+			"role": "Developer"
+		},
+		{
+			"name": "Daniel Petrie",
+			"email": "dan.petrie@cartalyst.com",
+			"role": "Developer"
+		},
+		{
+			"name": "Bruno Gaspar",
+			"email": "bruno.gaspar@cartalyst.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"require-dev": {
+		"mockery/mockery": "0.9.*",
+
+		"illuminate/cookie": "~5.0|~5.1|~5.2|~5.3",
+		"illuminate/database": "~5.0|~5.1|~5.2|~5.3",
+		"illuminate/http": "~5.0|~5.1|~5.2|~5.3",
+		"illuminate/session": "~5.0|~5.1|~5.2|~5.3",
+		"ircmaxell/password-compat": "1.0.*"
+	},
+	"suggest": {
+		"illuminate/database": "Default sentry user, group and throttling implementations.",
+		"ircmaxell/password-compat": "Default hashing uses PHP 5.5 password_* functions, with forward-compatible support.",
+		"happydemon/txt": "Required Text helpers when using the Kohana implementation"
+	},
+	"autoload": {
+		"classmap": [
+			"src/Cartalyst/Sentry/Groups/Exceptions.php",
+			"src/Cartalyst/Sentry/Throttling/Exceptions.php",
+			"src/Cartalyst/Sentry/Users/Exceptions.php"
+		],
+		"psr-0": {
+			"Cartalyst\\Sentry": "src/"
+		}
+	},
+	"extra": {
+		"component": "package",
+		"frameworks": ["Laravel 5"],
+		"versions": {
+			"1": "1.1/master",
+			"2": "master"
+		},
+		"branch-alias": {
+			"dev-master": "2.0-dev"
+		}
+	},
+	"minimum-stability": "dev"
+}
