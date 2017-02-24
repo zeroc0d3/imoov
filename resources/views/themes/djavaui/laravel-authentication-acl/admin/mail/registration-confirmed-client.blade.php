@@ -458,7 +458,7 @@
                                                 <h1>Registration Confirmed</h1>
                                                 <h3>Welcome to: {!! Config::get('acl_base.app_name') !!}</h3>
                                                 <br/>
-												                        <h3>Dear: {!!$body['first_name']!!} {!!$body['last_name']!!}</h3>
+												                        <h3>Dear: {!!$body['first_name']!!}</h3>
                                                 <strong>Your account has been created.</strong> You can now login to the website using the <a href="{!! URL::to('/admin') !!}">Following link</a>.
                                                 <br/>
                                                 <br/>

@@ -458,7 +458,7 @@
                                                 <h1>Registration Request</h1>
                                                 <h3>Registration request on: {!!Config::get('acl_base.app_name')!!}</h3>
                                                 <br/>
-												                        <h3>Dear: {!!$body['first_name']!!} {!!$body['last_name']!!}</h3>
+												                        <h3>Dear: {!!$body['first_name']!!}</h3>
                                                 <strong>Your account has been created. However, before you can use it you need to confirm your email address first by clicking the
                                                     <a href="{!!URL::route('user.email-confirmation', ['token' => $body['token'], 'email' => $body['email'] ] )!!}">Following link</a></strong>
                                                 <br/>
