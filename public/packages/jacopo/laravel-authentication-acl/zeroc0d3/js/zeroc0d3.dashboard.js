@@ -77,7 +77,7 @@ var ZeroC0D3Dashboard = function () {
                     {
                         element: "#tour-3",
                         title: "Form Search",
-                        content: "Search engine powerfull with autocomplete plugin. Just sample type blankon on here.",
+                        content: "Search engine powerfull with autocomplete plugin. Just sample type ZeroC0D3 on here.",
                         placement: "bottom"
                     },
                     {
@@ -101,7 +101,7 @@ var ZeroC0D3Dashboard = function () {
                     {
                         element: "#tour-7",
                         title: "Sidebar Right Navigation",
-                        content: "Click for show sidebar right to content Blankon.",
+                        content: "Click for show sidebar right to content ZeroC0D3.",
                         placement: "left"
                     },
                     {
@@ -272,11 +272,11 @@ var ZeroC0D3Dashboard = function () {
                     setTimeout(function () {
                         var unique_id = $.gritter.add({
                             // (string | mandatory) the heading of the notification
-                            title: 'Welcome to Blankon',
+                            title: 'Welcome to ZeroC0D3',
                             // (string | mandatory) the text inside the notification
-                            text: 'Blankon is a theme fullpack admin template powered by Twitter bootstrap 3 front-end framework.',
+                            text: 'ZeroC0D3 is a theme fullpack admin template powered by Twitter bootstrap 3 front-end framework.',
                             // (string | optional) the image to display on the left
-                            image: BlankonApp.handleBaseURL()+'/assets/global/img/icon/64/contact.png',
+                            image: ZeroC0D3App.handleBaseURL()+'/assets/global/img/icon/64/contact.png',
                             // (bool | optional) if you want it to fade out on its own or just sit there
                             sticky: false,
                             // (int | optional) the time you want it to be alive for before fading out
@@ -298,9 +298,9 @@ var ZeroC0D3Dashboard = function () {
                             // (string | mandatory) the heading of the notification
                             title: 'Playing sounds',
                             // (string | mandatory) the text inside the notification
-                            text: 'Blankon made for playing small sounds, will help you with this task. Please make your sound system is active',
+                            text: 'ZeroC0D3 made for playing small sounds, will help you with this task. Please make your sound system is active',
                             // (string | optional) the image to display on the left
-                            image: BlankonApp.handleBaseURL()+'/assets/global/img/icon/64/sound.png',
+                            image: ZeroC0D3App.handleBaseURL()+'/assets/global/img/icon/64/sound.png',
                             // (bool | optional) if you want it to fade out on its own or just sit there
                             sticky: true,
                             // (int | optional) the time you want it to be alive for before fading out
